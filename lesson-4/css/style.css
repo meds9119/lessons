@@ -11,6 +11,13 @@
     color: red;
 }
 
+/* Це чисто експеримент для себе. Тут було звертання до всіх тегів <a> */
+/*
+a {
+   color: darkblue;
+}
+  */
+
 .header-navigation-list {
     color: rebeccapurple;
 }
@@ -22,13 +29,6 @@
 #seventh-content-part {
     color: goldenrod;
 }
-
-/* Це чисто експеримент. Тут звертання до всіх тегів <a> */
-/*
-a {
-   color: darkblue;
-}
-  */
 
 .main-content-source {
     color: darkorange;
