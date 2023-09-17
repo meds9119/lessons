@@ -1,0 +1,55 @@
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+
+.header-about {
+    color: green;
+}
+
+.header-navigation {
+    color: red;
+}
+
+.header-navigation-list {
+    color: rebeccapurple;
+}
+
+#second-content-part {
+    color: deepskyblue;
+}
+
+#seventh-content-part {
+    color: goldenrod;
+}
+
+/* Це чисто експеримент. Тут звертання до всіх тегів <a> */
+/*
+a {
+   color: darkblue;
+}
+  */
+
+.main-content-source {
+    color: darkorange;
+}
+
+.source-link {
+    color: deeppink;
+}
+
+.main-content-text-part.text {
+    color: cyan;
+}
+
+h3 {
+    color: palegoldenrod;
+}
+
+div.link {
+    color: chartreuse;
+}
+
+.footer-content-top link {
+    color: darkmagenta;
+}
