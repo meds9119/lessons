@@ -112,7 +112,7 @@ h4 {
 }
 
 .footer-title h4 {
-    font-family: RobotoCondensed-Bold sans-serif;
+    font-family: 'RobotoCondensed-Bold', sans-serif;
     font-size: 30px;
     color: goldenrod;
     text-shadow: gold 1px 2px 1px;
