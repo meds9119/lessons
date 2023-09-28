@@ -1,0 +1,43 @@
+
+/* Через Google Fonts */
+/* @import url("fonts.css"); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+
+/* Підключення вручну */
+@font-face {
+    font-family: 'RobotoCondensed-Regular';
+    src: url("../fonts/RobotoCondensed-Regular.woff2") format("woff2"),
+    url("../fonts/RobotoCondensed-Regular.woff") format("woff");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RobotoCondensed-Italic';
+    src: url("../fonts/RobotoCondensed-Italic.woff2") format("woff2"),
+    url("../fonts/RobotoCondensed-Italic.woff") format("woff");
+    font-weight: 400;
+    font-display: swap;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RobotoCondensed-Bold';
+    src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"),
+    url("../fonts/RobotoCondensed-Bold.woff") format("woff");
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Amithen';
+    src: url("../fonts/amithen.woff2") format("woff2"),
+    url("../fonts/amithen.woff") format("woff");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}

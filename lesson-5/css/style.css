@@ -1,0 +1,140 @@
+/* Підключення шрифтів */
+@import url("fonts.css");
+
+/* Через Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/*Скидання стилів*/
+@import url("reset.css");
+
+/* Основні стилі */
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+}
+
+h1,
+h3,
+h4 {
+    text-align: center;
+}
+
+.header-title h1 {
+    font-size: 30px;
+    color: yellow;
+    text-shadow: dodgerblue 1px 3px 2px;
+    text-decoration: underline;
+}
+
+/* 1 частина дз - макет з Figma (Why Us For...) */
+.main-container {
+    width: 692px;
+    color: #7D7D7D;
+    line-height: 1.46;
+}
+
+.text h2 {
+    color: #37393F;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.27;
+    text-transform: capitalize;
+}
+
+.main-block h2 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.main-block span {
+    color: #6B77E5;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.27;
+}
+
+/* 1 частина дз - макет з Figma (Project Information) */
+.information-block {
+    width: 830px;
+}
+
+.information-block h2 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.information-block ul {
+    font-weight: 500;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.information-block ol {
+    font-weight: 500;
+}
+
+/* 2 частина дз - стаття */
+
+.article-block {
+    font-family: 'RobotoCondensed-Regular', sans-serif;
+    letter-spacing: 1px;
+}
+
+.text-block h3,
+.text-block h4 {
+    font-family: 'RobotoCondensed-Italic', sans-serif;
+    font-size: 30px;
+    color: darkblue;
+    text-transform: uppercase;
+}
+
+.text-block p {
+    text-indent: 15px;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+.text-block span {
+    color: red;
+    font-style: oblique;
+    text-shadow: darkred 1px 1px 2px;
+}
+
+.text-block a {
+    color: chartreuse;
+    font-size: 20px;
+}
+
+.text-block > p > span {
+    text-transform: capitalize;
+    white-space: nowrap;
+}
+
+.footer-title h4 {
+    font-family: RobotoCondensed-Bold sans-serif;
+    font-size: 30px;
+    color: goldenrod;
+    text-shadow: gold 1px 2px 1px;
+    text-decoration: line-through;
+    word-spacing: 8px;
+}
+
+/* Для демонстрації шрифту Amithen. Він підтримує лише латиницю */
+
+.amithen-block {
+    font-family: 'Amithen', sans-serif;
+    font-size: 28px;
+}
+
+.amithen-block p {
+    text-indent: 15px;
+}
+
+.amithen-block span {
+    color: aqua;
+    text-transform: capitalize;
+    text-shadow: blue 1px 1px 2px;
+}
+
+
