@@ -131,7 +131,7 @@ h4 {
 /* Для демонстрації шрифту Amithen. Він підтримує лише латиницю */
 
 .amithen-block {
-    font-family: 'Amithen', sans-serif;
+    font-family: 'Amithen', fantasy;
     font-size: 28px;
 }
 
