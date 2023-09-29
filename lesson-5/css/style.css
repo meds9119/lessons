@@ -54,7 +54,6 @@ h4 {
 /* 1 частина дз - макет з Figma (Project Information) */
 .information-block {
     width: 830px;
-    line-height: 1.46;
 }
 
 .information-block h2 {
