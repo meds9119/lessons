@@ -1,0 +1,183 @@
+/* Підключення шрифтів */
+@import url("fonts.css");
+
+/*Скидання стилів*/
+@import url("reset.css");
+
+/* Основні стилі */
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+}
+
+.header-title h1 {
+    font-size: 27px;
+    font-weight: 600;
+    color: darkblue;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 30px;
+}
+
+/* Макет з Figma (Why us...) */
+
+.main-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.main-block-image {
+    margin-bottom: 37px;
+    width: 100%;
+}
+
+.main-block {
+    margin-bottom: 42px;
+}
+
+.main-block h2 {
+    color: #37393F;
+    font-family: Poppins, sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 1.27;
+    /*padding-bottom: 3px;*/
+    margin-bottom: 3px;
+}
+
+.main-block-two {
+    margin-bottom: 40px;
+}
+
+.main-block-two span {
+    display: inline-block;
+    color: #6B77E5;
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.27;
+    /*padding-bottom: 12px;*/
+    margin-bottom: 12px;
+}
+
+.text {
+    color: #7D7D7D;
+    line-height: 1.46;
+}
+
+.main-block-benefit {
+    max-width: 692px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.image {
+    max-width: 50%;
+    display: inline-block;
+    margin-right: 29px;
+}
+
+.main-block-benefit img {
+    vertical-align: baseline;
+}
+
+.content {
+    max-width: 332px;
+    display: inline-block;
+    /*margin-bottom: 30px;*/
+}
+
+.content h2 {
+    color: #37393F;
+    font-family: Poppins, sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.27;
+    margin-bottom: 15px;
+}
+
+.content h3 {
+    color: #40DDB6;
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.27;
+    margin-bottom: 21px;
+
+}
+
+.content > ul > li {
+    color: #7D7D7D;
+    font-size: 18px;
+    margin-bottom: 30px;
+    padding-left: 27px;
+}
+
+/* Figma (Jewellery) */
+
+.main-block-jewellery {
+    /*background-color: #FFF9F4;*/
+    max-width: 1220px;
+    margin: 0 auto;
+    font-size: 0;
+
+}
+
+.jewellery-container {
+    padding: 21px 0;
+    display: inline-block;
+    margin-bottom: 130px;
+}
+
+.jewellery-content {
+    display: inline-block;
+    padding-right: 19px;
+}
+
+.jewellery-content span {
+    display: inline-block;
+    color: #D06B00;
+    font-size: 28px;
+    /*padding-top: 21px;*/
+    margin-bottom: 13px;
+    text-transform: uppercase;
+
+}
+
+.jewellery-content h3 {
+    max-width: 526px;
+    color: #0E333D;
+    font-family: DM Serif Text, serif;
+    font-size: 59px;
+    line-height: 1.46;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+
+}
+
+.jewellery-content p {
+    width: 563px;
+    color: #474747;
+    font-size: 20px;
+    line-height: 1.80;
+    display: inline-block;
+
+}
+
+.jewellery-image {
+    display: inline;
+    padding-left: 19px;
+    padding-bottom: 19px;
+
+}
+
+.jewellery-image img {
+    max-height: 100%;
+    display: inline;
+    margin-right: 22px;
+
+}
+
+
+
