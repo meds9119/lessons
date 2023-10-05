@@ -10,19 +10,29 @@ body {
     font-size: 18px;
 }
 
-.header-title h1 {
-    font-size: 27px;
-    font-weight: 600;
-    color: darkblue;
-    text-align: center;
-    text-decoration: underline;
+.header-title {
     margin-bottom: 30px;
+    background-color: darkblue;
 }
 
-/* Figma (Why us...) */
+/* header */
 
-.main-container {
-    max-width: 700px;
+.header-title h1 {
+    font-family: "DM Serif Text", serif;
+    color: #f6f3f3;
+    font-size: 27px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* Figma (Consulting) */
+.main-block-consulting {
+    margin-bottom: 40px;
+}
+
+.main-block-container {
+    max-width: 692px;
     margin: 0 auto;
 }
 
@@ -31,33 +41,30 @@ body {
     width: 100%;
 }
 
-.main-block {
+.main-block-content {
     margin-bottom: 42px;
 }
 
-.main-block h2 {
+.main-block-content h2 {
     color: #37393F;
     font-family: Poppins, sans-serif;
     font-size: 30px;
     font-weight: 600;
     text-transform: capitalize;
     line-height: 1.27;
-    /*padding-bottom: 3px;*/
-    margin-bottom: 3px;
+    margin-bottom: 13px;
 }
 
 .main-block-two {
     margin-bottom: 40px;
 }
 
-.main-block-two span {
-    display: inline-block;
+.main-block-two h3 {
     color: #6B77E5;
     font-family: Poppins, sans-serif;
     font-size: 20px;
     font-weight: 600;
     line-height: 1.27;
-    /*padding-bottom: 12px;*/
     margin-bottom: 12px;
 }
 
@@ -69,6 +76,10 @@ body {
 /* Figma (Benefit) */
 
 .main-block-benefit {
+    margin-bottom: 40px;
+}
+
+.benefit-container {
     max-width: 692px;
     margin: 0 auto;
     font-size: 0;
@@ -84,65 +95,68 @@ body {
     vertical-align: baseline;
 }
 
-.content {
+.benefit-content {
     max-width: 332px;
     display: inline-block;
-    /*margin-bottom: 30px;*/
 }
 
-.content h2 {
+.benefit-content h2 {
     color: #37393F;
     font-family: Poppins, sans-serif;
     font-size: 25px;
     font-weight: 600;
-    line-height: 1.27;
+    line-height: 1.65;
     margin-bottom: 15px;
 }
 
-.content h3 {
+.benefit-content h3 {
     color: #40DDB6;
     font-family: Poppins, sans-serif;
     font-size: 20px;
     font-weight: 600;
-    line-height: 1.27;
+    line-height: 1.5;
     margin-bottom: 21px;
-
 }
 
-.content > ul > li {
+.benefit-content > ul > li {
     color: #7D7D7D;
     font-size: 18px;
     margin-bottom: 30px;
     padding-left: 27px;
 }
 
-/* Figma (Jewellery) */
+.benefit-content > ul > li:last-child {
+    margin-bottom: 0; /* Треба було прибрати у останнього <li> відступ */
+}
 
-.main-block-jewellery {
-    /*background-color: #FFF9F4;*/
-    max-width: 1220px;
+/* Figma (Jewellery). Цей блок виявився найболючішим, багато разів перероблявся. */
+/* Але результатом зараз я задоволена і сподіваюсь, тут не буде багато помилок 🌸 */
+
+.jewellery-block {
+    margin-bottom: 60px;
+    background-color: #FFF9F4;
+}
+
+.jewellery-block-wrapper {
+    max-width: 1169px;
     margin: 0 auto;
     font-size: 0;
 }
 
 .jewellery-container {
-    padding: 21px 0;
     display: inline-block;
-    margin-bottom: 130px;
-    /*height: 518px;*/
-
+    max-width: 563px;
+    margin-right: 38px;
 }
 
 .jewellery-content {
-    display: inline-block;
-    padding-right: 19px;
+    padding: 29px 0;
 }
 
 .jewellery-content span {
     display: inline-block;
     color: #D06B00;
     font-size: 28px;
-    /*padding-top: 21px;*/
     margin-bottom: 13px;
     text-transform: uppercase;
 
@@ -153,33 +167,96 @@ body {
     color: #0E333D;
     font-family: 'DM Serif Text', serif;
     font-size: 59px;
-    line-height: 1.46;
+    line-height: 1.5;
     text-transform: capitalize;
     margin-bottom: 25px;
 
 }
 
 .jewellery-content p {
-    width: 563px;
     color: #474747;
     font-size: 20px;
-    line-height: 1.80;
-    display: inline-block;
-
+    line-height: 1.8;
+    display: inline-block; /* чи треба??? */
 }
 
 .jewellery-image {
     display: inline;
-    padding-left: 19px;
+    vertical-align: top;
 }
 
-.jewellery-image img {
-    max-height: 500px;
-    /*max-height: 100%;*/
+.jewellery-image-first {
     display: inline-block;
     margin-right: 22px;
+    height: 518px;
+    width: 273px;
+}
+
+.jewellery-image-second {
+    display: inline-block;
+    height: 518px;
+    width: 273px;
+}
+
+/* Відпрацювання вивченого матеріалу  */
+
+.example-block {
+    font-family: Poppins, sans-serif;
 
 }
 
+.example-block-container {
+    max-width: 500px;
+    max-height: 300px;
+    overflow: auto;
+    margin: 0 auto;
+}
 
+.example-content {
+    display: inline-block;
+    width: 550px;
+    height: 400px;
+    font-size: 21px;
+    line-height: 1.2;
+    padding: 25px 25px;
+}
+
+.example-content > p {
+    text-align: center;
+}
+
+.example-content span {
+    font-family: 'DM Serif Text', serif;
+    color: magenta;
+    font-size: 19px;
+}
+
+.example-block-image {
+    max-width: 400px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.example-image {
+    display: inline-block;
+    padding: 20px;
+}
+
+.example-block-image img {
+    display: inline-block;
+    width: 500px;
+    min-height: 100px;
+}
+
+/* footer */
+.footer-title {
+    background-color: yellow;
+}
+
+.footer-title h5 {
+    font-family: "DM Serif Text", serif;
+    text-align: center;
+    color: black;
+    font-size: 27px;
+}
 
