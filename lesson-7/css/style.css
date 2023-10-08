@@ -1,0 +1,298 @@
+/* Підключення шрифтів */
+@import url('fonts.css');
+/* Скидання стилів */
+@import url('reset.css');
+
+/* Основні стилі */
+body {
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+}
+
+.header-title {
+    margin-bottom: 150px;
+}
+
+/* Стилі для Licencing */
+.main-block-licencing {
+    margin-bottom: 150px;
+}
+
+.licencing-container {
+    max-width: 1218px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.licencing-content-title {
+    /*max-width: 296px;*/
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.licencing-title {
+    margin-bottom: 16px;
+}
+
+.licencing-decor {
+    display: inline-block;
+    margin-right: 6px;
+    width: 12px;
+    height: 12px;
+    background-color: #40ddb6;
+}
+
+.licencing-title h2 {
+    display: inline-block;
+    color: #37393F;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.licencing-subtitle h3 {
+    color: #37393F;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.21;
+}
+
+.licencing-content-icons {
+    margin-bottom: 100px;
+}
+
+.licencing-content-icons h3 {;
+    color: #37393F;
+    font-family: Poppins, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.21;
+    margin-bottom: 11px;
+}
+
+.licencing-content-icons p {
+    font-size: 18px;
+    color: #7D7D7D;
+    line-height: 1.46;
+    margin-bottom: 32px;
+}
+
+.licencing-content-icons h4 {
+    color: #37393F;
+    font-family: Poppins, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.licencing-content-icons span {
+    color: #40DDB6;
+    /*font-family: Poppins, sans-serif;*/
+    /*font-size: 30px;*/
+    /*line-height: 1.2;*/
+}
+
+.licencing-content-text {
+    margin-bottom: 100px;
+}
+
+.licencing-content-text h3 {
+    color: #37393F;
+    font-family: Poppins, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.21;
+    margin-bottom: 11px;
+}
+
+.licencing-content-text p {
+    color: #7D7D7D;
+    font-size: 18px;
+    line-height: 1.46;
+    margin-bottom: 24px;
+}
+
+.color h4 {
+    color: #37393F;
+    font-family: Poppins, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.21;
+    margin-bottom: 8px;
+}
+
+.color span {
+    color: #40DDB6;
+    font-family: Poppins, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.21;
+}
+
+.color p {
+    color: #40DDB6;
+    font-size: 18px;
+    line-height: 1.46;
+}
+
+.licencing-content-output {
+
+}
+
+.licencing-content-output h4 {
+    color: #37393F;
+    font-family: Poppins, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.21;
+}
+
+.licencing-content-output p {
+    color: #7D7D7D;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.46;
+}
+
+.licencing-content-output span {
+    color: #40DDB6;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.46;
+}
+
+/* Project information */
+
+.project-block {
+    margin-bottom: 50px;
+}
+
+.project-container {
+    max-width: 838px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.project-title {
+    max-width: 399px;
+    margin-bottom: 13px;
+}
+
+.project-title h2 {
+    color: #37393F;
+    font-family: Poppins, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 1.27;
+}
+
+.project-content {
+    margin-bottom: 35px;
+}
+
+.project-content p {
+    color: #7D7D7D;
+    font-size: 18px;
+    line-height: 1.46;
+    margin-bottom: 35px;
+}
+
+.project-content p:first-child {
+    margin-bottom: 29px;
+}
+
+.project-content p:last-child {
+    margin-bottom: 0;
+}
+
+.project-content ul {
+    max-width: 447px;
+    margin-bottom: 35px;
+    padding-left: 30px;
+    /*border: 7px inset rgba(218, 209, 209, 0.75);*/
+
+}
+
+.project-content > ul > li {
+    color: #7D7D7D;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.46;
+    list-style: disc;
+    margin-bottom: 28px;
+}
+
+.project-content li:last-child {
+    margin-bottom: 0;
+}
+
+/* -------------------------------------- */
+/*.project-content .project-markers-list {*/
+/*    margin-left: 20px;*/
+/*}*/
+
+/*.project-markers-list {*/
+/*    max-width: 427px;*/
+/*    margin-bottom: 35px;*/
+/*    border: 2px solid black;*/
+/*}*/
+
+/*.project-markers-list ul {*/
+/*    padding-left: 20px;*/
+/*}*/
+
+/*.project-markers-list li {*/
+/*    color: #7D7D7D;*/
+/*    font-size: 18px;*/
+/*    font-weight: 500;*/
+/*    line-height: 1.46;*/
+/*    list-style: disc;*/
+/*}*/
+
+.project-content > ol {
+    max-width: 457px;
+    padding-left: 42px;
+    margin-bottom: 35px;
+    /*border: 7px inset rgba(4, 150, 248, 0.37);*/
+}
+
+.project-content > ol > li {
+    color: #7D7D7D;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.46;
+    list-style: decimal-leading-zero;
+    margin-bottom: 28px;
+}
+
+.clothing-india-block {
+    margin-bottom: 40px;
+}
+
+.clothing-india-container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 15px;
+    /*font-size: 0;*/
+    border: 7px dashed rgba(84, 1, 103, 0.58);
+}
+
+.clothing-india-content {
+
+}
+
+.clothing-india-decor {
+    border-radius: 10px;
+    background: #8A33FD;
+    width: 6px;
+    height: 28px;
+}
+
+.clothing-india-title h3 {
+
+}
+
+
