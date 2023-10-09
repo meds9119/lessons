@@ -10,12 +10,26 @@ body {
 }
 
 .header-title {
-    margin-bottom: 150px;
+    margin-bottom: 70px;
+}
+
+h1,
+h6 {
+    text-align: center;
+    background-color: #40ddb6;
+    font-family: Causten, serif;
+    color: white;
+    text-shadow: 2px 3px #807D7E;
+    font-size: 29px;
+    font-weight: 700;
+    line-height: 1.7;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 /* Стилі для Licencing */
 .main-block-licencing {
-    margin-bottom: 150px;
+    margin-bottom: 70px;
 }
 
 .licencing-container {
@@ -56,7 +70,7 @@ body {
     font-family: Poppins, sans-serif;
     font-size: 60px;
     font-weight: 700;
-    line-height: 1.21;
+    line-height: 1.2;
 }
 
 .licencing-content-icons {
@@ -68,7 +82,7 @@ body {
     font-family: Poppins, sans-serif;
     font-size: 40px;
     font-weight: 700;
-    line-height: 1.21;
+    line-height: 1.2;
     margin-bottom: 11px;
 }
 
@@ -89,9 +103,6 @@ body {
 
 .licencing-content-icons span {
     color: #40DDB6;
-    /*font-family: Poppins, sans-serif;*/
-    /*font-size: 30px;*/
-    /*line-height: 1.2;*/
 }
 
 .licencing-content-text {
@@ -103,7 +114,7 @@ body {
     font-family: Poppins, sans-serif;
     font-size: 40px;
     font-weight: 700;
-    line-height: 1.21;
+    line-height: 1.2;
     margin-bottom: 11px;
 }
 
@@ -119,7 +130,7 @@ body {
     font-family: Poppins, sans-serif;
     font-size: 30px;
     font-weight: 700;
-    line-height: 1.21;
+    line-height: 1.2;
     margin-bottom: 8px;
 }
 
@@ -128,7 +139,7 @@ body {
     font-family: Poppins, sans-serif;
     font-size: 30px;
     font-weight: 400;
-    line-height: 1.21;
+    line-height: 1.2;
 }
 
 .color p {
@@ -137,16 +148,13 @@ body {
     line-height: 1.46;
 }
 
-.licencing-content-output {
-
-}
-
 .licencing-content-output h4 {
     color: #37393F;
     font-family: Poppins, sans-serif;
     font-size: 40px;
     font-weight: 700;
-    line-height: 1.21;
+    line-height: 1.2;
+    margin-bottom: 11px;
 }
 
 .licencing-content-output p {
@@ -166,7 +174,7 @@ body {
 /* Project information */
 
 .project-block {
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 
 .project-container {
@@ -213,7 +221,6 @@ body {
     margin-bottom: 35px;
     padding-left: 30px;
     /*border: 7px inset rgba(218, 209, 209, 0.75);*/
-
 }
 
 .project-content > ul > li {
@@ -228,29 +235,6 @@ body {
 .project-content li:last-child {
     margin-bottom: 0;
 }
-
-/* -------------------------------------- */
-/*.project-content .project-markers-list {*/
-/*    margin-left: 20px;*/
-/*}*/
-
-/*.project-markers-list {*/
-/*    max-width: 427px;*/
-/*    margin-bottom: 35px;*/
-/*    border: 2px solid black;*/
-/*}*/
-
-/*.project-markers-list ul {*/
-/*    padding-left: 20px;*/
-/*}*/
-
-/*.project-markers-list li {*/
-/*    color: #7D7D7D;*/
-/*    font-size: 18px;*/
-/*    font-weight: 500;*/
-/*    line-height: 1.46;*/
-/*    list-style: disc;*/
-/*}*/
 
 .project-content > ol {
     max-width: 457px;
@@ -268,6 +252,7 @@ body {
     margin-bottom: 28px;
 }
 
+/* Clothing for women online in India */
 .clothing-india-block {
     margin-bottom: 40px;
 }
@@ -275,24 +260,335 @@ body {
 .clothing-india-container {
     max-width: 1240px;
     margin: 0 auto;
-    padding: 15px;
-    /*font-size: 0;*/
-    border: 7px dashed rgba(84, 1, 103, 0.58);
-}
-
-.clothing-india-content {
-
+    font-size: 0;
+    border: 5px dashed rgba(84, 1, 103, 0.58);
 }
 
 .clothing-india-decor {
+    display: inline-block;
     border-radius: 10px;
     background: #8A33FD;
-    width: 6px;
-    height: 28px;
+    width: 7px;
+    height: 32px;
+    margin-right: 15px;
+}
+
+.clothing-india-title {
+    max-width: 573px;
+    margin-bottom: 30px;
 }
 
 .clothing-india-title h3 {
-
+    display: inline-block;
+    color: #3C4242;
+    font-family: 'Core Sans C', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.2; /* line-height: 33.5px/font-size: 28px */
+    letter-spacing: 0.6px;
+    vertical-align: top;
 }
+
+.clothing-india-content {
+    padding: 0 2px 0 21px;
+}
+
+.clothing-india-content h4 {
+    color: #807D7E;
+    font-family: 'Core Sans C', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.7; /* line-height: 33,5px/font-size: 20px = 1.675. Округлила до 1.7 */
+    letter-spacing: 0.4px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+}
+
+.clothing-india-content > h4 + p {
+    margin-bottom: 20px;
+}
+
+.clothing-india-content p {
+    color: #807D7E;
+    font-family: Causten, sans-serif;
+    font-size: 20px;
+    line-height: 1.7;
+    letter-spacing: 0.4px;
+    margin-bottom: 25px;
+}
+
+.clothing-india-content span {
+    color: #807D7E;
+    font-family: Causten, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.7;
+    text-transform: capitalize;
+    letter-spacing: 0.4px;
+}
+
+.clothing-india-content p:last-of-type {
+    margin-bottom: 20px;
+}
+
+.clothing-india-link {
+    max-width: 168px;
+}
+
+.clothing-india-link a {
+    color: #807D7E;
+    font-family: 'Core Sans C', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.7;
+    text-transform: capitalize;
+    letter-spacing: 0.4px;
+}
+
+/* Jewellery. WHAT WE DO */
+
+.jewellery-create-block {
+    margin-bottom: 70px;
+}
+
+.jewellery-create-container {
+    max-width: 1114px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.jewellery-create-content {
+    display: inline-block;
+    max-width: 525px;
+    font-family: 'Cormorant Infant', serif;
+    font-weight: 700;
+    padding: 70px 0;
+    margin-right: 75px;
+}
+
+.jewellery-create-content h3 {
+    color: #D58417;
+    font-family: 'Cormorant Infant', serif;
+    font-size: 20px;
+    line-height: 1.00;
+    text-transform: uppercase;
+    margin-bottom: 27px;
+}
+
+.jewellery-create-content h2 {
+    color: #000;
+    font-size: 64px;
+    line-height: 1.00;
+    text-transform: capitalize;
+    margin-bottom: 31px;
+}
+
+.jewellery-create-content p {
+    color: #606060;
+    font-size: 30px;
+    line-height: 1.40;
+}
+
+.jewellery-image-block {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 0;
+}
+
+.jewellery-image-block div {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.jewellery-image-first {
+    width: 177px;
+    height: 336px;
+    border-radius: 235px;
+    border: 1px solid #502203;
+    margin-right: 30px;
+}
+
+.jewellery-image-first img {
+    border-radius: 235px;
+    padding-top: 14px;
+    margin-left: -10px;
+}
+
+.jewellery-image-second {
+    width: 307px;
+    height: 500px;
+    border-radius: 235px;
+    border: 1px solid #502203;
+}
+
+.jewellery-image-second img {
+    border-radius: 235px;
+    padding-top: 13px;
+    margin-left: -11px;
+}
+
+.footer-title {
+    text-align: center;
+}
+
+/* Example Tetris Game */
+.example-title-container {
+    max-width: 450px;
+    margin: 0 auto 50px;
+}
+
+.example-title h3 {
+    font-family: 'Pixelify Sans', sans-serif;
+    text-align: center;
+    color: black;
+    font-size: 37px;
+    letter-spacing: 2px;
+    box-shadow: 3px 3px #071a00, 20px 20px #54ef05;
+}
+
+/* Profile block */
+
+.example-block {
+    margin-bottom: 40px;
+}
+
+.example-block-container {
+    max-width: 450px;
+    min-height: 400px;
+    margin: 0 auto;
+    border: 4px dashed black;
+}
+
+.example-content-profile {
+    font-family: 'Pixelify Sans', sans-serif;
+    color: white;
+    text-align: center;
+    letter-spacing: 3px;
+    padding: 50px;
+    background-color: #1c1f19;
+}
+
+.game-link {
+    border: 4px inset rgba(245, 246, 246, 0.94);
+    border-radius: 50px;
+    font-size: 26px;
+    line-height: 1.8;
+    margin-bottom: 55px;
+}
+
+.game-link a {
+    display: inline-block;
+    width: 285px;
+}
+
+.game-link a:hover {
+    text-shadow: 2px 2px #07e707;
+}
+
+.example-content-profile h3 {
+    color: white;
+    text-shadow: 2px 2px #07e707;
+    font-size: 43px;
+    line-height: 1.8;
+    margin-bottom: 45px;
+}
+
+.example-content-profile h5 {
+    text-shadow: 2px 2px #07e707;
+}
+
+/* Game block */
+
+.example-container-game {
+    max-width: 450px;
+    min-height: 400px;
+    margin: 0 auto 45px;
+    font-size: 0;
+    border: 4px dashed black;
+}
+
+.example-content-game {
+    display: inline-block;
+    vertical-align: top;
+    background-color: #262b2c;
+}
+
+.cell {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    background: black;
+    border-radius: 4px;
+    border: 1px solid;
+}
+
+.color-red-block {
+    background: #fa0404;
+}
+
+.color-blue-block {
+    background: #0048ff;
+}
+
+.color-yellow-block {
+    background: #e1fa04;
+}
+
+.color-green-block {
+    background: #07e707;
+}
+
+.color-pink-block {
+    background: deeppink;
+}
+
+.color-white-block {
+    background: white;
+}
+
+.example-block-example {
+    /*text-align: center;*/
+}
+
+.example-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.example-example > span {
+    font-family: 'Causten', sans-serif;
+    color: rgba(18, 24, 18, 0.92);
+    font-size: 30px;
+    border-top: 4px dashed #26c701;
+    border-right: 3px dotted #0c8503;
+    border-bottom: 6px double #0e100e;
+    border-left: 4px solid rgba(85, 246, 4, 0.78);
+}
+
+.span-decorate-one {
+    opacity: 0.6;
+}
+
+.span-decorate-two {
+    opacity: 0.4;
+}
+
+.span-decorate-three {
+    opacity: 0.3;
+}
+
+.example-example span {
+    margin-right: 30px;
+}
+
+.footer-title span {
+    visibility: hidden;
+}
+
+
+
+
+
 
 
