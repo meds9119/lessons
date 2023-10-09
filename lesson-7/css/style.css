@@ -10,6 +10,7 @@ body {
 }
 
 .header-title {
+    padding: 5px;
     margin-bottom: 70px;
 }
 
@@ -17,7 +18,7 @@ h1,
 h6 {
     text-align: center;
     background-color: #40ddb6;
-    font-family: Causten, serif;
+    font-family: Causten, sans-serif;
     color: white;
     text-shadow: 2px 3px #807D7E;
     font-size: 29px;
@@ -25,6 +26,7 @@ h6 {
     line-height: 1.7;
     text-transform: uppercase;
     letter-spacing: 2px;
+    outline: thick double #17cea2;
 }
 
 /* Стилі для Licencing */
@@ -56,6 +58,16 @@ h6 {
     background-color: #40ddb6;
 }
 
+/* Загальні для заголовків */
+
+.main-block-licencing h3,
+h4 {
+    color: #37393F;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
 .licencing-title h2 {
     display: inline-block;
     color: #37393F;
@@ -65,12 +77,8 @@ h6 {
 }
 
 .licencing-subtitle h3 {
-    color: #37393F;
     text-align: center;
-    font-family: Poppins, sans-serif;
     font-size: 60px;
-    font-weight: 700;
-    line-height: 1.2;
 }
 
 .licencing-content-icons {
@@ -78,11 +86,7 @@ h6 {
 }
 
 .licencing-content-icons h3 {;
-    color: #37393F;
-    font-family: Poppins, sans-serif;
     font-size: 40px;
-    font-weight: 700;
-    line-height: 1.2;
     margin-bottom: 11px;
 }
 
@@ -94,11 +98,7 @@ h6 {
 }
 
 .licencing-content-icons h4 {
-    color: #37393F;
-    font-family: Poppins, sans-serif;
     font-size: 30px;
-    font-weight: 700;
-    line-height: 1.2;
 }
 
 .licencing-content-icons span {
@@ -110,11 +110,7 @@ h6 {
 }
 
 .licencing-content-text h3 {
-    color: #37393F;
-    font-family: Poppins, sans-serif;
     font-size: 40px;
-    font-weight: 700;
-    line-height: 1.2;
     margin-bottom: 11px;
 }
 
@@ -125,12 +121,12 @@ h6 {
     margin-bottom: 24px;
 }
 
+.licencing-content-text p:last-child {
+    margin-bottom: 0;
+}
+
 .color h4 {
-    color: #37393F;
-    font-family: Poppins, sans-serif;
     font-size: 30px;
-    font-weight: 700;
-    line-height: 1.2;
     margin-bottom: 8px;
 }
 
@@ -149,11 +145,7 @@ h6 {
 }
 
 .licencing-content-output h4 {
-    color: #37393F;
-    font-family: Poppins, sans-serif;
     font-size: 40px;
-    font-weight: 700;
-    line-height: 1.2;
     margin-bottom: 11px;
 }
 
@@ -164,7 +156,7 @@ h6 {
     line-height: 1.46;
 }
 
-.licencing-content-output span {
+.licencing-content-output a {
     color: #40DDB6;
     font-size: 18px;
     font-weight: 500;
@@ -229,7 +221,7 @@ h6 {
     font-weight: 500;
     line-height: 1.46;
     list-style: disc;
-    margin-bottom: 28px;
+    margin-bottom: 26px;
 }
 
 .project-content li:last-child {
@@ -249,7 +241,7 @@ h6 {
     font-weight: 500;
     line-height: 1.46;
     list-style: decimal-leading-zero;
-    margin-bottom: 28px;
+    margin-bottom: 26px;
 }
 
 /* Clothing for women online in India */
@@ -259,9 +251,9 @@ h6 {
 
 .clothing-india-container {
     max-width: 1240px;
+    padding: 0 15px;
     margin: 0 auto;
     font-size: 0;
-    border: 5px dashed rgba(84, 1, 103, 0.58);
 }
 
 .clothing-india-decor {
@@ -284,8 +276,9 @@ h6 {
     font-family: 'Core Sans C', sans-serif;
     font-size: 28px;
     font-weight: 600;
-    line-height: 1.2; /* line-height: 33.5px/font-size: 28px */
+    line-height: 1.2; /* line-height: 33.5px / font-size: 28px */
     letter-spacing: 0.6px;
+    text-transform: capitalize;
     vertical-align: top;
 }
 
@@ -298,7 +291,7 @@ h6 {
     font-family: 'Core Sans C', sans-serif;
     font-size: 20px;
     font-weight: 600;
-    line-height: 1.7; /* line-height: 33,5px/font-size: 20px = 1.675. Округлила до 1.7 */
+    line-height: 1.7; /* line-height: 33,5px / font-size: 20px = 1.675. Округлила до 1.7 */
     letter-spacing: 0.4px;
     text-transform: capitalize;
     margin-bottom: 25px;
@@ -348,7 +341,7 @@ h6 {
 /* Jewellery. WHAT WE DO */
 
 .jewellery-create-block {
-    margin-bottom: 70px;
+    margin-bottom: 80px;
 }
 
 .jewellery-create-container {
@@ -427,10 +420,7 @@ h6 {
     margin-left: -11px;
 }
 
-.footer-title {
-    text-align: center;
-}
-
+/* Відпрацювання вивченого матеріалу */
 /* Example Tetris Game */
 .example-title-container {
     max-width: 450px;
@@ -438,7 +428,7 @@ h6 {
 }
 
 .example-title h3 {
-    font-family: 'Pixelify Sans', sans-serif;
+    font-family: 'Pixelify Sans', fantasy;
     text-align: center;
     color: black;
     font-size: 37px;
@@ -460,7 +450,7 @@ h6 {
 }
 
 .example-content-profile {
-    font-family: 'Pixelify Sans', sans-serif;
+    font-family: 'Pixelify Sans', fantasy;
     color: white;
     text-align: center;
     letter-spacing: 3px;
@@ -546,10 +536,6 @@ h6 {
     background: white;
 }
 
-.example-block-example {
-    /*text-align: center;*/
-}
-
 .example-container {
     max-width: 1300px;
     margin: 0 auto;
@@ -580,6 +566,12 @@ h6 {
 
 .example-example span {
     margin-right: 30px;
+}
+
+/* Footer */
+
+.footer-title {
+    padding: 5px;
 }
 
 .footer-title span {
