@@ -9,64 +9,102 @@
 body {
     font-family: Inter, sans-serif;
     font-size: 18px;
+    min-height: 400px;
+    background: url("../img/practice/bee-one-bee.png") 100% 10%/7% no-repeat fixed,
+    url("../img/practice/bee-lieve.jpg") 0 100%/19% no-repeat scroll;
+
 }
 
 h1,
 h5 {
-    font-size: 25px;
+    font-family: Pacifico, fantasy;
+    letter-spacing: 4px;
+    font-size: 40px;
     line-height: 1.5;
-    text-align: center;
+    color: #ffdf7b;
+    text-shadow: 2px 2px 3px black;
+}
 
+.header {
+    margin-bottom: 40px;
 }
 
 .header-title {
-    background-color: #6B77E5;
-    margin-bottom: 50px;
+    text-align: right;
+    padding: 2px 40px;
+    background: url("../img/practice/honey-drops-realistic.jpg") 0 0/contain repeat;
+    background-color: #c08c00;
+}
+
+.header-navigation-list {
+    padding: 10px 1px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.header-navigation-decor {
+    min-height: 100px;
+    max-width: 150px;
+    background: url("../img/practice/bee-one-bee.png") 0 0/auto 100% no-repeat;
+}
+
+.header-navigation-list > ul > li {
+    display: inline-block;
+    font-family: Pacifico, fantasy;
+    letter-spacing: 1px;
+    margin-right: 20px;
+    color: #261701;
+    line-height: 1.5;
+    font-size: 27px;
+    text-transform: capitalize;
+}
+
+.header-navigation-list li:hover {
+    text-shadow: 1px 1px 1px #e8d29e;
 }
 
 /* Whitecollar block */
 .whitecollar-block {
-
+    background: url("../img/practice/fly-more-bee.jpg") 70% 90%/17% no-repeat scroll;
+    margin-bottom: 48px;
 }
 
 .whitecollar-block-container {
-    max-width: 1023px;
-    min-height: auto;
-    /*margin: 0 auto;*/
-    padding: 0 15px;
-    font-size: 0; /* мають прибрати фантомні відступи */
-
+    max-width: 1038px; /* 1028px + 15px padding */
+    margin: 0 auto;
+    padding: 100px 15px;
+    font-size: 0;
 }
 
 .whitecollar-title-block {
+    max-width: 413px;
     margin-bottom: 20px;
 }
 
-.whitecollar-icons {
-    max-width: 413px;
+.whitecollar-title-block h3 {
+    background: url("../img/icons/color-box.svg") 0 5px no-repeat;
+    padding-left: 20px;
     display: inline-block;
-}
-
-.whitecollar-icons h2 {
-    display: inline-block;
-    /*vertical-align: top;*/
     color: #37393F;
+    font-size: 18px;
     font-weight: 500;
     line-height: 1.2;
     text-transform: capitalize;
     margin-bottom: 16px;
 }
 
-.whitecollar-icons h3 {
+.whitecollar-title-block h2 {
     color: #37393F;
     font-family: Poppins, sans-serif;
-    font-size: 40px; /* має ж перезаписатися значення, цей запис приорітетніший, але ні :( */
+    font-size: 40px;
     font-weight: 700;
     line-height: 1.2;
     text-transform: capitalize;
 }
 
 .whitecollar-content-block {
+    max-width: 673px;
     margin-bottom: 20px;
 }
 
@@ -74,11 +112,421 @@ h5 {
     color: #7D7D7D;
     font-size: 18px;
     line-height: 1.46;
-}
-
-.whitecollar-content-block + p {
     margin-bottom: 15px;
 }
+
+.whitecollar-content-block > p + p {
+    margin-bottom: 0;
+}
+
+.whitecollar-content-two {
+    max-width: 613px;
+}
+
+.list {
+    margin-bottom: 43px;
+}
+
+.list li {
+    background: url("../img/icons/icon-check-mark.svg") 0 0 / 27px 27px no-repeat;
+    padding-left: 35px;
+    min-height: 33px;
+    color: #37393F;
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    margin-bottom: 23px;
+}
+
+.icon-box {
+    margin-bottom: 37px;
+
+}
+
+.icon-box h3 {
+    vertical-align: top;
+    display: inline-block;
+    color: #37393F;
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.icon-box p {
+    vertical-align: middle;
+    display: inline-block;
+    color: #7D7D7D;
+    font-size: 16px;
+    line-height: 1.35;
+}
+
+.whitecollar-icon-box-first {
+    max-width: 296px;
+    display: inline-block;
+    border: 1px solid #E3E3E3;
+    padding: 31px 32px 32px 32px;
+    margin-right: 21px;
+}
+
+.icon-box-first {
+    background: url("../img/icons/icon-list.svg") no-repeat;
+    vertical-align: baseline;
+    padding-left: 53px;
+}
+
+.whitecollar-icon-box-second {
+    max-width: 296px;
+    display: inline-block;
+    border: 1px solid #E3E3E3;
+    padding: 31px 37px 32px 37px;
+}
+
+.icon-box-second {
+    background: url("../img/icons/icon-list.svg") 0 5px no-repeat;
+    padding-left: 53px;
+}
+
+.link a {
+    display: inline-block;
+    background: #6B77E5;
+    padding: 21px 27px 22px 27px;
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-transform: capitalize;
+}
+
+
+.block-decor-left {
+    min-height: 200px;
+    background: url("../img/practice/happy-bee-two.png") 10% 100% no-repeat scroll,
+    url("../img/practice/dotted-arrow.png") 5% 100% no-repeat scroll;
+}
+
+/* Latest Project */
+.project-block {
+    margin-bottom: 40px;
+}
+
+.project-block-container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 10px;
+    font-size: 0;
+}
+
+.project-title {
+    max-width: 852px;
+    margin: 0 auto 47px;
+    text-align: center;
+}
+
+.project-title h3 {
+    background: url("../img/icons/color-box.svg") 0 5px / 12px 12px no-repeat;
+    color: #37393F;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2;
+    padding-left: 18px;
+    margin-bottom: 14px;
+    display: inline-block;
+}
+
+.project-title h2 {
+    color: #37393F;
+    font-family: Poppins, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.21;
+    margin-bottom: 14px;
+}
+
+.project-title p {
+    color: #7D7D7D;
+    font-size: 18px;
+    line-height: 1.46;
+}
+
+.project-content-row-up {
+    margin-bottom: 58px;
+}
+
+.image-list {
+    display: inline-block;
+    vertical-align: baseline;
+    max-width: 384px;
+    width: 100%;
+    height: 501px;
+}
+
+.images {
+    min-height: 501px;
+    max-width: 384px;
+    margin-bottom: 24px;
+}
+
+.image-list h4 {
+    color: #37393F;
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.27;
+    margin-bottom: 10px;
+}
+
+.icon-calendar {
+    display: inline-block;
+    color: #7D7D7D;
+    font-size: 14px;
+    line-height: 1.46;
+    padding-left: 25px;
+    background: url("../img/icons/project-icons.svg") 0 0 no-repeat;
+    min-height: 22px;
+    width: 100%;
+}
+
+.image-first {
+    margin-right: 34px;
+    background: url("../img/worktable.png") center no-repeat;
+}
+
+.image-second {
+    margin-right: 34px;
+    background: url("../img/with-men.png") center no-repeat;
+}
+
+.image-third {
+    background: url("../img/phone.png") center no-repeat;
+}
+
+.image-fourth {
+    margin-right: 34px;
+    background: url("../img/with-women.png") center no-repeat;
+}
+
+
+.image-fives {
+    margin-right: 34px;
+    background: url("../img/with-list.png") center no-repeat;
+}
+
+
+.image-sixth {
+    background: url("../img/coffe.png") center no-repeat;
+}
+
+.project-content-row-down {
+
+}
+
+/* Clothing for women online in India */
+.clothing-india-block {
+    margin-bottom: 40px;
+}
+
+.clothing-india-container {
+    max-width: 1260px;
+    padding: 0 15px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.clothing-india-decor {
+    display: inline-block;
+    border-radius: 10px;
+    background: #8A33FD;
+    width: 6px;
+    height: 26px;
+    margin-right: 15px;
+}
+
+.clothing-india-title {
+    max-width: 573px;
+    margin-bottom: 30px;
+}
+
+.clothing-india-title h3 {
+    display: inline-block;
+    color: #3C4242;
+    font-family: 'Core Sans C', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 0.6px;
+    text-transform: capitalize;
+    vertical-align: top;
+    background: url("../img/icons/clothing-icons.svg") 0 0 no-repeat;
+    padding-left: 16px;
+}
+
+.clothing-india-content {
+    padding: 0 2px 0 21px;
+}
+
+.clothing-india-content h4 {
+    color: #807D7E;
+    font-family: 'Core Sans C', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.67;
+    letter-spacing: 0.4px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+}
+
+.clothing-india-content > h4 + p {
+    margin-bottom: 20px;
+}
+
+.clothing-india-content p {
+    color: #807D7E;
+    font-family: Causten, sans-serif;
+    font-size: 20px;
+    line-height: 1.7;
+    letter-spacing: 0.4px;
+    margin-bottom: 25px;
+}
+
+.clothing-india-content span {
+    color: #807D7E;
+    font-family: Causten, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.7;
+    text-transform: capitalize;
+    letter-spacing: 0.4px;
+}
+
+.clothing-india-content p:last-of-type {
+    margin-bottom: 20px;
+}
+
+.clothing-india-link {
+    max-width: 168px;
+}
+
+.clothing-india-link a {
+    color: #807D7E;
+    font-family: 'Core Sans C', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.7;
+    text-transform: capitalize;
+    letter-spacing: 0.4px;
+}
+
+/* We made your everyday fashion */
+.we-made-block {
+}
+
+.we-made-container {
+    max-width: 1260px;
+    padding: 0 10px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.we-made-content {
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.we-made-left-part {
+    display: inline-block;
+    max-width: 614px;
+    width: 100%;
+    height: 640px;
+    background: url("../img/we-made-green.png") 50% 0/cover no-repeat;
+    background-color: #112515;
+    padding: 183px 74px 175px 74px;
+}
+
+.we-made-left-part h3 {
+    color: #FFF;
+    font-family: 'Core Sans C', sans-serif;
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 1.47;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.we-made-left-part p {
+    color: #FFF;
+    font-family: Causten, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+}
+
+.we-made-left-part a {
+    display: inline-block;
+    padding: 12px 44px;
+    border-radius: 8px;
+    background-color: #FFF;
+}
+
+.we-made-button {
+    text-align: center;
+    font-size: 18px;
+}
+
+.we-made-right-part {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 626px;
+    width: 100%;
+    height: 640px;
+    background: url("../img/we-made-people.png") 50% 0/cover no-repeat;
+    background-color: #ea9c0b;
+    border-radius: 8px;
+}
+
+.example-part {
+    max-width: 1260px;
+    margin: 0 auto;
+}
+.example-part-gradient {
+    border: 1px solid black;
+    border-radius: 20% 30%;
+    max-width: 70px;
+    height: 50px;
+    background: linear-gradient(211deg, rgba(224,205,135,1) 26%, rgba(255,182,25,1) 53%);
+}
+
+.example-part-radial {
+    border: 1px solid black;
+    border-radius: 20% 30%;
+    max-width: 70px;
+    height: 50px;
+    background: radial-gradient(circle, rgba(217,238,174,1) 0%, rgba(244,231,75,1) 100%);
+}
+
+.example-part-img {
+    height: 50px;
+    background: url("../img/practice/honey-jer-jer.jpg") 10% 100%/10% repeat-x;
+}
+
+
+/*  Footer  */
+.footer-title {
+    text-align: right;
+    padding: 2px 40px;
+    background: url("../img/practice/honey-drops-realistic–reverse.jpg") 0 0/contain repeat;
+    min-height: 130px;
+}
+
+.footer-decor {
+    min-height: 320px;
+    background: url("../img/practice/let-it-bee.jpg") 5% 80%/20% no-repeat fixed;
+}
+
+
+
 
 
 
