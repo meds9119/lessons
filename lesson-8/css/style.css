@@ -5,18 +5,15 @@
 @import url("reset.css");
 
 /* Загальні стилі */
-
 body {
     font-family: Inter, sans-serif;
     font-size: 18px;
-    min-height: 400px;
-    background: url("../img/practice/bee-one-bee.png") 100% 10%/7% no-repeat fixed,
-    url("../img/practice/bee-lieve.jpg") 0 100%/19% no-repeat scroll;
-
+    min-height: 200px;
+    background: url("../img/practice/bee-one-bee.png") 100% 5%/auto no-repeat fixed,
+    url("../img/practice/bee-lieve.jpg") 0 100%/auto no-repeat scroll;
 }
 
-h1,
-h5 {
+h1 {
     font-family: Pacifico, fantasy;
     letter-spacing: 4px;
     font-size: 40px;
@@ -32,8 +29,8 @@ h5 {
 .header-title {
     text-align: right;
     padding: 2px 40px;
-    background: url("../img/practice/honey-drops-realistic.jpg") 0 0/contain repeat;
-    background-color: #c08c00;
+    background: #c08c00 url("../img/practice/honey-drops-realistic-copy.jpg") 0 0/contain repeat;
+
 }
 
 .header-navigation-list {
@@ -71,7 +68,7 @@ h5 {
 }
 
 .whitecollar-block-container {
-    max-width: 1038px; /* 1028px + 15px padding */
+    max-width: 1058px;
     margin: 0 auto;
     padding: 100px 15px;
     font-size: 0;
@@ -83,7 +80,7 @@ h5 {
 }
 
 .whitecollar-title-block h3 {
-    background: url("../img/icons/color-box.svg") 0 5px no-repeat;
+    background: url("../img/icons/color-box.svg") 0 50%/10% 55% no-repeat;
     padding-left: 20px;
     display: inline-block;
     color: #37393F;
@@ -128,7 +125,7 @@ h5 {
 }
 
 .list li {
-    background: url("../img/icons/icon-check-mark.svg") 0 0 / 27px 27px no-repeat;
+    background: url("../img/icons/icon-check-mark.svg") 0 0/ 5% 80% no-repeat;
     padding-left: 35px;
     min-height: 33px;
     color: #37393F;
@@ -137,9 +134,12 @@ h5 {
     margin-bottom: 23px;
 }
 
+.list li:last-child {
+    margin-bottom: 0;
+}
+
 .icon-box {
     margin-bottom: 37px;
-
 }
 
 .icon-box h3 {
@@ -182,11 +182,11 @@ h5 {
 }
 
 .icon-box-second {
-    background: url("../img/icons/icon-list.svg") 0 5px no-repeat;
+    background: url("../img/icons/icon-prize.svg") no-repeat;
     padding-left: 53px;
 }
 
-.link a {
+.whitecollar-content-two a {
     display: inline-block;
     background: #6B77E5;
     padding: 21px 27px 22px 27px;
@@ -198,6 +198,10 @@ h5 {
     text-transform: capitalize;
 }
 
+.block-decor-right {
+    min-height: 280px;
+    background: url("../img/practice/let-it-bee.jpg") 10% 15%/auto no-repeat scroll;
+}
 
 .block-decor-left {
     min-height: 200px;
@@ -224,7 +228,7 @@ h5 {
 }
 
 .project-title h3 {
-    background: url("../img/icons/color-box.svg") 0 5px / 12px 12px no-repeat;
+    background: url("../img/icons/color-box.svg") 0 50%/10% 55% no-repeat;
     color: #37393F;
     font-size: 18px;
     font-weight: 500;
@@ -255,15 +259,13 @@ h5 {
 
 .image-list {
     display: inline-block;
-    vertical-align: baseline;
     max-width: 384px;
     width: 100%;
-    height: 501px;
 }
 
-.images {
+.image {
     min-height: 501px;
-    max-width: 384px;
+    max-width: 100%;
     margin-bottom: 24px;
 }
 
@@ -273,6 +275,7 @@ h5 {
     font-size: 20px;
     font-weight: 600;
     line-height: 1.27;
+    text-transform: capitalize;
     margin-bottom: 10px;
 }
 
@@ -282,43 +285,40 @@ h5 {
     font-size: 14px;
     line-height: 1.46;
     padding-left: 25px;
-    background: url("../img/icons/project-icons.svg") 0 0 no-repeat;
+    background: url("../img/icons/project-icons.svg") no-repeat;
     min-height: 22px;
     width: 100%;
 }
 
-.image-first {
-    margin-right: 34px;
-    background: url("../img/worktable.png") center no-repeat;
-}
-
-.image-second {
-    margin-right: 34px;
-    background: url("../img/with-men.png") center no-repeat;
-}
-
-.image-third {
-    background: url("../img/phone.png") center no-repeat;
-}
-
-.image-fourth {
-    margin-right: 34px;
-    background: url("../img/with-women.png") center no-repeat;
-}
-
-
+.image-first,
+.image-second,
+.image-fourth,
 .image-fives {
     margin-right: 34px;
-    background: url("../img/with-list.png") center no-repeat;
 }
 
-
-.image-sixth {
-    background: url("../img/coffe.png") center no-repeat;
+.image-first .image {
+    background: #013d3a url("../img/worktable.png") 50%/cover no-repeat;
 }
 
-.project-content-row-down {
+.image-second .image {
+    background: #013d3a url("../img/with-men.png") 50%/cover no-repeat;
+}
 
+.image-third .image {
+    background: #013d3a url("../img/phone.png") 50%/cover no-repeat;
+}
+
+.image-fourth .image {
+    background: #013d3a url("../img/with-women.png") 50%/cover no-repeat;
+}
+
+.image-fives .image {
+    background: #013d3a url("../img/with-list.png") 50%/cover no-repeat;
+}
+
+.image-sixth .image {
+    background: #013d3a url("../img/coffe.png") 50%/cover no-repeat;
 }
 
 /* Clothing for women online in India */
@@ -357,7 +357,7 @@ h5 {
     letter-spacing: 0.6px;
     text-transform: capitalize;
     vertical-align: top;
-    background: url("../img/icons/clothing-icons.svg") 0 0 no-repeat;
+    background: url("../img/icons/clothing-icons.svg") no-repeat;
     padding-left: 16px;
 }
 
@@ -419,6 +419,7 @@ h5 {
 
 /* We made your everyday fashion */
 .we-made-block {
+    margin-bottom: 50px;
 }
 
 .we-made-container {
@@ -438,8 +439,7 @@ h5 {
     max-width: 614px;
     width: 100%;
     height: 640px;
-    background: url("../img/we-made-green.png") 50% 0/cover no-repeat;
-    background-color: #112515;
+    background: #112515 url("../img/we-made-green.png") 50%/cover no-repeat;
     padding: 183px 74px 175px 74px;
 }
 
@@ -460,19 +460,20 @@ h5 {
     font-size: 20px;
     font-weight: 300;
     letter-spacing: 1px;
+    line-height: 1.2;
     margin-bottom: 50px;
 }
 
 .we-made-left-part a {
+    color: #3C4242;
     display: inline-block;
     padding: 12px 44px;
+    font-family: Causten, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
     border-radius: 8px;
     background-color: #FFF;
-}
-
-.we-made-button {
-    text-align: center;
-    font-size: 18px;
 }
 
 .we-made-right-part {
@@ -481,49 +482,37 @@ h5 {
     max-width: 626px;
     width: 100%;
     height: 640px;
-    background: url("../img/we-made-people.png") 50% 0/cover no-repeat;
-    background-color: #ea9c0b;
-    border-radius: 8px;
+    background: #ea9c0b url("../img/we-made-people.png") 50%/cover no-repeat;
 }
 
-.example-part {
-    max-width: 1260px;
-    margin: 0 auto;
-}
+/* Example part */
 .example-part-gradient {
     border: 1px solid black;
-    border-radius: 20% 30%;
-    max-width: 70px;
     height: 50px;
-    background: linear-gradient(211deg, rgba(224,205,135,1) 26%, rgba(255,182,25,1) 53%);
+    background: linear-gradient(211deg, rgba(224, 205, 135, 1) 26%, rgba(255, 182, 25, 1) 53%);
 }
+
 
 .example-part-radial {
     border: 1px solid black;
-    border-radius: 20% 30%;
-    max-width: 70px;
     height: 50px;
-    background: radial-gradient(circle, rgba(217,238,174,1) 0%, rgba(244,231,75,1) 100%);
+    background: radial-gradient(circle, rgba(217, 238, 174, 1) 0%, rgba(244, 231, 75, 1) 100%);
+    margin-bottom: 10px;
 }
 
-.example-part-img {
-    height: 50px;
-    background: url("../img/practice/honey-jer-jer.jpg") 10% 100%/10% repeat-x;
+.example-part-y{
+    height: 300px;
+    background: url("../img/practice/happy-bee-two.png") repeat-y;
 }
-
 
 /*  Footer  */
 .footer-title {
+    min-height: 100px;
     text-align: right;
     padding: 2px 40px;
-    background: url("../img/practice/honey-drops-realistic–reverse.jpg") 0 0/contain repeat;
-    min-height: 130px;
+    background: url("../img/practice/happy-bee-two.png") repeat-x;
 }
 
-.footer-decor {
-    min-height: 320px;
-    background: url("../img/practice/let-it-bee.jpg") 5% 80%/20% no-repeat fixed;
-}
 
 
 
