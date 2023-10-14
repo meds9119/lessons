@@ -438,7 +438,7 @@ h1 {
     display: inline-block;
     max-width: 614px;
     width: 100%;
-    height: 640px;
+    min-height: 640px;
     background: #112515 url("../img/we-made-green.png") 50%/cover no-repeat;
     padding: 183px 74px 175px 74px;
 }
@@ -451,7 +451,7 @@ h1 {
     line-height: 1.47;
     letter-spacing: 0.2px;
     text-transform: uppercase;
-    margin-bottom: 30px;
+    margin-bottom: 18px; /* по макету тут відступ 30px,але через line-height довелося зробити меншим */
 }
 
 .we-made-left-part p {
