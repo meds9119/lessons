@@ -9,8 +9,8 @@ body {
     font-family: Inter, sans-serif;
     font-size: 18px;
     min-height: 200px;
-    background: url("../img/practice/bee-one-bee.png") 100% 5%/auto no-repeat fixed,
-    url("../img/practice/bee-lieve.jpg") 0 100%/auto no-repeat scroll;
+    background: url("../img/practice/bee-one-bee.png") 100% 5% no-repeat fixed,
+    url("../img/practice/bee-lieve.jpg") 0 100% no-repeat scroll;
 }
 
 h1 {
@@ -200,7 +200,7 @@ h1 {
 
 .block-decor-right {
     min-height: 280px;
-    background: url("../img/practice/let-it-bee.jpg") 10% 15%/auto no-repeat scroll;
+    background: url("../img/practice/let-it-bee.jpg") 10% 15% no-repeat scroll;
 }
 
 .block-decor-left {
@@ -294,7 +294,7 @@ h1 {
 .image-first,
 .image-second,
 .image-fourth,
-.image-fives {
+.image-fifth {
     margin-right: 34px;
 }
 
