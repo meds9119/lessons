@@ -254,11 +254,9 @@ body {
     width: 100%;
 }
 
-.cards__image-wrapper img {
-    width: 100%;
-}
-
-
+/*.cards__image-wrapper img {*/
+/*    width: 100%;*/
+/*}*/
 
 .cards__social-wrapper {
     visibility: hidden;
