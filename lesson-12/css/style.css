@@ -1,0 +1,334 @@
+/* Підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Загальні стилі */
+body {
+    font-family: Oranienbaum, serif;
+    font-size: 28px;
+    background: url("../img/body-full.webp") 10% 100%/cover repeat;
+}
+
+[class*="__container"] {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.wrapper {
+    overflow: clip;
+}
+
+.header {
+    background-color: rgba(203, 203, 203, 0.75);
+    padding: 8px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+
+/*.header__container {*/
+/*    max-width: 1220px;*/
+/*    margin: 0 auto;*/
+/*    padding: 0 15px;*/
+/*}*/
+/*-------------Header------------------------------*/
+/*------------ First level menu. Menu--------------*/
+.menu {
+    text-align: center;
+}
+
+.menu__item {
+    display: inline-block;
+    position: relative;
+    border: 1px solid #e3e2e2;
+}
+
+.menu__item:hover .menu__link {
+    background-color: rgba(59, 57, 57, 0.87);
+}
+
+.menu__item:hover .sub-menu {
+    visibility: visible;
+}
+
+.menu__link {
+    text-align: center;
+    width: 150px;
+    display: inline-block;
+    background-color: #5d5b5c;
+    padding: 10px;
+}
+
+/*-------------Second level menu. Sub-menu--------------*/
+.sub-menu {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    padding-top: 9px;
+    width: 233px;
+    visibility: hidden;
+}
+
+.sub-menu__item {
+    background-color: #868484;
+    border: 1px solid #989797;
+}
+
+.sub-menu__item:hover .sub-menu__link {
+    background-color: rgba(59, 57, 57, 0.87);
+}
+
+.sub-menu__item:hover .sub-menu-side {
+    visibility: visible;
+}
+
+.sub-menu__link {
+    display: block;
+    padding: 10px;
+}
+
+.sub-menu__link:hover {
+    text-decoration: underline;
+}
+
+/*------------ Third level menu. Sub-menu-side--------------*/
+.sub-menu-side {
+    position: absolute;
+    top: 53%;
+    left: 100%;
+    width: 233px;
+    visibility: hidden;
+}
+
+.sub-menu-side__item {
+    border: 1px solid #989797;
+    color: #1c1f19;
+    background-color: #b4b1b1;
+}
+
+.sub-menu-side__link {
+    display: block;
+    padding: 10px;
+}
+
+.sub-menu-side__link:hover {
+    color: #d3d3d3;
+    background-color: rgba(59, 57, 57, 0.87);
+    text-decoration: underline;
+}
+
+/*-----------------------Main. Page-----------------------*/
+.main {
+    padding: 130px 0;
+}
+
+.main__page:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+/*.page__container {*/
+/*    max-width: 1220px;*/
+/*    margin: 0 auto;*/
+/*    font-size: 0;*/
+/*}*/
+
+.page__title {
+    margin-bottom: 10px;
+}
+
+.title-page__item {
+    font-size: 35px;
+}
+
+.page__content {
+    font-size: 25px;
+    padding: 15px;
+    background-color: #807D7E;
+}
+
+.page__content p:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.page__block-sticky {
+    padding: 15px;
+    text-align: center;
+    background-color: rgba(148, 147, 147, 0.86);
+    height: 90px;
+    position: sticky;
+    top: 65px;
+}
+
+.page__block-sticky p {
+    color: #706f6f;
+    text-shadow: 1px 1px 1px #171515;
+    font-size: 60px;
+}
+
+.page__image-sticky {
+    background-color: rgba(154, 154, 154, 0.96);
+    text-align: center;
+    height: 90px;
+    position: sticky;
+    top: 65px;
+}
+
+.page__image-sticky img {
+    width: 340px;
+    height: 90px;
+}
+
+/*-------------------------------Main. Whitecollar--------------------*/
+.whitecollar {
+    background-color: rgba(218, 216, 216, 0.76);
+}
+
+/*.whitecollar__container {*/
+/*    max-width: 1250px;*/
+/*    margin: 0 auto;*/
+/*    padding: 5px 15px;*/
+/*}*/
+
+.whitecollar__cards-row-up {
+    font-size: 0;
+}
+
+.whitecollar__cards-row-up:not(:last-child) {
+    margin-bottom: 31px;
+}
+
+.cards__item {
+    display: inline-block;
+    position: relative;
+    max-width: 386px;
+    min-height: 532px;
+}
+
+.cards__item::before {
+    /*display: inline-block; Успадковується від батьківського .cards__item?*/
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(107, 119, 229, 0.7);
+    visibility: hidden;
+}
+
+.cards__item:hover::before {
+    visibility: visible;
+}
+
+.cards__item:hover .social {
+    visibility: visible;
+}
+
+.cards__item:not(:last-child) {
+    margin-right: 31px;
+}
+
+.social__link:not(:last-child) {
+    margin-right: 13px;
+}
+
+.social__link img {
+    width: 45px;
+    height: 45px;
+}
+
+.cards__image-wrapper {
+    width: 386px;
+    height: 532px;
+}
+
+.image {
+}
+
+.image__item {
+    width: 100%;
+}
+
+.cards__image-wrapper img {
+    width: 100%;
+}
+
+
+
+.cards__social-wrapper {
+    visibility: hidden;
+    position: absolute;
+    top: 45%;
+    left: 31%;
+}
+
+.cards__info-wrapper:hover .cards__social-wrapper{
+    visibility: visible;
+}
+
+.social {
+}
+
+.social__link {
+    display: inline-block;
+}
+
+.cards__info-wrapper {
+    min-width: 341px;
+    background: #FFF;
+    padding: 24px 20px;
+    text-align: center;
+    position: absolute;
+    bottom: 22px;
+    left: 22px;
+    /*right: 22px;*/
+    text-transform: capitalize;
+}
+
+.title__about {
+    color: #37393F;
+    font-family: Poppins, sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 4px;
+}
+
+.cards__info-wrapper p {
+    color: #7D7D7D;
+    text-align: center;
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    line-height: 1.35;
+}
+
+.whitecollar__cards-row-down {
+    font-size: 0;
+}
+
+.whitecollar__cards-row-down:not(:last-child) {
+    margin-bottom: 31px;
+}
+
+/*----------------------Footer-----------------------*/
+.footer {
+    padding: 35px 0;
+    background-color: rgba(203, 203, 203, 0.22);
+}
+
+/*.footer__container {*/
+/*    max-width: 1220px;*/
+/*    margin: 0 auto;*/
+/*    padding: 0 15px;*/
+/*}*/
+
+.footer__title {
+    text-align: center;
+    text-transform: capitalize;
+}
+
