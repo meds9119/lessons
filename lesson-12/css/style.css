@@ -71,7 +71,7 @@ body {
     width: 15px;
     height: 15px;
     background: url("../img/icon/arrow.svg") 10% 80%/90% no-repeat;
-    transition: all .3s ease;
+    transition: transform .3s ease-out;
 }
 
 .menu__item--hover:hover .menu__link--after::after,
