@@ -19,6 +19,7 @@ body {
 
 .wrapper {
     overflow: clip;
+    min-height: 100%;
 }
 
 .header {
@@ -203,11 +204,11 @@ body {
     background-color: rgba(218, 216, 216, 0.76);
 }
 
-/*.whitecollar__container {*/
-/*    max-width: 1250px;*/
-/*    margin: 0 auto;*/
-/*    padding: 5px 15px;*/
-/*}*/
+.whitecollar__container {
+    /*max-width: 1250px;*/
+    /*margin: 0 auto;*/
+    padding: 7px 15px;
+}
 
 .whitecollar__cards-row-up {
     font-size: 0;
@@ -225,7 +226,7 @@ body {
 }
 
 .cards__item::before {
-    /*display: inline-block; Успадковується від батьківського .cards__item?*/
+    /*display: inline-block; Успадковується від батьківського .cards__item? */
     content: "";
     position: absolute;
     top: 0;
@@ -293,7 +294,7 @@ body {
     position: absolute;
     bottom: 22px;
     left: 22px;
-    /*right: 22px;*/
+    right: 22px;
     text-transform: capitalize;
 }
 
