@@ -1,0 +1,508 @@
+/* Підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Загальні стилі */
+body {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 23px;
+    background: url("../img/full-body.webp") 0 0/cover no-repeat;
+}
+
+[class*="__container"] {
+    max-width: 1680px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.wrapper {
+    overflow: clip;
+    min-height: 100%;
+}
+
+.header-title,
+.footer-title {
+    padding: 20px;
+    background-color: rgba(128, 125, 126, 0.61);
+    border: 2px solid #363636;
+}
+
+/*------------------------- Practice------------------------- */
+.practice__block {
+    padding: 50px;
+    margin-bottom: 700px;
+}
+
+.example {
+}
+
+.example__item {
+    display: inline-block;
+    text-align: center;
+    width: 170px;
+    height: 170px;
+    border: 2px solid black;
+    background-color: #670c0c;
+    margin-left: 50px;
+}
+
+.part__example h2 {
+    color: white;
+    padding: 50px 0 0 0;
+}
+
+.example__item:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.example__item:hover .translate{
+    border: 1px solid black;
+    background-color: rgba(147, 0, 0, 0.68);
+    width: 170px;
+    height: 170px;
+    transform: translate(15%, 25%);
+}
+
+.example__item:hover .scale {
+    border: 1px solid black;
+    background-color: rgba(147, 0, 0, 0.68);
+    width: 170px;
+    height: 170px;
+    transform: scale(0.5);
+}
+
+.example__item:hover .skew {
+    border: 1px solid black;
+    background-color: rgba(147, 0, 0, 0.68);
+    width: 170px;
+    height: 170px;
+    transform: skew(75deg, 50deg);
+}
+
+.example__item:hover .rotate {
+    border: 1px solid black;
+    background-color: rgba(147, 0, 0, 0.68);
+    width: 170px;
+    height: 170px;
+    transform: rotate(150deg);
+}
+
+.example__item:hover .matrix {
+    border: 1px solid black;
+    background-color: rgba(147, 0, 0, 0.68);
+    width: 170px;
+    height: 170px;
+    transform: translate(15%, 15%) scale(0.5) rotate(30deg) skew(25deg, 25deg);
+}
+
+.example__item:hover .origin {
+    border: 1px solid black;
+    background-color: rgba(147, 0, 0, 0.68);
+    width: 170px;
+    height: 170px;
+    transform-origin: 0 0;
+    transform: rotate(20deg);
+}
+
+
+.example__item:hover .translate3d {
+    border: 1px solid black;
+    background-color: rgba(147, 0, 0, 0.68);
+    width: 170px;
+    height: 170px;
+    transform: translate3d(20px, 20px, 20px) rotateZ(151deg);
+}
+
+/*.item--turn {*/
+/*    perspective:400px;*/
+/*    transform-style:preserve-3d;*/
+/*}*/
+
+.example__item:hover .flip {
+    border: 1px solid black;
+    background-color: rgba(192, 4, 4, 0.68);
+    width: 170px;
+    height: 170px;
+    transform: rotateY(180deg);
+    transition: all 0.5s ease-in;
+}
+
+/*------------------------- Car-------------------------- */
+.page__car {
+    max-width: 1670px;
+    width: 100%;
+    position: relative;
+    z-index: 4;
+    font-size: 0;
+}
+
+.car__motor {
+    position: absolute;
+    bottom: 84%;
+    left: 1%;
+    width: 230px;
+    height: 191px;
+    border-radius: 50px 0 0;
+    background: linear-gradient(211deg, rgba(195, 1, 1, 1) 5%, rgba(209, 0, 23, 1) 42%);
+}
+
+.hood__item {
+    width: 232px;
+    height: 24px;
+    border: 3px solid black;
+    border-radius: 50px 0 0;
+    background: linear-gradient(211deg, rgba(195, 1, 1, 1) 5%, rgba(209, 0, 23, 1) 42%);
+    transform: translate(0px, 0%);
+}
+
+.middle__radiator {
+    width: 20px;
+    height: 150px;
+    border: 4px solid black;
+    border-radius: 50px 0 0;
+    background: linear-gradient(146deg, rgba(218,218,218,1) 28%, rgba(152,152,152,1) 65%);
+    position: relative;
+    top: -3px;
+    left: -10px;
+}
+
+.middle__headlights {
+    width: 34px;
+    height: 41px;
+    border: 3px solid black;
+    position: relative;
+    top: -11px;
+    left: -16px;
+    background-color: #e1cc8d;
+    border-radius: 55% 10% 10% 55% / 70% 10% 10% 65%;
+    z-index: 2;
+}
+
+.middle__bumper {
+    width: 313px;
+    height: 61px;
+    border: 3px solid #525050;
+    border-radius: 10% 10% 10% 80% / 67% 10% 10% 100%;
+    background-color: #1f1f1f;
+    position: absolute;
+    left: -11%;
+    top: 85%;
+    z-index: 1;
+}
+
+.headlights__item {
+    width: 24px;
+    height: 29px;
+    background-color: #e1cc8d;
+}
+
+.middle__headlights--small {
+    width: 12px;
+    height: 12px;
+    background: radial-gradient(circle, rgba(255,213,0,1) 0%, rgba(201,183,4,1) 100%);
+    border: 2px solid #a68703;
+    border-radius: 10px;
+    position: absolute;
+    top: 69%;
+    left: 17%;
+    z-index: 4;
+}
+
+.middle__wing {
+    width: 209px;
+    height: 90px;
+    background-color: #1f1f1f;
+    border-radius: 44% 45% 0 0 / 100% 100% 0 0;
+    position: absolute;
+    top: 54%;
+    left: 41%;
+    bottom: 10%;
+    z-index: 3;
+}
+
+.middle__bottom-wing {
+    width: 109px;
+    height: 40px;
+    transform: rotate(156deg);
+    background-color: #1f1f1f;
+    position: absolute;
+    top: 84%;
+    left: 118%;
+    bottom: 20%;
+    z-index: 6;
+}
+
+.middle__up-wing {
+    width: 176px;
+    height: 47px;
+    background-color: #1f1f1f;
+    position: absolute;
+    top: 68%;
+    left: 116%;
+    bottom: 1%;
+    z-index: 6;
+}
+
+.car__cabin {
+    position: absolute;
+    bottom: 92%;
+    left: 16%;
+    width: 215px;
+    height: 334px;
+    border-radius: 69px 0 0 29px;
+    background: linear-gradient(211deg, rgba(195, 1, 1, 1) 5%, rgba(209, 0, 23, 1) 42%);
+    border: 3px solid black;
+}
+
+.up {
+
+}
+.cabin__up-part {
+    width: 145px;
+    height: 64px;
+    border-radius: 182px 21px 3px 13px;
+    background-color: #252424;
+    border: 3px solid black;
+    position: absolute;
+    bottom: 100%;
+    right: 40%;
+    left: 32%;
+}
+
+.up__item {
+    width: 9px;
+    height: 10px;
+    background: radial-gradient(circle, rgba(209,209,209,1) 0%, rgba(55,55,55,1) 100%);
+    border: 2px solid #4b4a4a;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 28%;
+    left: 77%;
+}
+
+.up__item--position {
+    position: absolute;
+    bottom: 28%;
+    left: 64%;
+}
+
+.up__item--position-sec {
+    position: absolute;
+    bottom: 28%;
+    left: 50%;
+}
+
+.up__item--position-third {
+    position: absolute;
+    bottom: 28%;
+    left: 37%;
+}
+
+.body-cabin__window {
+    width: 6px;
+    height: 98px;
+    border: 3px solid #1c1c1c;
+    border-radius: 70px 0 0;
+    background-color: #2d2d2d;
+    position: absolute;
+    top: 17%;
+    left: -2.5%;
+
+}
+
+.door {
+    position: absolute;
+    top: -2%;
+    border: 3px solid #101010;
+    transform: translate(10px, 8%);
+    border-radius: 90% 0 0 20% / 10% 0 0 0;
+    width: 190px;
+    height: 306px;
+    background: linear-gradient(211deg, rgba(195, 1, 1, 1) 5%, rgba(209, 0, 23, 1) 42%);
+}
+
+.door__window {
+    background: linear-gradient(270deg, rgba(0,0,0,1) 16%, rgba(65,62,62,1) 52%);
+    border: 2px solid #101010;
+    transform: translate(40px, 10%);
+    border-radius: 100% 0 100% 10% / 27% 0 16% 0;
+    width: 170px;
+    height: 120px;
+    position: absolute;
+    left: -32px;
+}
+
+.door__detail-window {
+    border: 2px double #0a0a0a;
+    width: 8px;
+    height: 111px;
+    background-color: #282828;
+    position: absolute;
+    transform: translate(36px, 12%);
+    left: 90px;
+}
+
+.door__mirror {
+    width: 3px;
+    height: 55px;
+    border: 3px solid black;
+    background-color: #2d2d2d;
+    position: absolute;
+    top: 27%;
+    left: -18%;
+    transform: rotate(115deg);
+}
+
+.door__mirror::after {
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 25px;
+    border: 2px solid black;
+    background-color: #2d2d2d;
+    position: absolute;
+    top: 1%;
+    transform: rotate(151deg) translate(7px, 13%);
+}
+
+.mirror__detail {
+    width: 7px;
+    height: 47px;
+    border: 3px solid black;
+    background-color: #2d2d2d;
+    position: absolute;
+    top: 53%;
+    border-radius: 0 17% 100% 0 / 0 31% 21% 0;
+    transform: rotate(65deg) translate(1px, 30%);
+}
+
+.door__handle {
+    width: 30px;
+    height: 8px;
+    background-color: #2f2f2f;
+    border: 2px solid #101010;
+    position: absolute;
+    top: 50%;
+    left: 140px;
+}
+
+.car__body {
+    position: absolute;
+    bottom: 94%;
+    left: 30.5%;
+    width: 1032px;
+    height: 426px;
+    background: linear-gradient(90deg, rgba(255,22,35,1) 0%, rgba(136,22,22,1) 65%, rgba(112,3,8,1) 100%);
+    border-radius: 4px;
+    border: 8px double black;
+}
+
+.body__logo {
+    width: 1400px;
+    height: 420px;
+    background: url("../img/cola-logo.png") 10% 55%/60% no-repeat;
+}
+
+.body__down {
+    position: absolute;
+    top: 91%;
+    bottom: 24%;
+    width: 1034px;
+    height: 46px;
+    background-color: #1f1f1f;
+    border-radius: 5px 5px;
+}
+
+.body__radiator-down {
+    width: 200px;
+    height: 70px;
+    border-radius: 20px;
+    border: 2px double #363636;
+    background-color: #807d7d;
+    position: absolute;
+    right: 447px;
+    bottom: -17%;
+}
+
+.body__radiator-down::after {
+    content: '';
+    display: inline-block;
+    width: 160px;
+    height: 2px;
+    background-color: #383838;
+    position: absolute;
+    bottom: 60%;
+    left: 19%;
+}
+
+.body__radiator-down::before {
+    content: '';
+    display: inline-block;
+    width: 150px;
+    height: 2px;
+    background-color: #383838;
+    position: absolute;
+    bottom: 20%;
+}
+
+.body__headlights {
+    width: 12px;
+    height: 12px;
+    background: radial-gradient(circle, rgba(255,213,0,1) 0%, rgba(201,183,4,1) 100%);
+    border: 2px solid #a68703;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 2%;
+    left: 98%;
+}
+
+.car__wheels {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    z-index: 5;
+}
+
+.wheels {
+    width: 160px;
+    height: 160px;
+}
+
+.wheel__first {
+    position: absolute;
+    bottom: 10px;
+    left: 138px;
+}
+
+.wheel__second {
+    bottom: 10px;
+    position: absolute;
+    left: 501px;
+}
+
+.wheel__third {
+    bottom: 10px;
+    position: absolute;
+    left: 647px;
+}
+
+.wheel__fourth {
+    bottom: 10px;
+    position: absolute;
+    left: 1052px;
+}
+
+.wheel__fifth {
+    bottom: 10px;
+    position: absolute;
+    left: 1199px;
+}
+
+
+
+
+
+
+
