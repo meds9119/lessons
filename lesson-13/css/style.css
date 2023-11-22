@@ -6,9 +6,10 @@
 
 /* Загальні стилі */
 body {
+    background: url("../img/body-full.webp") 0 40%/ cover no-repeat;
     font-family: 'Kdam Thmor Pro', sans-serif;
     font-size: 23px;
-    background: url("../img/full-body.webp") 0 0/cover no-repeat;
+
 }
 
 [class*="__container"] {
@@ -24,28 +25,41 @@ body {
 
 .header-title,
 .footer-title {
+    color: #1c1b1b;
+    letter-spacing: 1px;
+    font-size: 28px;
     padding: 20px;
-    background-color: rgba(128, 125, 126, 0.61);
-    border: 2px solid #363636;
+    background-color: rgba(135, 149, 175, 0.51);
+    border: 2px solid #151515;
 }
 
 /*------------------------- Practice------------------------- */
 .practice__block {
     padding: 50px;
     margin-bottom: 700px;
+    text-align: center;
 }
 
-.example {
-}
-
-.example__item {
+.example__item,
+.translate,
+.scale,
+.skew,
+.rotate,
+.matrix,
+.origin,
+.multi3d,
+.translate3d,
+.flip,
+.transform-style {
+    margin-right: 70px;
     display: inline-block;
     text-align: center;
     width: 170px;
     height: 170px;
-    border: 2px solid black;
-    background-color: #670c0c;
-    margin-left: 50px;
+    border: 1px solid black;
+    background-color: rgba(66, 70, 107, 0.58);
+    vertical-align: top;
+    transition: all 0.7s ease;
 }
 
 .part__example h2 {
@@ -57,77 +71,115 @@ body {
     margin-bottom: 50px;
 }
 
-.example__item:hover .translate{
+.example__item:hover .translate {
     border: 1px solid black;
-    background-color: rgba(147, 0, 0, 0.68);
+    background-color: rgba(202, 182, 232, 0.8);
     width: 170px;
     height: 170px;
-    transform: translate(15%, 25%);
+    transform: translate(15%, 15%);
+    transition: all 0.7s ease;
 }
 
 .example__item:hover .scale {
     border: 1px solid black;
-    background-color: rgba(147, 0, 0, 0.68);
+    background-color: rgba(202, 182, 232, 0.8);
     width: 170px;
     height: 170px;
-    transform: scale(0.5);
+    transform: scale(1.2);
+    /*transform: scale(-1, 1); !* effect mirror *!*/
+    transition: all 0.7s ease;
 }
 
 .example__item:hover .skew {
     border: 1px solid black;
-    background-color: rgba(147, 0, 0, 0.68);
+    background-color: rgba(202, 182, 232, 0.8);
     width: 170px;
     height: 170px;
-    transform: skew(75deg, 50deg);
+    transform: skew(-20deg, 20deg);
+    /*transform: skewY(25deg);*/
+    transition: all 0.7s ease;
 }
 
 .example__item:hover .rotate {
     border: 1px solid black;
-    background-color: rgba(147, 0, 0, 0.68);
+    background-color: rgba(202, 182, 232, 0.8);
     width: 170px;
     height: 170px;
-    transform: rotate(150deg);
+    transform: rotate(90deg);
+    transition: all 0.7s ease;
 }
 
 .example__item:hover .matrix {
     border: 1px solid black;
-    background-color: rgba(147, 0, 0, 0.68);
+    background-color: rgba(202, 182, 232, 0.8);
     width: 170px;
     height: 170px;
-    transform: translate(15%, 15%) scale(0.5) rotate(30deg) skew(25deg, 25deg);
+    /*transform: translate(5%, 5%) scale(-1, 1) rotate(90deg) skew(-20deg, 20deg);*/
+    transform: rotate(90deg) scale(1.2) skew(15deg) translate(30%, -250%);
+    transition: all 0.7s ease;
 }
 
 .example__item:hover .origin {
     border: 1px solid black;
-    background-color: rgba(147, 0, 0, 0.68);
+    background-color: rgba(202, 182, 232, 0.8);
     width: 170px;
     height: 170px;
-    transform-origin: 0 0;
-    transform: rotate(20deg);
+    /*transform-origin: 10%;*/
+    /*transform: rotate(180deg);*/
+    /*!*transform: rotate(360deg);*!*/
+    transition: all 1.0s ease;
+    transform-origin: 1%;
+    transform: scale(-1, 1) rotate(180deg);
 }
 
+.part--3d,
+.part--transform-style,
+.part--flip {
+    perspective: 200px;
+    perspective-origin: center;
+}
 
 .example__item:hover .translate3d {
-    border: 1px solid black;
-    background-color: rgba(147, 0, 0, 0.68);
+    background-color: rgba(202, 182, 232, 0.8);
     width: 170px;
     height: 170px;
-    transform: translate3d(20px, 20px, 20px) rotateZ(151deg);
+    /*transform: translate3d(20px, 20px, -70px);*/
+    /*transform: scale3d(-1.5, -1.5, 1);*/
+    transform: rotate3d(50, 100, 50, 360deg);
+    transition: all 1.2s ease;
 }
 
-/*.item--turn {*/
-/*    perspective:400px;*/
-/*    transform-style:preserve-3d;*/
-/*}*/
+.example__item:hover .multi3d {
+    border: 1px solid black;
+    background-color: rgba(202, 182, 232, 0.8);
+    width: 170px;
+    height: 170px;
+    transform: translate3d(-100px, -150px, -100px) rotate3d(-100, 10, 10, 190deg);
+    transition: all 0.7s ease;
+}
 
 .example__item:hover .flip {
     border: 1px solid black;
-    background-color: rgba(192, 4, 4, 0.68);
+    background-color: rgba(202, 182, 232, 0.8);
     width: 170px;
     height: 170px;
     transform: rotateY(180deg);
-    transition: all 0.5s ease-in;
+    transition: all 1s ease;
 }
+
+.part--transform-style {
+    transform-style: preserve-3d;
+}
+
+.example__item:hover .transform-style {
+    border: 1px solid black;
+    background-color: rgba(202, 182, 232, 0.8);
+    width: 170px;
+    height: 170px;
+    transform: rotateY(40deg);
+    transition: all 0.7s ease;
+}
+
 
 /*------------------------- Car-------------------------- */
 .page__car {
@@ -162,7 +214,7 @@ body {
     height: 150px;
     border: 4px solid black;
     border-radius: 50px 0 0;
-    background: linear-gradient(146deg, rgba(218,218,218,1) 28%, rgba(152,152,152,1) 65%);
+    background: linear-gradient(146deg, rgba(218, 218, 218, 1) 28%, rgba(152, 152, 152, 1) 65%);
     position: relative;
     top: -3px;
     left: -10px;
@@ -201,7 +253,7 @@ body {
 .middle__headlights--small {
     width: 12px;
     height: 12px;
-    background: radial-gradient(circle, rgba(255,213,0,1) 0%, rgba(201,183,4,1) 100%);
+    background: radial-gradient(circle, rgba(255, 213, 0, 1) 0%, rgba(201, 183, 4, 1) 100%);
     border: 2px solid #a68703;
     border-radius: 10px;
     position: absolute;
@@ -239,7 +291,7 @@ body {
     height: 47px;
     background-color: #1f1f1f;
     position: absolute;
-    top: 68%;
+    top: 69%;
     left: 116%;
     bottom: 1%;
     z-index: 6;
@@ -256,9 +308,6 @@ body {
     border: 3px solid black;
 }
 
-.up {
-
-}
 .cabin__up-part {
     width: 145px;
     height: 64px;
@@ -274,7 +323,7 @@ body {
 .up__item {
     width: 9px;
     height: 10px;
-    background: radial-gradient(circle, rgba(209,209,209,1) 0%, rgba(55,55,55,1) 100%);
+    background: radial-gradient(circle, rgba(209, 209, 209, 1) 0%, rgba(55, 55, 55, 1) 100%);
     border: 2px solid #4b4a4a;
     border-radius: 10px;
     position: absolute;
@@ -309,7 +358,6 @@ body {
     position: absolute;
     top: 17%;
     left: -2.5%;
-
 }
 
 .door {
@@ -324,7 +372,7 @@ body {
 }
 
 .door__window {
-    background: linear-gradient(270deg, rgba(0,0,0,1) 16%, rgba(65,62,62,1) 52%);
+    background: linear-gradient(270deg, rgba(0, 0, 0, 1) 16%, rgba(65, 62, 62, 1) 52%);
     border: 2px solid #101010;
     transform: translate(40px, 10%);
     border-radius: 100% 0 100% 10% / 27% 0 16% 0;
@@ -394,7 +442,7 @@ body {
     left: 30.5%;
     width: 1032px;
     height: 426px;
-    background: linear-gradient(90deg, rgba(255,22,35,1) 0%, rgba(136,22,22,1) 65%, rgba(112,3,8,1) 100%);
+    background: linear-gradient(90deg, rgba(255, 22, 35, 1) 0%, rgba(136, 22, 22, 1) 65%, rgba(112, 3, 8, 1) 100%);
     border-radius: 4px;
     border: 8px double black;
 }
@@ -402,7 +450,7 @@ body {
 .body__logo {
     width: 1400px;
     height: 420px;
-    background: url("../img/cola-logo.png") 10% 55%/60% no-repeat;
+    background: url("../img/cola-logo.png") 2% 53%/75% no-repeat;
 }
 
 .body__down {
@@ -450,7 +498,7 @@ body {
 .body__headlights {
     width: 12px;
     height: 12px;
-    background: radial-gradient(circle, rgba(255,213,0,1) 0%, rgba(201,183,4,1) 100%);
+    background: radial-gradient(circle, rgba(255, 213, 0, 1) 0%, rgba(201, 183, 4, 1) 100%);
     border: 2px solid #a68703;
     border-radius: 10px;
     position: absolute;
@@ -499,8 +547,6 @@ body {
     position: absolute;
     left: 1199px;
 }
-
-
 
 
 
