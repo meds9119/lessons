@@ -1,0 +1,272 @@
+/* Підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Загальні стилі */
+body {
+    /*font-family: ;*/
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+[class*="__container"] {
+    max-width: 1309px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    overflow: clip;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    /*position: fixed;*/
+    /*width: 100%;*/
+    /*z-index: 50;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    padding: 34px 0 31px;
+    font-family: Causten, sans-serif;
+    min-height: 111px;
+}
+
+.header__container {
+    margin-bottom: 80px;
+    /*flex: 0 0 1240px;*/
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    /*gap: ; !* ???? *!*/
+
+}
+
+.header__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    margin-right: 164px;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo__item {
+    flex: 0 0 92px;
+}
+
+.header__search {
+    width: 184px;
+    height: 46px;
+    border-radius: 8px;
+    background: #F6F6F6;
+    padding: 12px 48px;
+    margin-right: 181px;
+}
+
+.search {
+}
+
+.search__item {
+    color: #807D7E;
+    text-align: center;
+    font-weight: 500;
+}
+
+.search__item::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    gap: 19px;
+    background: url("../img/icons/search.svg") 0 50% no-repeat;
+}
+
+.menu-language {
+    flex-direction: column;
+    position: relative;
+}
+
+.menu-language__item {
+}
+
+.menu-language__item:hover .sub-language-menu {
+    border: 1px solid black;
+    visibility: visible;
+}
+
+.menu-language__link {
+    color: #333;
+}
+
+.menu-language__link--after {
+}
+
+.menu-language__link--after::after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 5px;
+    margin-left: 20px;
+    background: url("../img/icons/down-arrow.svg") 0 50% no-repeat;
+}
+
+.sub-language-menu {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    padding-top: 13px;
+    width: 233px;
+    visibility: hidden;
+}
+
+.sub-language-menu__item:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.sub-language-menu__item:hover {
+    text-decoration: underline;
+}
+
+.sub-language-menu__link {
+}
+
+.header__form {
+    display: flex;
+    align-items: center;
+}
+
+.form {
+    display: inline-flex;
+    padding: 12px 48px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: nowrap;
+    text-transform: capitalize;
+}
+
+.form__button-link {
+    padding: 12px 48px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+    border: 1px solid #3C4242;
+    color: #8A33FD;
+}
+
+.form__button-link:hover {
+    border-radius: 8px;
+    background: #8A33FD;
+    color: #FFF;
+    text-align: center;
+    font-weight: 500;
+}
+
+.form__button-link:not(:last-child) {
+    margin-right: 29px;
+}
+
+/* ------------------------Categories for man--------------------- */
+.page {
+
+}
+
+.page__container {
+    /*display: inline-flex;*/
+    /*flex: 1 1 1054px;*/
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
+    /*align-items: flex-start;*/
+    /*gap: 70px;*/
+}
+
+.categories {
+}
+
+.categories__title {
+}
+
+.categories__column {
+}
+
+.column {
+}
+
+.column__item {
+}
+
+.item {
+}
+
+.item__image {
+}
+
+.footer {
+}
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------- */
+.page {
+    padding: 30px 20px;
+}
+
+.block {
+    background-color: plum;
+    border: 4px solid #262626;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    /*flex-direction: column;*/
+
+    /*height: 300px;*/
+
+    /*gap: 30px;*/
+    column-gap: 30px;
+    row-gap: 45px;
+    /*align-self: stretch;*/
+}
+
+.block__item:nth-child(1) {
+    align-self: flex-start;
+}
+
+.block__item:nth-child(2) {
+    /* */
+    flex-shrink: 0;
+}
+
+.block__item {
+    background-color: deepskyblue;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    border: 3px solid #f6f6f6;
+}
+
+
+/* ----------------------------------------- */
+
+
+
+
