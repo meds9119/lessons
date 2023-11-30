@@ -18,118 +18,419 @@
                 <div class="header__search search">
                     <div class="search__item">Search</div>
                 </div>
-                <ul class="menu-language">
-                    <li class="menu-language__item">
-                        <a class="menu-language__link menu-language__link--after" href="#">English (united States)
-                        </a>
-                        <ul class="sub-language-menu">
-                            <li class="sub-language-menu__item">
-                                <a class="sub-language-menu__link" href="#">Ukrainian (Ukraine)
-                                </a>
-                            </li>
-                            <li class="sub-language-menu__item">
-                                <a class="sub-language-menu__link" href="#">Polish (Republic of Poland)
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+                <div class="header__menu menu-language">
+                    <a class="menu-language__default menu-language__default--after" href="#">English (united States)
+                    </a>
+                    <ul class="menu-language__list">
+                        <li class="menu-language__item">
+                            <a class="menu-language__link" href="#">Ukrainian (Ukraine)
+                            </a>
+                        </li>
+                        <li class="menu-language__item">
+                            <a class="menu-language__link" href="#">Polish (Republic of Poland)
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="header__form form">
-                <a class="form__button-link" href="#">Login</a>
+                <a class="form__button-link form__button-link--color" href="#">Login</a>
                 <a class="form__button-link" href="#">Sign Up</a>
             </div>
         </div>
     </header>
 
     <main class="page">
-        <div class="page__container categories">
-            <div class="categories__title">
-                <h2>
-                    Categories For Men
-                </h2>
-            </div>
-            <div class="categories__column column">
-                <div class="column__item item">
-                    <img class="item__image" src="img/content/categories-orange%20.webp" alt="product categories">
-                    <h3>
-                        Shirts
-                    </h3>
-                    <p>
-                        Explore Now!
-                    </p>
+        <div class="page__categories categories">
+            <div class="categories__container">
+                <div class="categories__title">
+                    <h2>
+                        Categories For Men
+                    </h2>
                 </div>
-                <div class="column__item item">
-                    <img class="item__image" src="img/content/categories-black.webp" alt="product categories">
-                    <h3>
-                        Printed T-Shirts
-                    </h3>
-                    <p>
-                        Explore Now!
-                    </p>
-                </div>
-                <div class="column__item item">
-                    <img class="item__image" src="img/content/categories-brown.webp" alt="product categories">
-                    <h3>
-                        Plain T-Shirt
-                    </h3>
-                    <p>
-                        Explore Now!
-                    </p>
-                </div>
-                <div class="column__item item">
-                    <img class="item__image" src="img/content/categories-blue.webp" alt="product categories">
-                    <h3>
-                        Polo T-Shirt
-                    </h3>
-                    <p>
-                        Explore Now!
-                    </p>
-                </div>
-                <div class="column__item item">
-                    <img class="item__image" src="img/content/categories-green.webp" alt="product categories">
-                    <h3>
-                        Hoodies & Sweetshirt
-                    </h3>
-                    <p>
-                        Explore Now!
-                    </p>
-                </div>
-                <div class="column__item item">
-                    <img class="item__image" src="img/content/categories-jeans.webp" alt="product categories">
-                    <h3>
-                        Jeans
-                    </h3>
-                    <p>
-                        Explore Now!
-                    </p>
-                </div>
-                <div class="column__item item">
-                    <img class="item__image" src="img/content/categories-black-02.webp" alt="product categories">
-                    <h3>
-                        Activewear
-                    </h3>
-                    <p>
-                        Explore Now!
-                    </p>
-                </div>
-                <div class="column__item item">
-                    <img class="item__image" src="img/content/categories-white.webp" alt="product categories">
-                    <h3>
-                        Boxers
-                    </h3>
-                    <p>
-                        Explore Now!
-                    </p>
+                <div class="categories__column column">
+                    <div class="column__item item">
+                        <a class="item__link-product" href="#">
+                            <img class="item__image" src="img/content/categories-orange.webp" alt="product categories">
+                        </a>
+                        <div class="item__product product">
+                            <div class="product__info">
+                                <h3 class="product__title">
+                                    Shirts
+                                </h3>
+                                <p>
+                                    Explore Now!
+                                </p>
+                            </div>
+                            <a class="product__side-link" href="#"></a>
+                        </div>
+                    </div>
+                    <div class="column__item item">
+                        <a class="item__link-product" href="#">
+                            <img class="item__image" src="img/content/categories-black.webp" alt="product categories">
+                        </a>
+                        <div class="item__product product">
+                            <div class="product__info">
+                                <h3 class="product__title">
+                                    Printed T-Shirts
+                                </h3>
+                                <p>
+                                    Explore Now!
+                                </p>
+                            </div>
+                            <a class="product__side-link" href="#"></a>
+                        </div>
+                    </div>
+                    <div class="column__item item">
+                        <a class="item__link-product" href="#">
+                            <img class="item__image" src="img/content/categories-brown.webp" alt="product categories">
+                        </a>
+                        <div class="item__product product">
+                            <div class="product__info">
+                                <h3 class="product__title">
+                                    Plain T-Shirt
+                                </h3>
+                                <p>
+                                    Explore Now!
+                                </p>
+                            </div>
+                            <a class="product__side-link" href="#"></a>
+                        </div>
+                    </div>
+                    <div class="column__item item">
+                        <a class="item__link-product" href="#">
+                            <img class="item__image" src="img/content/categories-blue.webp" alt="product categories">
+                        </a>
+                        <div class="item__product product">
+                            <div class="product__info">
+                                <h3 class="product__title">
+                                    Polo T-Shirt
+                                </h3>
+                                <p>
+                                    Explore Now!
+                                </p>
+                            </div>
+                            <a class="product__side-link" href="#"></a>
+                        </div>
+                    </div>
+                    <div class="column__item item">
+                        <a class="item__link-product" href="#">
+                            <img class="item__image" src="img/content/categories-green.webp" alt="product categories">
+                        </a>
+                        <div class="item__product product">
+                            <div class="product__info">
+                                <h3 class="product__title">
+                                    Hoodies & Sweetshirt
+                                </h3>
+                                <p>
+                                    Explore Now!
+                                </p>
+                            </div>
+                            <a class="product__side-link" href="#"></a>
+                        </div>
+                    </div>
+                    <div class="column__item item">
+                        <a class="item__link-product" href="#">
+                            <img class="item__image" src="img/content/categories-jeans.webp" alt="product categories">
+                        </a>
+                        <div class="item__product product">
+                            <div class="product__info">
+                                <h3 class="product__title">
+                                    Jeans
+                                </h3>
+                                <p>
+                                    Explore Now!
+                                </p>
+                            </div>
+                            <a class="product__side-link" href="#"></a>
+                        </div>
+                    </div>
+                    <div class="column__item item">
+                        <a class="item__link-product" href="#">
+                            <img class="item__image" src="img/content/categories-black-02.webp"
+                                 alt="product categories">
+                        </a>
+                        <div class="item__product product">
+                            <div class="product__info">
+                                <h3 class="product__title">
+                                    Activewear
+                                </h3>
+                                <p>
+                                    Explore Now!
+                                </p>
+                            </div>
+                            <a class="product__side-link" href="#"></a>
+                        </div>
+                    </div>
+                    <div class="column__item item">
+                        <a class="item__link-product" href="#">
+                            <img class="item__image" src="img/content/categories-white.webp" alt="product categories">
+                        </a>
+                        <div class="item__product product">
+                            <div class="product__info">
+                                <h3 class="product__title">
+                                    Boxers
+                                </h3>
+                                <p>
+                                    Explore Now!
+                                </p>
+                            </div>
+                            <a class="product__side-link" href="#"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
-
-
+        <div class="page__wishlist wishlist">
+            <div class="wishlist__container">
+                <div class="wishlist__title">
+                    <h3>
+                        Wishlist
+                    </h3>
+                </div>
+                <ul class="wishlist__list">
+                    <li class="wishlist__item card">
+                        <div class="card__cancel"></div>
+                        <a class="card__product-link" href="#" target="_blank">
+                            <img class="card__image-product" src="img/content/wishlist-yellow.png"
+                                 alt="Wishlist product">
+                        </a>
+                        <div class="card__about-product product">
+                            <a href="#" class="product__link">
+                                Blue Flower Print Crop Top
+                            </a>
+                            <p>
+                                Color : <span>Yellow</span>
+                            </p>
+                            <p>
+                                Quantity : <span>1</span>
+                            </p>
+                        </div>
+                        <span class="card__price">
+                                $29.00
+                            </span>
+                        <a class="card__add-link" href="#">
+                            Add to cart
+                        </a>
+                    </li>
+                    <li class="wishlist__item card">
+                        <div class="card__cancel"></div>
+                        <a class="card__product-link" href="#" target="_blank">
+                            <img class="card__image-product" src="img/content/wishlist-purple.png"
+                                 alt="Wishlist product">
+                        </a>
+                        <div class="card__about-product product">
+                            <a href="#" class="product__link">
+                                Yellow Flower Print Dress
+                            </a>
+                            <p>
+                                Color : <span>Yellow</span>
+                            </p>
+                            <p>
+                                Quantity : <span>1</span>
+                            </p>
+                        </div>
+                        <span class="card__price">
+                                $78.00
+                            </span>
+                        <a class="card__add-link" href="#">
+                            Add to cart
+                        </a>
+                    </li>
+                    <li class="wishlist__item card">
+                        <div class="card__cancel"></div>
+                        <a class="card__product-link" href="#" target="_blank">
+                            <img class="card__image-product" src="img/content/wishlist-white.png"
+                                 alt="Wishlist product">
+                        </a>
+                        <div class="card__about-product product">
+                            <a href="#" class="product__link">
+                                White Hoodie long sleeve
+                            </a>
+                            <p>
+                                Color : <span>Yellow</span>
+                            </p>
+                            <p>
+                                Quantity : <span>1</span>
+                            </p>
+                        </div>
+                        <span class="card__price">
+                                $134.00
+                            </span>
+                        <a class="card__add-link" href="#">
+                            Add to cart
+                        </a>
+                    </li>
+                    <li class="wishlist__item card">
+                        <div class="card__cancel"></div>
+                        <a class="card__product-link" href="#" target="_blank">
+                            <img class="card__image-product" src="img/content/wishlist-blue.png"
+                                 alt="Wishlist product">
+                        </a>
+                        <div class="card__about-product product">
+                            <a href="#" class="product__link">
+                                Brown men’s long sleeve T-shirt
+                            </a>
+                            <p>
+                                Color : <span>Yellow</span>
+                            </p>
+                            <p>
+                                Quantity : <span>1</span>
+                            </p>
+                        </div>
+                        <span class="card__price">
+                                $93.00
+                            </span>
+                        <a class="card__add-link" href="#">
+                            Add to cart
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="page__orders orders">
+            <div class="orders__container">
+                <ul class="orders__list list">
+                    <li class="list__item order-product">
+                        <h4 class="order-product__title">
+                            Order no: #123456789
+                        </h4>
+                        <div class="order-product__info info">
+                            <div class="info__date">
+                                <p>
+                                    Order Date : <span>2 June 2023 2:40 PM</span>
+                                </p>
+                                <p>
+                                    Estimated Delivery Date : <span>8 June 2023</span>
+                                </p>
+                            </div>
+                            <div class="info__status">
+                                <p>
+                                    Order Status : <span>Inprogress</span>
+                                </p>
+                                <p>
+                                    Payment Method : <span>Cash on delivery</span>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list__item about-product">
+                        <img class="about-product__image" src="img/content/orders-black.png" alt="Order product">
+                        <div class="about-product__info">
+                            <h5 class="about-product__title">
+                                Black Printed T-shirt
+                            </h5>
+                            <p>
+                                Colour : <span>Pink</span>
+                            </p>
+                            <p>
+                                Qty : <span>1</span>
+                            </p>
+                            <span>
+                                Total : $23.00
+                            </span>
+                        </div>
+                        <a class="about-product__link" href="#">
+                            View Detail
+                        </a>
+                    </li>
+                    <li class="list__item order-product">
+                        <h4 class="order-product__title">
+                            Order no: #123456789
+                        </h4>
+                        <div class="order-product__info info">
+                            <div class="info__date">
+                                <p>
+                                    Order Date : <span>2 June 2023 2:40 PM</span>
+                                </p>
+                                <p>
+                                    Estimated Delivery Date : <span>8 June 2023</span>
+                                </p>
+                            </div>
+                            <div class="info__status">
+                                <p>
+                                    Order Status : <span>Shipped</span>
+                                </p>
+                                <p>
+                                    Payment Method : <span>Cash on delivery</span>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list__item about-product">
+                        <img class="about-product__image" src="img/content/orders-yellow.png" alt="Order product">
+                        <div class="about-product__info">
+                            <h5 class="about-product__title">
+                                Printed blue & white Cote
+                            </h5>
+                            <p>
+                                Colour : <span>White</span>
+                            </p>
+                            <p>
+                                Qty : <span>1</span>
+                            </p>
+                            <span>
+                                Total : $143.00
+                            </span>
+                        </div>
+                        <a class="about-product__link" href="#">
+                            View Detail
+                        </a>
+                    </li>
+                    <li class="list__item order-product">
+                        <h4 class="order-product__title">
+                            Order no: #123456789
+                        </h4>
+                        <div class="order-product__info info">
+                            <div class="info__date">
+                                <p>
+                                    Order Date : <span>2 June 2023 2:40 PM</span>
+                                </p>
+                                <p>
+                                    Estimated Delivery Date : <span>8 June 2023</span>
+                                </p>
+                            </div>
+                            <div class="info__status">
+                                <p>
+                                    Order Status : <span>Inprogress</span>
+                                </p>
+                                <p>
+                                    Payment Method : <span>Cash on delivery</span>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list__item about-product">
+                        <img class="about-product__image" src="img/content/orders-white.png" alt="Order product">
+                        <div class="about-product__info">
+                            <h5 class="about-product__title">
+                                Blue Shirt
+                            </h5>
+                            <p>
+                                Colour : <span>Blue</span>
+                            </p>
+                            <p>
+                                Qty : <span>1</span>
+                            </p>
+                            <span>
+                                Total : $93.00
+                            </span>
+                        </div>
+                        <a class="about-product__link" href="#">
+                            View Detail
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </main>
-    <footer class="footer">
 
+    <footer class="footer">
+            <div class="footer__title">
+                <h6>
+                    Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.
+                </h6>
+            </div>
     </footer>
 </div>
 </body>
