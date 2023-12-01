@@ -24,12 +24,16 @@ body {
     flex-direction: column;
 }
 
+/*------------Header-----------------------------*/
 .header {
-    /*position: fixed;*/
-    /*width: 100%;*/
-    /*z-index: 50;*/
-    /*top: 0;*/
-    /*left: 0;*/
+    position: fixed;
+    width: 100%;
+    height: 111px;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    background-color: rgba(253, 252, 252, 0.89);
+    outline: 1px solid #d0cece;
     padding: 34px 0 31px;
 }
 
@@ -54,18 +58,22 @@ body {
     display: inline-block;
 }
 
-.logo__item {
-}
-
 .header__search {
-    width: 184px;
-    height: 46px;
+    flex: 0 1 184px;
+    height: 100%;
     border-radius: 8px;
-    background: #F6F6F6;
+    background: #f3f3f3;
     padding: 12px 48px;
 }
 
-.search {
+.logo__item {
+    width: 91px;
+    height: 45px;
+}
+
+.logo__item img {
+    width: 100%;
+    height: 100%;
 }
 
 .search__item {
@@ -73,6 +81,7 @@ body {
     gap: 12px;
     color: #807D7E;
     font-weight: 500;
+    width: 100%;
 }
 
 .search__item::before {
@@ -84,7 +93,6 @@ body {
 }
 
 /*------------------ language---------------------- */
-
 .header__menu {
     position: relative;
     transition: all 0.3s ease;
@@ -94,11 +102,12 @@ body {
     position: absolute;
     left: 0;
     top: 100%;
-    padding-top: 15px;
+    padding: 15px 5px 5px 5px;
     width: 233px;
     visibility: hidden;
     border-radius: 5px;
     border: 1px solid black;
+    background-color: #f5f5f5;
     transition: all 0.4s ease;
     opacity: 0;
 }
@@ -177,6 +186,11 @@ body {
 }
 
 /* ------------------------Categories for man--------------------- */
+.page {
+    padding-top: 170px;
+    flex-grow: 1;
+}
+
 .page__categories {
     margin-bottom: 90px;
 }
@@ -286,7 +300,7 @@ body {
     display: inline-block;
     width: 18px;
     height: 14px;
-    background: url("../img/icons/side-arrow.svg") 100% 50% no-repeat;
+    background: url("../img/icons/side-arrow.svg") 100% 50%/100% no-repeat;
     transition: scale3d 0.5s ease;
 
 }
@@ -337,7 +351,7 @@ body {
     display: inline-block;
     width: 22px;
     height: 22px;
-    background: url("../img/icons/close-cross.svg") 0 50% no-repeat;
+    background: url("../img/icons/close-cross.svg") 0 50%/100% no-repeat;
 }
 
 .card__product-link {
@@ -514,7 +528,7 @@ body {
 }
 
 .about-product__item:hover {
-    outline: 1px solid #d2d0d0;
+    outline: 1px solid #a6a3a9;
     border-radius: 4px;
 }
 
