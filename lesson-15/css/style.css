@@ -24,21 +24,25 @@ body {
     flex-direction: column;
 }
 
-/*------------Header-----------------------------*/
+/*-----------------Header-----------------------------*/
 .header {
     position: fixed;
     width: 100%;
-    height: 111px;
+    min-height: 100px;
     z-index: 50;
     top: 0;
     left: 0;
     background-color: rgba(253, 252, 252, 0.89);
+    /*background-color: #FFF;*/
     outline: 1px solid #d0cece;
     padding: 34px 0 31px;
 }
 
-.header__container {
+.header--margin {
     margin-bottom: 80px;
+}
+
+.header__container {
     display: flex;
     column-gap: 60px;
     justify-content: space-between;
@@ -62,8 +66,9 @@ body {
     flex: 0 1 184px;
     height: 100%;
     border-radius: 8px;
-    background: #f3f3f3;
+    /*outline: 1px solid rgba(21, 21, 21, 0.32);*/
     padding: 12px 48px;
+    background: #F6F6F6;
 }
 
 .logo__item {
@@ -207,6 +212,7 @@ body {
     font-size: 34px;
     font-weight: 600;
     letter-spacing: 0.68px;
+    text-transform: capitalize;
 }
 
 .categories__title h1::before {
@@ -223,19 +229,24 @@ body {
 .categories__column {
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    margin: 0 -25px;
+    row-gap: 50px;
 }
 
 .column__item {
     display: flex;
     flex-direction: column;
-    flex: 0 1 20%;
-    gap: 15px;
+    min-height: 100%;
+    padding: 0 25px;
+    flex: 0 1 25%;
 }
 
 .item__link-product {
-    display: inline-block;
-    max-height: 394px;
+    /*display: inline-block;*/
+}
+
+.item__link-product:not(:last-child) {
+    margin-bottom: 15px;
 }
 
 .item__link-product:hover {
@@ -258,12 +269,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 15px;
+    column-gap: 15px;
 }
 
 .product__info {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 
 .product__title-link {
@@ -311,7 +323,6 @@ body {
 }
 
 /*-------------------Wishlist--------------------- */
-
 .page__wishlist {
     margin-bottom: 110px;
 }
