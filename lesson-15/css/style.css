@@ -33,8 +33,7 @@ body {
     top: 0;
     left: 0;
     background-color: rgba(253, 252, 252, 0.89);
-    /*background-color: #FFF;*/
-    outline: 1px solid #d0cece;
+    border-bottom: 1px solid #d0cece;
     padding: 34px 0 31px;
 }
 
@@ -66,7 +65,6 @@ body {
     flex: 0 1 184px;
     height: 100%;
     border-radius: 8px;
-    /*outline: 1px solid rgba(21, 21, 21, 0.32);*/
     padding: 12px 48px;
     background: #F6F6F6;
 }
@@ -94,7 +92,7 @@ body {
     display: inline-block;
     width: 20px;
     height: 20px;
-    background: url("../img/icons/search.svg") 0 50% no-repeat;
+    background: url("../img/icons/search.svg") 0 50%/100% no-repeat;
 }
 
 /*------------------ language---------------------- */
@@ -132,7 +130,7 @@ body {
     /*display: inline-block;*/
     width: 10px;
     height: 5px;
-    background: url("../img/icons/down-arrow.svg") 0 50% no-repeat;
+    background: url("../img/icons/down-arrow.svg") 0 50%/100% no-repeat;
 }
 
 .header__menu:hover .menu-language__list {
@@ -249,11 +247,6 @@ body {
     margin-bottom: 15px;
 }
 
-.item__link-product:hover {
-    outline: 1px solid #d2d1d1;
-    border-radius: 10px;
-}
-
 .item__image {
     width: 270px;
     height: 393px;
@@ -312,7 +305,7 @@ body {
     display: inline-block;
     width: 18px;
     height: 14px;
-    background: url("../img/icons/side-arrow.svg") 100% 50%/100% no-repeat;
+    background: url("../img/icons/side-arrow.svg") 0 50%/100% no-repeat;
     transition: scale3d 0.5s ease;
 
 }
