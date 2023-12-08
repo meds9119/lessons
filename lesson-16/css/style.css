@@ -1,0 +1,323 @@
+/* Підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Загальні стилі */
+body {
+    /*font-family: ;*/
+    font-size: 18px;
+}
+
+[class*="__container"] {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.wrapper {
+    overflow: clip;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header,
+.footer {
+    padding: 30px 3px;
+    min-height: 90px;
+    background-color: rgba(121, 102, 121, 0.83);
+    font-size: 30px;
+}
+
+.header--margin {
+    margin-bottom: 100px;
+}
+
+/*---------------------------Page My Info form-------------------- */
+.page__info,
+.page__checkout {
+    margin-bottom: 70px;
+}
+
+.info__container {
+    max-width: 925px;
+}
+
+.title-info {
+    font-family: 'Core Sans C', sans-serif;
+    color: #3C4242;
+    font-weight: 600;
+}
+
+.title-info__main {
+    font-size: 28px;
+    line-height: 1.2;
+    letter-spacing: 0.56px;
+}
+
+.title-info__main:not(:last-child) {
+    margin-bottom: 28px;
+}
+
+.title-info__subtitle {
+    font-size: 22px;
+    line-height: 1.5;
+    letter-spacing: 0.44px;
+}
+
+.info__title:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.info__form {
+
+}
+
+.form {
+
+}
+
+.form__body {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 31px;
+    margin: 0 -15px;
+}
+
+.body {
+
+}
+
+.body__item {
+    flex: 1 1 50%;
+    padding: 0 15px;
+    min-width: 213px;
+}
+
+.item {
+
+}
+
+.item__label:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.item__label {
+    display: inline-block;
+    color: #3C4242;
+    font-family: Causten, sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 0.36px;
+    text-transform: capitalize;
+}
+
+.item__input {
+    border-radius: 8px;
+    background: #F6F6F6;
+    padding: 17px 22px;
+    width: 100%;
+}
+
+.item__input--placeholder::placeholder {
+    text-transform: lowercase;
+}
+
+.item__textarea {
+    min-height: 149px;
+    width: 100%;
+    border-radius: 8px;
+    background: #F6F6F6;
+    padding: 17px 22px;
+    resize: vertical;
+}
+
+.item__input::placeholder,
+.item__textarea::placeholder {
+    color: #807D7E;
+    font-family: Causten, sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.form__body:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.form__checkbox:not(:last-child) {
+    margin-bottom: 62px;
+}
+
+.checkbox__item {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row-reverse;
+    column-gap: 11px;
+}
+
+.check__label {
+    display: flex;
+    align-items: center;
+
+    color: #3C4242;
+    font-family: Causten, sans-serif;
+    font-size: 20px;
+    line-height: 1.2;
+
+}
+
+.checkbox__item:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.check__input {
+    width: 20.087px;
+    height: 20.087px;
+    /*border: 1px solid #BEBCBD;*/
+    background-color: #3C4242;
+
+}
+
+.form__button {
+    font-family: Causten, sans-serif;
+    font-size: 20.087px;
+    line-height: 1.2;
+}
+
+.button__save {
+    padding: 12px 40px;
+    border-radius: 8px;
+    background: #8A33FD;
+    color: #FFF;
+    font-weight: 600;
+    transition: all 0.4s ease;
+}
+
+.button__save:not(:last-child) {
+    margin-right: 32px;
+}
+
+.button__cancel {
+    padding: 12px 40px;
+    border-radius: 8px;
+    background: #F6F6F6;
+    color: #807D7E;
+    font-weight: 700;
+    transition: all 0.4s ease;
+}
+
+.button__save:hover,
+.button__cancel:hover,
+.button__cancel--color:hover {
+    border-radius: 8px;
+    background: #6620C1;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.10);
+    color: #FFF;
+}
+
+/*------------------Page. Checkout-----------------------*/
+.page__checkout {
+
+}
+
+.checkout {
+
+}
+
+.checkout__container {
+    max-width: 832px;
+}
+
+.checkout__title {
+}
+
+.checkout__title:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.title-info {
+}
+
+.title-info__main {
+}
+
+.title-info__subtitle {
+}
+
+.info__form {
+}
+
+.form {
+}
+
+.form__body:not(:last-child) {
+    margin-bottom: 26px;
+}
+
+.body {
+}
+
+.body__item {
+}
+
+.form__row-body {
+    display: flex;
+    row-gap: 32px;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.row__item {
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    padding: 0 15px;
+    flex: 0 1 33.333%;
+    /*row-gap: 10px;*/
+
+}
+
+.row {
+}
+
+.row__label {
+    display: inline-block;
+}
+
+.row__label:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.row__input {
+}
+
+.item__input--placeholder {
+}
+
+.form__button {
+}
+
+.form__checkbox {
+}
+
+.checkbox {
+}
+
+.checkbox__item {
+}
+
+.check {
+}
+
+.check__label {
+}
+
+.check__input {
+}
+
+
+.footer {
+    margin-top: 50px;
+}

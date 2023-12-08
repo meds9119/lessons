@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson 16</title>
+</head>
+<body>
+<div class="wrapper">
+    <header class="header header--margin">
+        <div class="header__title">
+            <h1>
+                Form.
+            </h1>
+        </div>
+    </header>
+    <main class="page">
+        <div class="page__info info">
+            <div class="info__container">
+                <div class="info__title title-info">
+                    <h2 class="title-info__main">
+                        My Info
+                    </h2>
+                    <h3 class="title-info__subtitle">
+                        Add Address
+                    </h3>
+                </div>
+                <form class="info__form form" action="#" enctype="multipart/form-data" method="GET">
+                    <div class="form__body body">
+                        <div class="body__item item">
+                            <label class="item__label" for="username">
+                                First Name*
+                            </label>
+                            <input required class="item__input" autocomplete="on" type="text" id="username"
+                                   placeholder="First Name">
+                        </div>
+                        <div class="body__item item">
+                            <label class="item__label" for="lastname">
+                                Last Name*
+                            </label>
+                            <input required class="item__input" autocomplete="on" type="text" id="lastname"
+                                   placeholder="Last Name">
+                        </div>
+                        <div class="body__item item">
+                            <label class="item__label" for="country-region">
+                                Country / Region*
+                            </label>
+                            <input required class="item__input" autocomplete="on" type="text" id="country-region"
+                                   placeholder="Country / Region">
+                        </div>
+                        <div class="body__item item">
+                            <label class="item__label" for="company">
+                                Company Name
+                            </label>
+                            <input class="item__input" type="text" id="company" placeholder="Company (optional)">
+                        </div>
+                        <div class="body__item item">
+                            <label class="item__label" for="house-number">
+                                Street Address*
+                            </label>
+                            <input required class="item__input" autocomplete="on" type="text" id="house-number"
+                                   placeholder="House number and street name">
+                        </div>
+                        <div class="body__item item">
+                            <label class="item__label" for="which-apartment">
+                                Apt, suite, unit
+                            </label>
+                            <input class="item__input item__input--placeholder" autocomplete="on" type="text"
+                                   id="which-apartment" placeholder="apartment, suite, unit, etc. (optional)">
+                        </div>
+                        <div class="body__item item">
+                            <label class="item__label" for="town">
+                                City*
+                            </label>
+                            <input required class="item__input" type="text" id="town" placeholder="Town / City">
+                        </div>
+                        <div class="body__item item">
+                            <label class="item__label" for="state">
+                                State*
+                            </label>
+                            <input required class="item__input" type="text" id="state" placeholder="State">
+                        </div>
+                        <div class="body__item item">
+                            <label class="item__label" for="phone">
+                                Phone*
+                            </label>
+                            <input required class="item__input" type="tel" id="phone" placeholder="Phone">
+                        </div>
+                        <div class="body__item item">
+                            <label class="item__label" for="postal-code">
+                                Postal Code*
+                            </label>
+                            <input required class="item__input" type="text" pattern="[0-9]*" id="postal-code"
+                                   placeholder="Postal Code">
+                        </div>
+                        <div class="body__item item">
+                            <label class="item__label" for="delivery-instruction">
+                                Delivery Instruction
+                            </label>
+                            <textarea class="item__textarea" id="delivery-instruction"
+                                      placeholder="Delivery Instruction">
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="form__checkbox checkbox">
+                        <div class="checkbox__item check">
+                            <label class="check__label" for="shipping-address">
+                                Set as default shipping address
+                            </label>
+                            <input class="check__input" id="shipping-address" name="default" type="checkbox">
+                        </div>
+                        <div class="checkbox__item check">
+                            <label class="check__label" for="billing-address">
+                                Set as default billing address
+                            </label>
+                            <input class="check__input" id="billing-address" name="default" type="checkbox">
+                        </div>
+                    </div>
+                    <div class="form__button button">
+                        <button class="button__save" type="button">
+                            Save
+                        </button>
+                        <button class="button__cancel button__cancel--color" type="button">
+                            Cancel
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="page__checkout checkout">
+            <div class="checkout__container">
+                <div class="checkout__title title-info">
+                    <h3 class="title-info__main">
+                        Check Out
+                    </h3>
+                    <h4 class="title-info__subtitle">
+                        Billing Details
+                    </h4>
+                </div>
+                <form class="form" action="#" enctype="multipart/form-data" method="GET">
+                    <div class="form__body body">
+                        <div class="body__item item">
+                            <label class="item__label" for="username-check">
+                                First Name*
+                            </label>
+                            <input required class="item__input" autocomplete="on" type="text" id="username-check"
+                                   placeholder="First Name">
+                        </div>
+                        <div class="body__item item">
+                            <label class="item__label" for="lastname-check">
+                                Last Name*
+                            </label>
+                            <input required class="item__input" autocomplete="on" type="text" id="lastname-check"
+                                   placeholder="Last Name">
+                        </div>
+                        <div class="body__item item">
+                            <label class="item__label" for="country-region-check">
+                                Country / Region*
+                            </label>
+                            <input required class="item__input" autocomplete="on" type="text" id="country-region-check"
+                                   placeholder="Country / Region">
+                        </div>
+                        <div class="body__item item">
+                            <label class="item__label" for="company-check">
+                                Company Name
+                            </label>
+                            <input class="item__input" type="text" id="company-check" placeholder="Company (optional)">
+                        </div>
+                        <div class="body__item item">
+                            <label class="item__label" for="house-number-check">
+                                Street Address*
+                            </label>
+                            <input required class="item__input" autocomplete="on" type="text" id="house-number-check"
+                                   placeholder="House number and street name">
+                        </div>
+                        <div class="body__item item">
+                            <label class="item__label" for="which-apartment-check">
+                                Apt, suite, unit
+                            </label>
+                            <input class="item__input item__input--placeholder" autocomplete="on" type="text"
+                                   id="which-apartment-check" placeholder="apartment, suite, unit, etc. (optional)">
+                        </div>
+                    </div>
+                    <div class="form__row-body row">
+                        <div class="row__item item">
+                            <label class="row__label" for="town-check">
+                                City*
+                            </label>
+                            <input required class="item__input" type="text" id="town-check"
+                                   placeholder="Town / City">
+                        </div>
+                        <div class="row__item item">
+                            <label class="row__label" for="state-check">
+                                State*
+                            </label>
+                            <input required class="item__input" type="text" id="state-check" placeholder="State">
+                        </div>
+                        <div class="row__item item">
+                            <label class="row__label" for="postal-code-check">
+                                Postal Code*
+                            </label>
+                            <input required class="item__input" type="text" pattern="[0-9]*" id="postal-code-check"
+                                   placeholder="Postal Code">
+                        </div>
+                        <div class="row__item item">
+                            <label class="row__label" for="phone-check">
+                                Phone*
+                            </label>
+                            <input required class="item__input" type="tel" id="phone-check" placeholder="Phone">
+                        </div>
+                    </div>
+                    <button class="form__button" type="button">
+                        Continue to delivery
+                    </button>
+                    <div class="form__checkbox checkbox">
+                        <div class="checkbox__item check">
+                            <label class="check__label" for="save-info">
+                                Save my information for a faster checkout
+                            </label>
+                            <input class="check__input" id="save-info" name="save-information" type="checkbox">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <h6>
+            Form.
+        </h6>
+    </footer>
+</div>
+</body>
+</html>
