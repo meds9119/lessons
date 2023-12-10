@@ -151,11 +151,7 @@ body {
 }
 
 .checkbox__item {
-    /*display: flex;*/
-    /*justify-content: flex-end;*/
-    /*align-items: center;*/
-    /*flex-direction: row-reverse;*/
-    /*column-gap: 11px;*/
+    position: relative;
 }
 
 .checkbox__item:not(:last-child) {
@@ -163,8 +159,6 @@ body {
 }
 
 .check__label {
-    /*display: flex;*/
-    /*align-items: center;*/
     color: #3C4242;
     font-family: Causten, sans-serif;
     font-size: 20px;
