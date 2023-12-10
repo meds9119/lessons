@@ -27,7 +27,7 @@
                         Add Address
                     </h3>
                 </div>
-                <form class="info__form form" action="#" enctype="multipart/form-data" method="GET">
+                <form class="info__form form" action="#" enctype="multipart/form-data" method="POST">
                     <div class="form__body body">
                         <div class="body__item item">
                             <label class="item__label" for="username">
@@ -100,29 +100,29 @@
                                 Delivery Instruction
                             </label>
                             <textarea class="item__textarea" id="delivery-instruction"
-                                      placeholder="Delivery Instruction">
-                            </textarea>
+                                      placeholder="Delivery Instruction"></textarea>
                         </div>
                     </div>
                     <div class="form__checkbox checkbox">
                         <div class="checkbox__item check">
+                            <input class="check__input" id="shipping-address" name="shipping-address" type="checkbox">
                             <label class="check__label" for="shipping-address">
                                 Set as default shipping address
                             </label>
-                            <input class="check__input" id="shipping-address" name="default" type="checkbox">
+
                         </div>
                         <div class="checkbox__item check">
+                            <input class="check__input" id="billing-address" name="billing-address" type="checkbox">
                             <label class="check__label" for="billing-address">
                                 Set as default billing address
                             </label>
-                            <input class="check__input" id="billing-address" name="default" type="checkbox">
                         </div>
                     </div>
                     <div class="form__button button">
-                        <button class="button__save" type="button">
+                        <button class="button__save" type="submit">
                             Save
                         </button>
-                        <button class="button__cancel button__cancel--color" type="button">
+                        <button class="button__cancel button__cancel--color" type="submit">
                             Cancel
                         </button>
                     </div>
@@ -139,7 +139,7 @@
                         Billing Details
                     </h4>
                 </div>
-                <form class="form" action="#" enctype="multipart/form-data" method="GET">
+                <form class="checkout__form form" action="#" enctype="multipart/form-data" method="POST">
                     <div class="form__body body">
                         <div class="body__item item">
                             <label class="item__label" for="username-check">
@@ -211,18 +211,70 @@
                             <input required class="item__input" type="tel" id="phone-check" placeholder="Phone">
                         </div>
                     </div>
-                    <button class="form__button" type="button">
+                    <button class="form__check-button" type="submit">
                         Continue to delivery
                     </button>
                     <div class="form__checkbox checkbox">
                         <div class="checkbox__item check">
+                            <input class="check__input" id="save-info" name="save-information" type="checkbox">
                             <label class="check__label" for="save-info">
                                 Save my information for a faster checkout
                             </label>
-                            <input class="check__input" id="save-info" name="save-information" type="checkbox">
                         </div>
                     </div>
                 </form>
+                <form class="checkout__form shipping-form" action="#" enctype="multipart/form-data" method="POST">
+                    <div class="shipping-form__address add-shipping">
+                        <h4 class="add-shipping__title">
+                            Shipping Address
+                        </h4>
+                        <h5 class="add-shipping__subtitle">
+                            Select the address that matches your card or payment method.
+                        </h5>
+                        <div class="add-shipping__body body-radio">
+                            <div class="body-radio__item item-radio">
+                                <input checked class="item-radio__input" type="radio" id="billing-add-radio"
+                                       name="shipping" value="billing-address">
+                                <label class="item-radio__label" for="billing-add-radio">
+                                    Same as Billing address
+                                </label>
+                            </div>
+                            <div class="body-radio__item item-radio">
+                                <input class="item-radio__input" type="radio" id="different-add-radio" name="shipping"
+                                       value="different-address">
+                                <label class="item-radio__label" for="different-add-radio">
+                                    Use a different shipping address
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shipping-form__method method-shipping">
+                        <h4 class="method-shipping__title">
+                            Shipping Method
+                        </h4>
+                        <div class="method-shipping__body body-details">
+                            <div class="body-details__arrives">
+                                <h5>
+                                    Arrives by Monday, June 7
+                                </h5>
+                            </div>
+                            <div class="body-details__charges row-charges">
+                                <div class="row-charges__row">
+                                    <h5>
+                                        Delivery Charges
+                                    </h5>
+                                    <span>
+                                    $5.00
+                                </span>
+                                </div>
+                                <p>
+                                    Additional fess may apply
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
             </div>
         </div>
     </main>
