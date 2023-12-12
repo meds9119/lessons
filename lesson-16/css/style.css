@@ -118,25 +118,27 @@ body {
     background: #F6F6F6;
     font-size: 16px;
 }
+
 .item__select--side-arrow {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background:  url("../img/icons/down.svg") 93% 50%/5% no-repeat, #F6F6F6;
+    background: url("../img/icons/down.svg") 93% 50%/5% no-repeat, #F6F6F6;
 }
 
 .item__select--arrow {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background:  url("../img/icons/down.svg") 93% 50%/8% no-repeat, #F6F6F6;
+    background: url("../img/icons/down.svg") 93% 50%/8% no-repeat, #F6F6F6;
 }
 
-.item__select > option {
+.item__select option {
     background: #F6F6F6;
     padding: 15px;
     color: #807D7E;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .item__textarea {
@@ -342,7 +344,6 @@ body {
     display: flex;
     flex-direction: column;
     row-gap: 25px;
-
 }
 
 .body-radio__item {
@@ -373,6 +374,7 @@ body {
     display: inline-flex;
     gap: 19px;
     align-items: center;
+    cursor: pointer;
 }
 
 .item-radio__label::before {
@@ -518,6 +520,7 @@ body {
 }
 
 .field__item {
+    position: relative; /* для button з img */
     padding: 0 15px;
     flex: 1 1 50%;
 }
@@ -533,6 +536,24 @@ body {
 .item-field__input::placeholder {
     color: #807D7E;
     font-size: 14px;
+}
+
+.item-field__button {
+    position: absolute;
+    left: 83%;
+    top: 31%;
+    width: 20px;
+    height: 20px;
+}
+
+.item-field__button img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.item-field__button img:hover {
+    transform: scale(1.1);
 }
 
 /*--------------------Page.Callback----------------*/
@@ -594,7 +615,7 @@ body {
 }
 
 .item-call__input,
-.item-call__textarea{
+.item-call__textarea {
     width: 100%;
     padding: 21px 40px 22px 40px;
     border: 1px solid #DDD;

@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="wrapper">
-<!--    Header-->
+    <!--    Header-->
     <header class="header">
         <div class="header__title">
             <h1>
@@ -17,9 +17,9 @@
             </h1>
         </div>
     </header>
-<!--    Main-->
+    <!--    Main-->
     <main class="page">
-<!--        Main.Page. Info block-->
+        <!--        Main.Page. Info block-->
         <div class="page__info info">
             <div class="info__container">
                 <div class="info__title title-info">
@@ -36,59 +36,69 @@
                             <label class="item__label" for="first-name">
                                 First Name*
                             </label>
-                            <input required class="item__input" name="first-name" autocomplete="on" type="text" id="first-name"
+                            <input required class="item__input" name="first-name" autocomplete="on" type="text"
+                                   id="first-name"
                                    placeholder="First Name">
                         </div>
                         <div class="body__item item">
                             <label class="item__label" for="lastname">
                                 Last Name*
                             </label>
-                            <input required class="item__input" name="last-name" autocomplete="on" type="text" id="lastname"
+                            <input required class="item__input" name="last-name" autocomplete="on" type="text"
+                                   id="lastname"
                                    placeholder="Last Name">
                         </div>
                         <div class="body__item item">
                             <label class="item__label" for="country-region">
                                 Country / Region*
                             </label>
-                            <input required class="item__input" name="country" autocomplete="on" type="text" id="country-region"
+                            <input required class="item__input" name="country" autocomplete="on" type="text"
+                                   id="country-region"
                                    placeholder="Country / Region">
                         </div>
                         <div class="body__item item">
                             <label class="item__label" for="company">
                                 Company Name
                             </label>
-                            <input class="item__input" name="company" type="text" id="company" placeholder="Company (optional)">
+                            <input class="item__input" name="company" type="text" id="company"
+                                   placeholder="Company (optional)">
                         </div>
                         <div class="body__item item">
                             <label class="item__label" for="house-number">
                                 Street Address*
                             </label>
-                            <input required class="item__input" name="address" autocomplete="on" type="text" id="house-number"
+                            <input required class="item__input" name="address" autocomplete="on" type="text"
+                                   id="house-number"
                                    placeholder="House number and street name">
                         </div>
                         <div class="body__item item">
                             <label class="item__label" for="which-apartment">
                                 Apt, suite, unit
                             </label>
-                            <input class="item__input item__input--placeholder" name="apartment" autocomplete="on" type="text"
+                            <input class="item__input item__input--placeholder" name="apartment" autocomplete="on"
+                                   type="text"
                                    id="which-apartment" placeholder="apartment, suite, unit, etc. (optional)">
                         </div>
                         <div class="body__item item">
                             <label class="item__label" for="town">
                                 City*
                             </label>
-                            <input required class="item__input" name="town" type="text" id="town" placeholder="Town / City">
+                            <input required class="item__input" name="town" type="text" id="town"
+                                   placeholder="Town / City">
                         </div>
                         <div class="body__item item">
                             <label class="item__label" for="state">
                                 State*
                             </label>
                             <select required class="item__select item__select--side-arrow" name="state-list" id="state">
-                                <option disabled value="">
+                                <option selected disabled value="">
                                     State
                                 </option>
+                                <option value="01">
+                                    State #2
+                                </option>
                                 <option value="02">
-                                    Another state
+                                    State #3
                                 </option>
                             </select>
                         </div>
@@ -102,9 +112,11 @@
                             <label class="item__label" for="postal-code">
                                 Postal Code*
                             </label>
-                            <input required class="item__input" name="postal-code" type="text" pattern="[0-9]*" id="postal-code"
+                            <input required class="item__input" name="postal-code" type="number" min="0" id="postal-code"
                                    placeholder="Postal Code">
                         </div>
+<!--                        я б залишила можливість вводу поштових індексів з дефісами та літерами з type="text". Але-->
+<!--                        виправляю, щоб за це не зарахували помилку-->
                         <div class="body__item item">
                             <label class="item__label" for="delivery-instruction">
                                 Delivery Instruction
@@ -139,7 +151,7 @@
                 </form>
             </div>
         </div>
-<!--        Main.Page.Checkout block-->
+        <!--        Main.Page.Checkout block-->
         <div class="page__checkout checkout">
             <div class="checkout__container">
                 <div class="checkout__title title-info">
@@ -156,41 +168,47 @@
                             <label class="item__label" for="username-check">
                                 First Name*
                             </label>
-                            <input required class="item__input" name="first-name" autocomplete="on" type="text" id="username-check"
+                            <input required class="item__input" name="first-name" autocomplete="on" type="text"
+                                   id="username-check"
                                    placeholder="First Name">
                         </div>
                         <div class="body__item item">
                             <label class="item__label" for="lastname-check">
                                 Last Name*
                             </label>
-                            <input required class="item__input" name="last-name" autocomplete="on" type="text" id="lastname-check"
+                            <input required class="item__input" name="last-name" autocomplete="on" type="text"
+                                   id="lastname-check"
                                    placeholder="Last Name">
                         </div>
                         <div class="body__item item">
                             <label class="item__label" for="country-region-check">
                                 Country / Region*
                             </label>
-                            <input required class="item__input" name="country" autocomplete="on" type="text" id="country-region-check"
+                            <input required class="item__input" name="country" autocomplete="on" type="text"
+                                   id="country-region-check"
                                    placeholder="Country / Region">
                         </div>
                         <div class="body__item item">
                             <label class="item__label" for="company-check">
                                 Company Name
                             </label>
-                            <input class="item__input" name="company" type="text" id="company-check" placeholder="Company (optional)">
+                            <input class="item__input" name="company" type="text" id="company-check"
+                                   placeholder="Company (optional)">
                         </div>
                         <div class="body__item item">
                             <label class="item__label" for="house-number-check">
                                 Street Address*
                             </label>
-                            <input required class="item__input" name="address" autocomplete="on" type="text" id="house-number-check"
+                            <input required class="item__input" name="address" autocomplete="on" type="text"
+                                   id="house-number-check"
                                    placeholder="House number and street name">
                         </div>
                         <div class="body__item item">
                             <label class="item__label" for="which-apartment-check">
                                 Apt, suite, unit
                             </label>
-                            <input class="item__input item__input--placeholder" name="apartment" autocomplete="on" type="text"
+                            <input class="item__input item__input--placeholder" name="apartment" autocomplete="on"
+                                   type="text"
                                    id="which-apartment-check" placeholder="apartment, suite, unit, etc. (optional)">
                         </div>
                     </div>
@@ -206,12 +224,16 @@
                             <label class="row__label" for="state-check">
                                 State*
                             </label>
-                            <select required class="item__select item__select--arrow" name="state-list" id="state-check">
-                                <option disabled value="">
+                            <select required class="item__select item__select--arrow" name="state-list"
+                                    id="state-check">
+                                <option selected disabled value="">
                                     State
                                 </option>
+                                <option value="01">
+                                    State #2
+                                </option>
                                 <option value="02">
-                                    Another state
+                                    State #3
                                 </option>
                             </select>
                         </div>
@@ -219,14 +241,16 @@
                             <label class="row__label" for="postal-code-check">
                                 Postal Code*
                             </label>
-                            <input required class="item__input" name="postal-code" type="text" pattern="[0-9]*" id="postal-code-check"
+                            <input required class="item__input" name="postal-code" type="number"
+                                   min="0" id="postal-code-check"
                                    placeholder="Postal Code">
                         </div>
                         <div class="row__item item">
                             <label class="row__label" for="phone-check">
                                 Phone*
                             </label>
-                            <input required class="item__input" name="phone" type="tel" id="phone-check" placeholder="Phone">
+                            <input required class="item__input" name="phone" type="tel" id="phone-check"
+                                   placeholder="Phone">
                         </div>
                     </div>
                     <button class="form__check-button" type="submit">
@@ -331,13 +355,16 @@
                                                    name="card-name" placeholder="Name of card">
                                         </div>
                                         <div class="field__item item-field">
-                                            <input required class="item-field__input" id="card-date" type="text"
+                                            <input required class="item-field__input" id="card-date" type="number"
                                                    name="card-date" placeholder="Expiration date (MM/YY)">
                                         </div>
                                         <div class="field__item item-field">
                                             <input required class="item-field__input" id="card-security" type="password"
                                                    minlength="3" maxlength="3" name="card-security"
                                                    placeholder="Security Code">
+                                            <button class="item-field__button" type="button">
+                                                <img src="img/icons/eye.svg" alt="hidden/visible security cod">
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -367,7 +394,7 @@
                 </form>
             </div>
         </div>
-<!--        Main.Page.Callback block-->
+        <!--        Main.Page.Callback block-->
         <div class="page__callback callback">
             <div class="callback__container">
                 <div class="callback__title title">
