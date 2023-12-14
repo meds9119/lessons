@@ -1,0 +1,336 @@
+/* Підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Загальні стилі */
+body {
+    /*font-family: ;*/
+    line-height: 1.2;
+    font-size: 18px;
+    background: #FEFAF4;
+}
+
+[class*="__container"] {
+    max-width: 1203px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.wrapper {
+    overflow: clip;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header,
+.footer {
+    padding: 30px 15px;
+    min-height: 90px;
+    background-color: rgba(96, 0, 0, 0.83);
+    font-size: 30px;
+    color: #e5d5d5;
+}
+
+/*-------------------Page. Bestseller--------------------*/
+.page {
+    padding: 80px 0;
+}
+
+.page__bestseller {
+    /*background: #FEFAF4;*/
+    margin-bottom: 60px;
+}
+
+.bestseller__container {
+
+}
+
+.bestseller__title {
+
+}
+
+.bestseller__title:not(:last-child) {
+    margin-bottom: 53px;
+}
+
+.title__main {
+    color: #000;
+    font-family: 'DM Serif Text', serif;
+    font-size: 58px;
+    line-height: 1;
+    text-transform: capitalize;
+}
+
+.title__main:not(:last-child) {
+    margin-bottom: 27px;
+}
+
+.title__subtitle {
+    color: #606060;
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+.bestseller__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /*gap: 28px;*/
+    margin: 0 -24px;
+    row-gap: 20px;
+}
+
+.content__item {
+    flex: 0 1 33.333%;
+    padding: 0 24px;
+}
+
+.item__image {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 357 / 240;
+}
+
+.item__image:not(:last-child),
+.item__about-product:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.item__about-product {
+    color: #000;
+    font-family: 'DM Serif Text', serif;
+    font-size: 24px;
+}
+
+.item p {
+    color: #000;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    opacity: 0.7;
+}
+
+.item p:not(:last-child) {
+    margin-bottom: 6px;
+}
+
+.item__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    color: #F55529;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+.item__link::after {
+    content: '';
+    width: 25px;
+    height: 25px;
+    background: url("../img/icons/link-arrow.svg") 0 0 / 80% no-repeat;
+}
+
+.item__link:hover {
+    text-decoration: underline #F55529;
+}
+
+/*@media (max-width: 1199.98px){*/
+/*    .page__bestseller {*/
+/*        max-width: 1199px;*/
+/*        !*padding: 50px 0;*!*/
+/*    }*/
+/*    .bestseller__title:not(:last-child) {*/
+/*        margin-bottom: 40px;*/
+/*    }*/
+/*    .title__main {*/
+/*        font-size: 39px;*/
+/*    }*/
+/*}*/
+
+/*@media (max-width: 990.98px) {*/
+/*    .page__bestseller {*/
+/*        max-width: 990px;*/
+/*    }*/
+/*}*/
+
+/*@media (max-width: 767.98px) {*/
+/*    .page__bestseller {*/
+/*        max-width: 767px;*/
+/*        !*padding: 30px 0;*!*/
+/*    }*/
+/*    .bestseller__title:not(:last-child) {*/
+/*        margin-bottom: 30px;*/
+/*    }*/
+/*    .content__item {*/
+/*        flex: 0 1 50%;*/
+/*    }*/
+/*}*/
+
+/*@media (max-width: 480px) {*/
+/*    .page__bestseller {*/
+/*        max-width: none;*/
+/*        !*padding: 20px 0;*!*/
+/*    }*/
+/*    .bestseller__title:not(:last-child) {*/
+/*        margin-bottom: 20px;*/
+/*    }*/
+/*    .content__item {*/
+/*        flex: 0 1 100%;*/
+/*    }*/
+/*}*/
+
+/*------------------Page. Our products-------------------*/
+.page__products {
+    margin-bottom: 60px;
+    background: #0E333D;
+    color: #FFF;
+}
+
+.products__container {
+    /*padding: 94px 215px;*/
+    padding: 40px 0;
+}
+
+.products__title {
+    text-align: center;
+}
+
+.products__title:not(:last-child) {
+    margin-bottom: 34px;
+}
+
+.title__main-prod {
+    font-family: 'DM Serif Text', serif;
+    font-size: 48px;
+    line-height: 1.27;
+}
+
+.title__about {
+    color: #EBEBEB;
+    font-family: Raleway, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.27;
+}
+
+.title__main-prod:not(:last-child) {
+    margin-bottom: 23px;
+}
+
+.products__nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.products__nav:not(:last-child) {
+    margin-bottom: 76px;
+}
+
+.nav__item {
+
+}
+
+.item__nav-link {
+    color: #FFF;
+    font-family: Raleway, sans-serif;
+    font-weight: 600;
+    line-height: 1.27;
+    text-decoration-line: underline;
+}
+
+.item__nav-link:hover {
+    text-decoration-line: none;
+}
+
+.products__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -24px;
+}
+
+.content-prod__item {
+    padding: 0 24px;
+    flex: 0 1 25%;
+}
+
+.item-prod__image {
+    margin-bottom: 17px;
+}
+
+.item-prod__image img {
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 271 / 270;
+}
+
+.item-prod__about-product {
+    display: inline-block;
+    font-family: 'Cormorant Infant', serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.item-prod__about-product:hover {
+    text-decoration: 1px underline whitesmoke;
+}
+
+.item-prod__about-product:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.content-prod__item span {
+    font-family: 'Cormorant Infant', serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+/*--------------------Page.Most popular product---------*/
+.page__popular-prod {
+    background: #FFF;
+}
+
+.popular-prod__container {
+    padding: 40px 0;
+}
+
+.popular-prod__title {
+    text-align: center;
+}
+
+.popular-prod__title:not(:last-child) {
+    margin-bottom: 62px;
+}
+
+.title__popular-subtitle {
+    color: #818181;
+    font-family: 'Cormorant Infant', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.popular-prod__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -24px;
+}
+
+.item-prod__image--contain img {
+    object-fit: contain;
+}
+
+
