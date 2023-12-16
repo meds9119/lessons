@@ -27,18 +27,31 @@ body {
 
 .header,
 .footer {
-    padding: 30px 15px;
-    min-height: 90px;
+    padding: 40px 25px;
     background-color: rgba(96, 0, 0, 0.83);
     font-size: 30px;
     color: #e5d5d5;
 }
 
 .page {
-    padding: 80px 0;
+    padding-top: 90px;
     flex-grow: 1;
 }
 
+@media (max-width: 1199.98px) {
+    .header,
+    .footer {
+        padding: 20px 15px;
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 480.98px) {
+    .header,
+    .footer {
+        padding: 10px 15px;
+    }
+}
 /*-------------------Page. Bestseller--------------------*/
 .page__bestseller {
     margin-bottom: 60px;
@@ -140,7 +153,7 @@ body {
 
 @media (max-width: 1199.98px) {
     .page {
-        padding: 40px 0;
+        padding-top: 40px;
     }
 
     .page__bestseller {
@@ -159,7 +172,7 @@ body {
 
 @media (max-width: 990.98px) {
     .page {
-        padding: 25px 0;
+        padding-top: 25px;
     }
     .page__bestseller {
         margin-bottom: 30px;
@@ -182,10 +195,6 @@ body {
 }
 
 @media (max-width: 767.98px) {
-    .page {
-        padding: 30px 0;
-    }
-
     .title__main {
         font-size: 29px;
     }
@@ -207,9 +216,9 @@ body {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 480.98px) {
     .page {
-        padding: 20px 0;
+        padding-top: 12px;
     }
 
     .bestseller__title:not(:last-child) {
@@ -227,13 +236,10 @@ body {
 
 /*------------------Page. Our products-------------------*/
 .page__products {
-    margin-bottom: 60px;
+    /*margin-bottom: 60px;*/
     background: #0E333D;
     color: #FFF;
-}
-
-.products__container {
-    padding: 40px 15px;
+    padding: 40px 0;
 }
 
 .products__title {
@@ -306,9 +312,12 @@ body {
 }
 
 .item-prod__image {
-    margin-bottom: 17px;
     transition: all 0.3s ease;
     opacity: 0.85;
+}
+
+.item-prod__image:not(:last-child) {
+    margin-bottom: 17px;
 }
 
 .item-prod__image img {
@@ -354,16 +363,16 @@ body {
 }
 
 @media (max-width: 990.98px) {
-    .products__container {
-        padding: 20px 15px;
+    .page__products {
+        padding: 20px 0;
     }
 
     .products__title:not(:last-child) {
-        margin-bottom: 27px;
+        margin-bottom: 22px;
     }
 
     .title-prod__main {
-        font-size: 38px;
+        font-size: 35px;
     }
 
     .title-prod__about {
@@ -371,7 +380,7 @@ body {
     }
 
     .products__nav:not(:last-child) {
-        margin-bottom: 43px;
+        margin-bottom: 33px;
     }
 
     .products__content {
@@ -396,33 +405,50 @@ body {
 }
 
 @media (max-width: 767.98px) {
-    .page__products {
-        margin-bottom: 30px;
-    }
+    /*.page__products {*/
+    /*    margin-bottom: 20px;*/
+    /*}*/
 
     .title-prod__main {
         font-size: 32px;
     }
 
     .title-prod__main:not(:last-child) {
-        margin-bottom: 13px;
+        margin-bottom: 11px;
     }
 
     .title-prod__about {
         font-size: 16px;
     }
+
     .content-prod__item {
         flex: 0 1 33.333%;
+    }
+
+    .item-prod__image:not(:last-child) {
+        margin-bottom: 8px;
+    }
+
+    .item-prod__about-product {
+        font-size: 16px;
+    }
+
+    .item-prod__card span {
+        font-size: 16px;
+    }
+
+    .item-prod__card {
+        text-align: center;
     }
 }
 
 @media (max-width: 600px) {
     .products__title:not(:last-child) {
-        margin-bottom: 24px;
+        margin-bottom: 16px;
     }
 
     .products__nav:not(:last-child) {
-        margin-bottom: 36px;
+        margin-bottom: 26px;
     }
 
     .products__content {
@@ -436,8 +462,8 @@ body {
 }
 
 @media (max-width: 380px) {
-    .products__container {
-        padding: 20px 15px;
+    .page__products {
+        padding: 10px 0;
     }
 
     .products__content {
@@ -465,10 +491,7 @@ body {
 /*--------------------Page.Most popular product---------*/
 .page__popular-prod {
     background: #FFF;
-}
-
-.popular-prod__container {
-    padding: 40px 15px;
+    padding: 40px;
 }
 
 .popular-prod__title {
@@ -519,10 +542,6 @@ body {
     background: #e16031;
 }
 
-@media (max-width: 1199.98px) {
-
-}
-
 @media (max-width: 990.98px) {
     .popular-prod__title:not(:last-child) {
         margin-bottom: 42px;
@@ -534,6 +553,10 @@ body {
 }
 
 @media (max-width: 767.98px) {
+    .page__popular-prod {
+        padding: 20px;
+    }
+
     .popular-prod__title:not(:last-child) {
         margin-bottom: 32px;
     }
@@ -556,8 +579,8 @@ body {
 }
 
 @media (max-width: 380px) {
-    .popular-prod__container {
-        padding: 25px 15px;
+    .page__popular-prod {
+        padding: 12px;
     }
 
     .popular-prod__title:not(:last-child) {
