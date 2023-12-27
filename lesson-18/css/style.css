@@ -468,6 +468,66 @@ body {
     background-color: #FFF;
 }
 
+.hero__side-content {
+
+}
+
+.side-content__wrapper {
+
+}
+
+.side-content__left,
+.side-content__right {
+    position: absolute;
+}
+
+.side-content__left {
+    bottom: 0;
+    left: 38px;
+    width: 239px;
+    height: 215px;
+}
+
+.side-content__left::before {
+    content: '';
+    position: absolute;
+    border-radius: 195px 195px 0 0;
+    border: 1px solid #FFF;
+    width: 100%;
+    height: 100%;
+    bottom: 5px;
+    right: 6px;
+}
+
+.side-content__left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 239 / 215;
+    border-radius: 195px 195px 0 0;
+    position: relative;
+}
+
+.side-content__right {
+    top: 50%;
+    right: 0;
+    width: 261px;
+    height: 371px;
+    border-radius: 215px;
+    border: 1px solid #FFF;
+    padding: 17px 12px;
+}
+
+.side-content__right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 237 / 336;
+    border-radius: 195px 195px 0 0;
+    position: relative;
+}
+
+
 @media (any-hover: hover) {
     .hero__button:hover::before {
         top: 0;
