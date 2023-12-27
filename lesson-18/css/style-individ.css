@@ -68,7 +68,6 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    /*align-items: center;*/
     column-gap: 36px;
     row-gap: 10px;
 }
@@ -160,8 +159,6 @@ body {
     width: 35px;
     height: 35px;
 }
-
-
 
 .header__icon-menu {
     display: none;
@@ -272,7 +269,6 @@ body {
     }
 
     .list__item--arrow .list__link {
-        /*justify-content: flex-end;*/
         display: block;
     }
 
@@ -333,7 +329,6 @@ body {
         bottom: 50%;
         margin-bottom: -1px;
     }
-
 }
 
 @media (max-width: 440px) {
@@ -348,7 +343,6 @@ body {
     .header__action {
         column-gap: 10px;
     }
-
 }
 
 @media (max-width: 320.98px) {
@@ -405,7 +399,6 @@ body {
     flex-wrap: wrap;
     column-gap: 47px;
     row-gap: 15px;
-
 }
 
 .action__link--padding {
@@ -446,9 +439,7 @@ body {
     .action__link--style:hover {
         background: none;
         text-decoration-line: none;
-
     }
-
 }
 
 @media (max-width: 960px) {
@@ -479,14 +470,56 @@ body {
         justify-content: center;
         text-align: center;
     }
+}
 
-    .individual__picture {
-
+@media (max-width: 677px) {
+    .page__individual {
+        padding-top: 75px;
     }
 
-    .picture__left,
-    .picture__right {
+    .content__title {
+        font-size: 38px;
+    }
 
+    .individual__content p {
+        font-size: 20px;
+    }
+
+    .picture__left {
+        padding-top: 0;
+    }
+
+}
+
+@media (max-width: 458.98px) {
+    .content__title {
+        font-size: 30px;
+    }
+
+    .individual__content p {
+        font-size: 19px;
+    }
+
+    .action__link,
+    .action__link--style {
+        font-size: 20px;
+        padding: 15px 26px;
+    }
+
+    .individual__picture {
+        column-gap: 17px;
+    }
+
+}
+
+@media (max-width: 385px) {
+    .individual__picture {
+        column-gap: 9px;
+    }
+
+    .action__link,
+    .action__link--style {
+        width: 100%;
     }
 }
 
@@ -495,8 +528,22 @@ body {
     font-family: 'Cormorant Infant', serif;
     background: #0E333D;
     text-align: center;
-    padding: 23px;
+    font-size: 22px;
+    padding: 30px;
     color: #DCDCDC;
+}
+
+@media (max-width: 767.98px) {
+    .footer {
+        padding: 15px 15px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 320px) {
+    .footer {
+        padding: 10px 10px;
+    }
 }
 
 
