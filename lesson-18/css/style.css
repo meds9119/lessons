@@ -468,14 +468,6 @@ body {
     background-color: #FFF;
 }
 
-.hero__side-content {
-
-}
-
-.side-content__wrapper {
-
-}
-
 .side-content__left,
 .side-content__right {
     position: absolute;
@@ -510,7 +502,7 @@ body {
 
 .side-content__right {
     top: 50%;
-    right: 0;
+    right: -7%;
     width: 261px;
     height: 371px;
     border-radius: 215px;
@@ -523,7 +515,7 @@ body {
     height: 100%;
     object-fit: cover;
     aspect-ratio: 237 / 336;
-    border-radius: 195px 195px 0 0;
+    border-radius: 195px;
     position: relative;
 }
 
@@ -537,6 +529,13 @@ body {
 
     .hero__button:active {
         background-color: rgba(255, 255, 255, 0.08);
+    }
+}
+
+@media (max-width: 1502px) {
+    .side-content__left,
+    .side-content__right {
+        display: none;
     }
 }
 
