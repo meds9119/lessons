@@ -433,6 +433,7 @@ body {
     height: 100%;
     object-fit: cover;
     background-color: #502203;
+    border-radius: 215px;
     aspect-ratio: 390 / 554
 }
 
@@ -455,6 +456,7 @@ body {
     font-weight: 600;
     padding-left: 10px;
     position: relative;
+    margin: 0 auto;
 }
 
 .content-hero__item::before {
