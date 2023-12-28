@@ -367,8 +367,7 @@ body {
 .hero__container {
     flex: 1 1 auto;
     display: flex;
-    /*gap: 30px;*/
-    align-items: flex-start;
+    /*align-items: flex-start;*/
 }
 
 .hero__body > * {
@@ -437,9 +436,9 @@ body {
     aspect-ratio: 390 / 554
 }
 
-.content-hero {
+.hero__content {
     display: flex;
-    align-self: stretch;
+    /*align-self: stretch;*/
     flex-direction: column;
     gap: 20px;
     justify-content: space-between;
@@ -626,11 +625,8 @@ body {
     }
 
     .content-hero__item {
+        /*margin-bottom: 183px;*/
         align-self: flex-end;
-    }
-
-    .content-hero__item {
-        margin-bottom: 183px;
     }
 }
 
