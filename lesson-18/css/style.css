@@ -455,6 +455,7 @@ body {
     font-weight: 600;
     padding-left: 10px;
     position: relative;
+    align-self: center;
 }
 
 .content-hero__item::before {
@@ -559,27 +560,33 @@ body {
 
     .hero__container {
         flex-direction: column;
-        gap: 40px;
-        align-items: stretch;
+        gap: 20px;
+        align-items: center;
     }
 
-    .hero__body,
-    .hero__content {
-        text-align: center;
-    }
-
-    .hero__image {
-        align-self: center;
+    .content-hero__item::before {
+        content: '';
+        position: absolute;
+        top: 48%;
+        left: 0;
+        width: 2px;
+        height: 79%;
+        transform: translate(0, -50%);
+        background-color: #FFF;
     }
 }
 
 @media (max-width: 960px) {
     .page__hero {
-        padding: 90px 0 40px 0;
+        padding: 70px 0 40px 0;
     }
 }
 
 @media (max-width: 470px) {
+    .page__hero {
+        padding-bottom: 20px;
+    }
+
     .hero__title {
         font-size: 46px;
     }
