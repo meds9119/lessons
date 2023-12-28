@@ -457,16 +457,16 @@ body {
     position: relative;
 }
 
-/*.content-hero__item::before {*/
-/*    content: '';*/
-/*    position: absolute;*/
-/*    top: 15%;*/
-/*    left: 0;*/
-/*    width: 1px;*/
-/*    height: 30.947368%;*/
-/*    transform: translate(0, -50%);*/
-/*    background-color: #FFF;*/
-/*}*/
+.content-hero__item::before {
+    content: '';
+    position: absolute;
+    top: 15%;
+    left: 0;
+    width: 1px;
+    height: 30.947368%;
+    transform: translate(0, -50%);
+    background-color: #FFF;
+}
 
 .side-content__left,
 .side-content__right {
