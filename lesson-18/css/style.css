@@ -454,17 +454,17 @@ body {
     font-size: 32px;
     font-weight: 600;
     padding-left: 10px;
+    padding-bottom: 50%;
     position: relative;
-    margin: 0 auto;
 }
 
 .content-hero__item::before {
     content: '';
     position: absolute;
-    top: 50%;
+    top: 15%;
     left: 0;
     width: 1px;
-    height: 78.947368%;
+    height: 30.947368%;
     transform: translate(0, -50%);
     background-color: #FFF;
 }
@@ -625,7 +625,6 @@ body {
     }
 
     .content-hero__item {
-        /*margin-bottom: 183px;*/
         align-self: flex-end;
     }
 }
