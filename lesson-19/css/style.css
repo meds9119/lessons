@@ -593,14 +593,12 @@ body {
     .info-sav__link:hover,
     .info-sav__link--bg:hover {
         color: #FFF;
-        border: 1px solid #FFF;
+        border: 2px solid #FFF;
         background-color: rgba(30, 30, 30, 0.56);
     }
 
-    .info-sav__link--border:hover {
-        color: #FFF;
-        border: 2px solid #FFF;
-        background-color: rgba(30, 30, 30, 0.56);
+    .info-sav__link--bg:hover {
+        border: 1px solid #FFF;
     }
 
     .info-sav__button:hover {
@@ -676,8 +674,7 @@ body {
         background-color: rgba(255, 255, 255, 0.4);
     }
 
-    .info-sav__link,
-    .info-sav__link--border {
+    .info-sav__link {
         border: 3px solid;
     }
 
