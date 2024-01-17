@@ -1,0 +1,50 @@
+// Reset styles
+@import "_reset.scss";
+
+// Common styles
+@import "_common.scss";
+
+// Manual fonts
+@import "_fonts.scss";
+
+//-------------Variables--------------
+// Main variables
+$main-font: "DM Serif Text", serif; //font
+$main-font-size: 18px; //font size
+$main-font-color: #FFF; //font color
+$main-line-height: 1.2; //line height
+
+
+body {
+  font-family: $main-font;
+  font-size: $main-font-size;
+  line-height: $main-line-height;
+}
+
+[class*="__container"] {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  main {
+    flex-grow: 1;
+  }
+}
+
+.menu-open {
+  body {
+    overflow: hidden;
+  }
+}
+
+//-----------Header-----------
+
+.header {
+
+}
