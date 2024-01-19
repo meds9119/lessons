@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css?v=1.0.1">
+    <link rel="stylesheet" href="css/style.css?v=1.0.2">
     <title>Lesson 20</title>
 </head>
 <body>
 <div class="wrapper">
     <!--    Header-->
-    <header class="header">
+    <header class="header header--position">
         <div class="header__container">
             <div class="header__logo">
                 <div>
@@ -21,7 +21,7 @@
                 <div class="menu__body">
                     <ul class="menu__list list">
                         <li class="list__item list__item--active">
-                            <a class="list__link" href="individ.html" target="_blank">
+                            <a class="list__link" href="#" target="_blank">
                                 Home
                             </a>
                         </li>
@@ -32,17 +32,17 @@
                             <div class="menu__submenu submenu">
                                 <ul class="submenu__list">
                                     <li class="submenu__item">
-                                        <a class="submenu__link" href="#">
+                                        <a class="submenu__link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes" target="_blank">
                                             Block #1
                                         </a>
                                     </li>
                                     <li class="submenu__item">
-                                        <a class="submenu__link" href="#">
+                                        <a class="submenu__link" href="https://developer.mozilla.org/en-US/docs/Web/API/CSSPseudoElement" target="_blank">
                                             Block #2
                                         </a>
                                     </li>
                                     <li class="submenu__item">
-                                        <a class="submenu__link" href="#">
+                                        <a class="submenu__link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/border" target="_blank">
                                             Block #3
                                         </a>
                                     </li>
@@ -96,9 +96,79 @@
             </button>
         </div>
     </header>
-
     <!--    Main. Page-->
     <main class="page">
+        <div class="page__products products">
+            <div class="products__container">
+                <div class="products__about about">
+                    <h1 class="about__title">
+                        Our Popular Products
+                    </h1>
+                    <h2 class="about__subtitle">
+                        lorem ipsum dolor sit amet, conse elit, sedid do eiusmod
+                    </h2>
+                </div>
+                <div class="products__content content">
+                    <div class="content__item item item--big">
+                        <div class="item__wrapper">
+                            <img class="item__image" src="img/content/products-big-01.webp" alt="Our popular product`s picture">
+                        </div>
+                    </div>
+                    <div class="content__item item">
+                        <div class="item__wrapper">
+                            <img class="item__image" src="img/content/products-small-01.webp" alt="Our popular product`s picture">
+                        </div>
+                        <div class="item__description description">
+                            <h3 class="description__title">
+                                Embossed hoop earrings
+                            </h3>
+                            <div class="description__price">
+                                $144.00
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content__item item">
+                        <div class="item__wrapper">
+                            <img class="item__image" src="img/content/products-small-02.webp" alt="Our popular product`s picture">
+                        </div>
+                        <div class="item__description description">
+                            <h3 class="description__title">
+                                Embossed hoop earrings
+                            </h3>
+                            <div class="description__price">
+                                $144.00
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content__item item">
+                        <div class="item__wrapper">
+                            <img class="item__image" src="img/content/products-small-03.webp" alt="Our popular product`s picture">
+                        </div>
+                        <div class="item__description description">
+                            <h3 class="description__title">
+                                Embossed hoop earrings
+                            </h3>
+                            <div class="description__price">
+                                $144.00
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content__item item">
+                        <div class="item__wrapper">
+                            <img class="item__image" src="img/content/products-small-04.webp" alt="Our popular product`s picture">
+                        </div>
+                        <div class="item__description description">
+                            <h3 class="description__title">
+                                Embossed hoop earrings
+                            </h3>
+                            <div class="description__price">
+                                $144.00
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer class="footer">
         <h6 class="footer__title">
@@ -106,5 +176,6 @@
         </h6>
     </footer>
 </div>
+<script src="js/script.js"></script>
 </body>
 </html>
