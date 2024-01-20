@@ -8,7 +8,6 @@
 // Main variables
 $main-font: 'Cormorant Infant', serif; //font
 $main-font-size: 18px; //font size
-$white-color: #FFF; // white color
 $black-color: #000; // black color
 $main-line-height: 1.2; //line height
 $full-percentage: 100%;
@@ -404,7 +403,7 @@ body {
       background-color: #FF3333;
       min-width: 12px;
       height: 12px;
-      color: $white-color;
+      color: #FFF;
       font-size: 9px;
       text-align: center;
       line-height: 1.3;
@@ -549,10 +548,8 @@ body {
       aspect-ratio: 398 / 728;
 
       @media (max-width: $small-mobile-breakpoint) {
-        & {
-          object-position: top;
-          //aspect-ratio: 2 / 3;
-        }
+        object-position: top;
+        //aspect-ratio: 2 / 3;
       }
     }
   }
