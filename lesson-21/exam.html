@@ -1,0 +1,339 @@
+
+<header class="header header--position">
+    <div class="header__container">
+        <div class="header__logo">
+            <img src="img/euphoria-logo.svg" alt="Logo">
+        </div>
+        <nav class="header__menu menu">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a class="menu__link menu__link--active" href="#">
+                        Shop
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">
+                        Men
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">
+                        Women
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">
+                        Combos
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">
+                        Joggers
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <form class="header__form form" action="#" method="GET">
+            <!--                <button class="form__button" type="button"></button>-->
+            <input class="form__search" id="search" name="search" autocomplete="off" placeholder="Search">
+        </form>
+        <div class="header__action action">
+            <a class="action__item" href="#">
+                <img class="action__favorite" src="img/icons/action-favorite.svg" alt="Action favorite">
+            </a>
+            <a class="action__item" href="#">
+                <img class="action__user" src="img/icons/action-user.svg" alt="Action user">
+            </a>
+            <a class="action__item" href="#">
+                <img class="action__card" src="img/icons/action-shopping-cart.svg" alt="Action card">
+            </a>
+        </div>
+        <button class="header__icon-menu" type="button">
+            <span></span>
+        </button>
+    </div>
+</header>
+
+// block header
+.header {
+padding-bottom: 7px;
+width: 100%;
+background-color: #FFF;
+
+@media (max-width: $tablet-breakpoint) {
+//padding: 15px 0;
+
+}
+
+// .header--position
+&--position {
+position: fixed;
+top: 0;
+left: 0;
+z-index: 10;
+}
+
+// .header__container
+&__container {
+min-height: 108px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+column-gap: 15px;
+
+@media (max-width: $tablet-breakpoint) {
+justify-content: end;
+
+}
+}
+
+// .header__logo
+&__logo {
+width: 91px;
+height: 45px;
+flex-shrink: 0;
+position: relative;
+z-index: 10;
+}
+
+// .header__menu
+&__menu {
+}
+
+// .header__form
+&__form {
+position: relative;
+z-index: 10;
+
+}
+
+// .header__action
+&__action {
+display: flex;
+flex-shrink: 0;
+align-items: center;
+column-gap: 12px;
+position: relative;
+z-index: 10;
+}
+
+// .header__icon-menu
+&__icon-menu {
+display: none;
+
+@media (max-width: $tablet-breakpoint) {
+display: block;
+width: 30px;
+height: 18px;
+flex: 0 0 30px;
+position: relative;
+z-index: 10;
+
+&::before,
+&::after,
+span {
+content: '';
+height: 2px;
+width: $full-percentage;
+position: absolute;
+left: 0;
+background-color: #a6a5a5;
+transition: $main-transition;
+}
+
+&::before {
+top: 0;
+}
+
+&::after {
+bottom: 0;
+}
+
+span {
+top: 50%;
+margin-top: -1px;
+}
+
+.menu-open &::before,
+.menu-open &::after {
+top: 50%;
+margin-top: -1px;
+}
+
+.menu-open & span {
+transform: scale(0);
+}
+
+.menu-open &::before {
+transform: rotate(-45deg);
+}
+
+.menu-open &::after {
+transform: rotate(45deg);
+}
+}
+}
+}
+
+.form {
+// .form__button
+&__button {
+img {
+width: 20px;
+height: 20px;
+position: absolute;
+left: 18px;
+top: 50%;
+transform: translateY(-50%);
+}
+}
+
+
+// .form__search
+&__search {
+max-width: 267px;
+padding: 12px 20px 12px 40px;
+border-radius: 8px;
+background: $header-background;
+
+@media (max-width: 1110.98px) {
+max-width: 200px;
+}
+
+@media (max-width: $tablet-breakpoint) {
+width: 400%;
+}
+
+&::placeholder {
+color: #807D7E;
+font-size: 16px;
+}
+}
+}
+
+.menu {
+@media (max-width: $tablet-breakpoint) {
+position: fixed;
+width: $full-percentage;
+height: $full-percentage;
+top: 0;
+left: -100%;
+transition: left 0.3s;
+background-color: #efefef;
+padding: 90px 15px 30px 15px;
+overflow: auto;
+
+&::before {
+content: '';
+position: fixed;
+width: $full-percentage;
+height: 50px;
+top: 100%;
+left: $full-percentage;
+transition: left 0.3s;
+z-index: 2;
+background-color: #efefef;
+}
+
+.menu-open &,
+.menu-open &::before {
+left: 0;
+}
+
+}
+
+// .menu__list
+&__list {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+column-gap: 38px;
+
+@media (max-width: 1110.98px) {
+column-gap: 28px;
+}
+
+@media (max-width: $tablet-breakpoint) {
+flex-direction: column;
+text-align: right;
+row-gap: 28px;
+}
+
+
+}
+
+// .menu__item
+&__item {
+}
+
+// .menu__link
+&__link {
+display: inline-block;
+color: #807D7E;
+font-family: Causten, sans-serif;
+font-size: 22px;
+font-weight: 500;
+transition: $main-transition;
+
+@media (any-hover: hover) {
+&:hover {
+color: $hover-color;
+}
+}
+
+@media (max-width: 1110.98px) {
+font-size: 18px;
+}
+
+// .menu__link--active
+&--active {
+color: #3C4242;
+font-weight: 700;
+}
+}
+}
+
+.action {
+
+// .action__item
+&__item {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-shrink: 0;
+//display: inline-block;
+border-radius: 8px;
+padding: 12px;
+background: $header-background;
+transition: $main-transition;
+
+@media (any-hover: hover) {
+&:hover {
+color: white;
+background: #6620C1;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.10);
+}
+}
+
+& > img {
+width: 20px;
+height: 20px;
+}
+
+}
+
+// .action__favorite
+&__favorite {
+
+}
+
+// .action__user
+&__user {
+}
+
+// .action__card
+&__card {
+}
+}
+
