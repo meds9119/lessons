@@ -322,7 +322,7 @@ body {
 .menu__link {
   display: inline-block;
   color: #807D7E;
-  font-family: 18px;
+  font-family: "Causten", sans-serif;
   font-size: 22px;
   font-weight: 500;
   transition: all 0.4s ease;
@@ -648,7 +648,7 @@ body {
   }
 }
 .content-ad p {
-  font-family: 18px;
+  font-family: "Causten", sans-serif;
   font-size: 20px;
   font-weight: 300;
   letter-spacing: 1px;
