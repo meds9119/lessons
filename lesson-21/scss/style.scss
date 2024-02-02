@@ -277,10 +277,6 @@ body {
       }
     }
 
-    @media (max-width: 1110.98px) {
-      font-size: $main-font-size;
-    }
-
     // .menu__link--active
     &--active {
       color: #3C4242;
@@ -323,7 +319,7 @@ body {
 
     &::placeholder {
       color: #807D7E;
-      font-size: 16px; // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+      font-size: 16px;
     }
   }
 }
@@ -446,7 +442,8 @@ body {
 .hero {
   // .hero__container
   &__container {
-
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 
   // .hero__image
@@ -829,6 +826,10 @@ body {
     display: flex;
     flex-direction: column;
     row-gap: 15px;
+
+    @media (max-width: $second-mobile-breakpoint) {
+      row-gap: 5px;
+    }
   }
 
   // .item__image
@@ -945,3 +946,6 @@ body {
     }
   }
 }
+
+
+

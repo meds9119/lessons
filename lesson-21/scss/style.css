@@ -332,11 +332,6 @@ body {
     color: #6620C1;
   }
 }
-@media (max-width: 1110.98px) {
-  .menu__link {
-    font-size: 18px;
-  }
-}
 .menu__link--active {
   color: #3C4242;
   font-weight: 700;
@@ -467,6 +462,10 @@ body {
   }
 }
 
+.hero__container {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
 .hero__image {
   padding: 55px;
 }
@@ -800,6 +799,11 @@ body {
   display: flex;
   flex-direction: column;
   row-gap: 15px;
+}
+@media (max-width: 502.98px) {
+  .item__link {
+    row-gap: 5px;
+  }
 }
 .item__image {
   border-radius: 10px;
