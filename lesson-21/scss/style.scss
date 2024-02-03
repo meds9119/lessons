@@ -243,7 +243,7 @@ body {
   &__list {
     display: flex;
     justify-content: space-between;
-    //flex-wrap: wrap;
+    flex-wrap: wrap;
     column-gap: 38px;
     row-gap: 12px;
 
