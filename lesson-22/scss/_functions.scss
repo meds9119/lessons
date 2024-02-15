@@ -1,0 +1,33 @@
+@use "sass:math";
+
+// with module sass:math
+@function toRem($num1, $num2: 16) {
+  $rez: math.div($num1, $num2) + rem;
+  @return $rez;
+}
+
+@function toEm($num1, $num2: 16) {
+  $rez: math.div($num1, $num2) + em;
+  @return $rez;
+}
+
+// without module sass:math
+//@function toRem($num1, $num2: 16) {
+//  $rez: ($num1 / $num2) + rem;
+//  @return $rez;
+//}
+
+//@function toEm($num1, $num2: 16) {
+//  $rez: ($num1 / $num2) + em;
+//  @return $rez;
+//}
+
+@mixin responsiveWidth($minSize, $maxSize) {
+  width: clamp(toRem($minSize), 5vw, toRem($maxSize));
+}
+
+
+@function percent($num1, $num2) {
+  $rez: ($num1 / $num2) * 100%;
+  @return $rez;
+}
