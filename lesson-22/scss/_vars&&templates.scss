@@ -1,0 +1,52 @@
+@import "_functions.scss"; // Functions
+
+//-------------Variables-------------------
+//---------------FONTS---------------------
+$main-font: 'Inter', sans-serif; //font
+$secondary-font: 'Poppins', sans-serif; //font
+
+//---------------COLORS--------------------
+$black-color: #000; // black color
+$white-color: #FFF; // white color
+$green-color: rgb(64, 221, 182);
+$blue-color: rgb(107, 119, 229);
+$hover-color: rgb(75, 88, 190);
+$second-hover-color: rgba(227, 227, 227, 0.44);
+
+//----------------SIZE---------------------
+$main-line-height: 1.2; //line height
+$full-percentage: 100%;
+$main-font-size: toRem(18); //font size
+
+//----------------OTHER--------------------
+$main-transition: all 0.4s ease;
+
+
+//---------------BREAKPOINTS---------------
+$tablet-breakpoint: toEm(980.98); // Tablet breakpoint
+$L-mob-bp: toEm(767.98); // Large mobile breakpoint
+//$second-mobile-breakpoint: toEm(502.98);
+$M-mob-bp: toEm(440.98); // Medium mobile breakpoint
+$S-mob-bp: toEm(320.98); // Small mobile breakpoint
+//----------------------------------------------------------------
+//--------------------------Templates-----------------------------
+%photo-absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+%image-size {
+  img {
+    width: $full-percentage;
+    height: $full-percentage;
+  }
+}
+
+%dis-flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
