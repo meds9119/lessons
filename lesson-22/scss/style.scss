@@ -520,11 +520,12 @@ body {
 //-----------------------MAIN.PAGE-----------------------------------
 //-------------------------HERO--------------------------------------
 .page {
+  padding-top: toRem(177);
   // .page__hero
   &__hero {
     position: relative;
     z-index: 10;
-    min-height: calc(100svh - 12.1875rem);
+    min-height: calc(100svh - 11.875rem);
   }
 
   // .page__business
@@ -547,9 +548,9 @@ body {
 
   // .hero__content
   &__content {
-    max-width: toRem(700);
+    max-width: toRem(600);
     position: relative;
-    padding: toRem(205) toRem(116) toRem(204) toRem(117);
+    padding: toRem(80) toRem(40) toRem(80) toRem(40);
     backdrop-filter: blur(9px);
     background: rgba(55, 57, 63, 0.91);
   }
@@ -564,11 +565,16 @@ body {
 
   // .content__button
   &__button {
+    display: flex;
+    column-gap: toRem(30);
   }
 }
 
 .body {
   color: $white-color;
+  &:not(:last-child) {
+    margin-bottom: toRem(32);
+  }
   // .body__subtitle
   &__subtitle {
     font-weight: 600;
@@ -586,14 +592,14 @@ body {
     &:not(:last-child) {
       margin-bottom: toRem(18);
     }
+    span {
+      color: #40DDB6;
+    }
     p {
       color: rgb(185, 185, 185);
       font-weight: 500;
       line-height: 1.4;
       text-align: left;
-      &:not(:last-child) {
-        margin-bottom: toRem(32);
-      }
     }
   }
 }
@@ -603,12 +609,21 @@ body {
   &__link {
   }
 
-  // .button__video-link
-  &__video-link {
+  // .button__get-link
+  &__get-link {
+    color: $white-color;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: underline;
   }
 }
 
 .link {
+  &--color {
+    background-color: $green-color;
+    color: $black-color;
+  }
 }
 //---------------------------------------------------------------
 //--------------------BUSINESS-----------------------------------
@@ -664,6 +679,19 @@ body {
   }
 }
 
+.sub {
+  display: flex;
+  column-gap: toRem(7);
+  align-items: center;
+  &:before {
+    content: '';
+    flex: 0 1 toRem(11);
+    width: toRem(11);
+    height: toRem(11);
+    background-color: $green-color;
+  }
+}
+
 .button {
   // .button__get-link
   &__get-link {
@@ -671,6 +699,7 @@ body {
 }
 
 .sub {
+
 }
 
 .list {
