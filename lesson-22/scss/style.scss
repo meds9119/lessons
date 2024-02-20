@@ -1,3 +1,4 @@
+@use "sass:math";
 @import "_functions.scss";
 // Functions
 @import "_reset.scss";
@@ -50,22 +51,56 @@ body {
   // .header__top
   &__top {
     padding: toEm(19) 0;
+
+    @media (max-width: $tablet-breakpoint) {
+      padding: toEm(10) 0;
+    }
   }
 
   // .header__main
   &__main {
-    @media (max-width: $tablet-breakpoint) {
-      background-color: transparent;
-    }
   }
 }
 
 .tophead {
   background-color: rgb(55, 57, 63);
   color: $white-color;
-  min-height: 60px;
+  min-height: toRem(60);
   font-family: $main-font;
   font-size: toRem(14);
+
+  @media (max-width: $tablet-breakpoint) {
+    min-height: toRem(30);
+    font-size: toRem(16);
+
+    //@media (max-width: $tablet-breakpoint) {
+    //  position: fixed;
+    //  width: $full-percentage;
+    //  height: $full-percentage;
+    //  top: 0;
+    //  left: 100%;
+    //  transition: left 0.3s;
+    //  background-color: #c3d4f3;
+    //  padding: toRem(190) toRem(15) toRem(30) toRem(15);
+    //  overflow: auto;
+    //
+    //  &::before {
+    //    content: '';
+    //    position: fixed;
+    //    width: $full-percentage;
+    //    height: toRem(50);
+    //    top: 0;
+    //    left: $full-percentage;
+    //    transition: left 0.3s;
+    //    z-index: 2;
+    //  }
+    //
+    //  .menu-open &,
+    //  .menu-open &::before {
+    //    left: 0;
+    //  }
+    //}
+  }
   // .tophead__container
   &__container {
     display: flex;
@@ -80,6 +115,12 @@ body {
     justify-content: flex-start;
     align-items: center;
     column-gap: toRem(40);
+
+    @media (max-width: $tablet-breakpoint) {
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: toRem(8);
+    }
   }
 
   // .tophead__social
@@ -129,6 +170,11 @@ body {
 .social {
   @extend %dis-flex-between;
   column-gap: toRem(40);
+
+  @media (max-width: $tablet-breakpoint) {
+    flex-direction: column;
+    row-gap: toRem(8);
+  }
   // .social__item
   &__item {
     @extend %dis-flex-between;
@@ -166,22 +212,25 @@ body {
     transform: scale(1.001);
 
     @media (any-hover: hover) {
-      //&:hover {
-      //  background-color: rgba(210, 209, 209, 0.69);
-      //  border-radius: 5px;
-      //  width: 16px;
-      //  height: 16px;
-      //}
-
       &:hover {
         transform: scale(1.2);
       }
+    }
+
+    @media (max-width: $tablet-breakpoint) {
+      width: toRem(22);
+      height: toRem(21);
     }
   }
 }
 
 .mainhead {
+  background-color: $white-color;
   padding: toRem(25) 0;
+
+  @media (max-width: $tablet-breakpoint) {
+    padding: toRem(12) 0;
+  }
   // .mainhead__container
   &__container {
     @extend %dis-flex-between;
@@ -347,12 +396,13 @@ body {
     position: fixed;
     width: $full-percentage;
     height: $full-percentage;
-    top: 0;
-    left: -100%;
-    transition: left 0.3s;
+    bottom: 100%;
+    left: 0;
+    transition: bottom 0.3s;
     background-color: #c3d4f3;
     padding: toRem(190) toRem(15) toRem(30) toRem(15);
     overflow: auto;
+    z-index: -1;
 
     &::before {
       content: '';
@@ -367,7 +417,7 @@ body {
 
     .menu-open &,
     .menu-open &::before {
-      left: 0;
+      bottom: 0;
     }
   }
   // .nav__list
@@ -446,6 +496,7 @@ body {
 }
 
 .link {
+  display: inline-block;
   padding: toRem(22) toRem(35);
   background: $blue-color;
   color: $white-color;
@@ -463,5 +514,193 @@ body {
 
   @media (max-width: $tablet-breakpoint) {
     padding: toRem(17) toRem(31);
+  }
+}
+//-------------------------------------------------------------------
+//-----------------------MAIN.PAGE-----------------------------------
+//-------------------------HERO--------------------------------------
+.page {
+  // .page__hero
+  &__hero {
+    position: relative;
+    z-index: 10;
+    min-height: calc(100svh - 12.1875rem);
+  }
+
+  // .page__business
+  &__business {
+    display: flex;
+    column-gap: toRem(70);
+  }
+
+}
+
+.hero {
+
+  // .hero__background
+  &__background {
+    @extend %photo-absolute;
+    object-fit: cover;
+    //object-position: right;
+    @extend %image-size
+  }
+
+  // .hero__content
+  &__content {
+    max-width: toRem(700);
+    position: relative;
+    padding: toRem(205) toRem(116) toRem(204) toRem(117);
+    backdrop-filter: blur(9px);
+    background: rgba(55, 57, 63, 0.91);
+  }
+}
+
+.content {
+
+  // .content__body
+  &__body {
+
+  }
+
+  // .content__button
+  &__button {
+  }
+}
+
+.body {
+  color: $white-color;
+  // .body__subtitle
+  &__subtitle {
+    font-weight: 600;
+    line-height: 1.4;
+    &:not(:last-child) {
+      margin-bottom: toRem(27);
+    }
+  }
+
+  // .body__title
+  &__title {
+    font-family: $secondary-font;
+    font-size: toRem(60);
+    font-weight: 700;
+    &:not(:last-child) {
+      margin-bottom: toRem(18);
+    }
+    p {
+      color: rgb(185, 185, 185);
+      font-weight: 500;
+      line-height: 1.4;
+      text-align: left;
+      &:not(:last-child) {
+        margin-bottom: toRem(32);
+      }
+    }
+  }
+}
+
+.button {
+  // .button__link
+  &__link {
+  }
+
+  // .button__video-link
+  &__video-link {
+  }
+}
+
+.link {
+}
+//---------------------------------------------------------------
+//--------------------BUSINESS-----------------------------------
+
+.business {
+  // .business__body
+  &__body {
+
+  }
+
+  // .business__side-content
+  &__side-content {
+    flex: 0 0 50%;
+    padding: toRem(151) toRem(52) toRem(151) toRem(300);
+    background-color: #F4F4F4;
+  }
+
+  // .business__content
+  &__content {
+  }
+}
+
+.side {
+  // .side__image
+  &__image {
+    width: $full-percentage;
+    aspect-ratio: 408 / 466;
+    object-fit: cover;
+    object-position: center;
+    @extend %image-size;
+  }
+
+  // .side__content
+  &__content {
+  }
+}
+
+.content {
+  // .content__title
+  &__title {
+  }
+
+  // .content__subtitle
+  &__subtitle {
+  }
+
+  // .content__list
+  &__list {
+  }
+
+  // .content__box
+  &__box {
+  }
+}
+
+.button {
+  // .button__get-link
+  &__get-link {
+  }
+}
+
+.sub {
+}
+
+.list {
+  // .list__item
+  &__item {
+  }
+}
+
+.box {
+  // .box__list
+  &__list {
+  }
+}
+
+.box-list {
+  // .box-list__item
+  &__item {
+  }
+
+  // .box-list__image
+  &__image {
+  }
+
+  // .box-list__info
+  &__info {
+  }
+}
+
+.info {
+  // .info__title
+  &__title {
   }
 }
