@@ -17,3 +17,4 @@ icon.addEventListener('click', function () {
 // } else {
 //     // Додати контакти до основного меню
 // }
+
