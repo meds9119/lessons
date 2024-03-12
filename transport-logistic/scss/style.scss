@@ -411,6 +411,14 @@ body {
       transform: scaleX(1);
     }
   }
+
+  @media (any-hover: none) {
+    &:active::after {
+      content: '';
+      opacity: 1;
+      transform: scaleX(1);
+    }
+  }
 }
 
 
