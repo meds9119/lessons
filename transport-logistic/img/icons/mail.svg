@@ -1,0 +1,10 @@
+<svg width="63.000000" height="63.000000" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs/>
+	<circle id="Background" cx="31.500000" cy="31.500000" r="31.500000" fill="#111C55" fill-opacity="1.000000"/>
+	<circle id="Background" cx="31.500000" cy="31.500000" r="31.000000" stroke="#273270" stroke-opacity="1.000000" stroke-width="1.000000"/>
+	<path id="Vector" d="M40.9961 23C41.5508 23 42 23.3755 42 23.8389L42 37.1611C42 37.6245 41.5508 38 40.9961 38L23.0039 38C22.4492 38 22 37.6245 22 37.1611L22 23.8389C22 23.3755 22.4492 23 23.0039 23L40.9961 23Z" stroke="#F6B426" stroke-opacity="1.000000" stroke-width="1.000000"/>
+	<path id="Vector" d="M22 23L32.4248 30L42 23.2295" stroke="#F6B426" stroke-opacity="1.000000" stroke-width="1.000000"/>
+</svg>
