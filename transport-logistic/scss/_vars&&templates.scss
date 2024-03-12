@@ -167,3 +167,38 @@ $S-mob-bp: toEm(320.98); // Small mobile breakpoint
     }
   }
 }
+
+//.blue{
+//  font-size: toRem(20);
+//  color: black;
+//  padding: toRem(15) toRem(25);
+//  position: relative;
+//  z-index: 3;
+//  overflow: hidden;
+//  position: relative;
+//  background-color: #091242;
+//  color: #fff;
+//  @media(any-hover:hover){
+//    &:hover::before{
+//      transform: scale(3.9);
+//    }
+//  }
+//  @media(any-hover:none){
+//    &:active::before{
+//      transform: scale(3.9);
+//      transition: none;
+//    }
+//  }
+//  &:before{
+//    content:'';
+//    position: absolute;
+//    background: rgb(31, 42, 105);
+//    transition: all .3s ease-in;
+//    z-index: -1;
+//    border-radius: 50%;
+//    bottom: -40%;
+//    right: -10%;
+//    width: 30%;
+//    height: 100%;
+//  }
+//}

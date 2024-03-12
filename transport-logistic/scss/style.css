@@ -341,7 +341,7 @@ body {
   transition: transform 0.6s, opacity 1.3s;
 }
 @media (any-hover: hover) {
-  .button:hover::after, .button:active::after {
+  .button:hover::after {
     content: "";
     opacity: 1;
     transform: scaleX(1);
@@ -352,6 +352,7 @@ body {
     content: "";
     opacity: 1;
     transform: scaleX(1);
+    transition: transform 0s, opacity 0s;
   }
 }
 
