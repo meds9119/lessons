@@ -14,6 +14,7 @@ $yellow-color: rgb(255, 182, 41); // yellow color
 $grey-text-color: rgb(102, 108, 137);; // grey text color
 $grey-footer-color: rgb(131, 136, 167); // grey text color in footer
 $blue-color: rgb(9, 18, 66); // blue color
+$blue-alfa-color: rgba(9, 18, 66, 0.85); // blue color with transparency
 $bg-gray: rgba(255, 255, 255, 0.08); // background gray color
 $hover-color: rgb(75, 88, 190);
 $second-hover-color: rgba(227, 227, 227, 0.44);
@@ -33,7 +34,7 @@ $main-transition: all 0.4s ease;
 $tablet-breakpoint: toEm(980.98); // Tablet breakpoint
 $L-mob-bp: toEm(767.98); // Large mobile breakpoint
 //$second-mobile-breakpoint: toEm(502.98);
-$M-mob-bp: toEm(490.98); // Medium mobile breakpoint
+$M-mob-bp: toEm(510.98); // Medium mobile breakpoint
 $S-mob-bp: toEm(320.98); // Small mobile breakpoint
 //----------------------------------------------------------------
 //--------------------------Templates-----------------------------
@@ -58,60 +59,6 @@ $S-mob-bp: toEm(320.98); // Small mobile breakpoint
   align-items: center;
   flex-wrap: wrap;
 }
-
-//%hover-grad-yellow {
-//  .button {
-//    color: $black-color;
-//    padding: 0.8em 1.7em;
-//    background: linear-gradient(126.56deg, rgb(255, 182, 41) 20.708%,rgb(255, 218, 86) 66.546%,rgb(255, 215, 166) 111.085%);
-//    position: relative;
-//    overflow: hidden;
-//    cursor: pointer;
-//    transition: .5s;
-//    font-weight: 400;
-//    font-size: 17px;
-//    font-family: inherit;
-//    text-transform: uppercase;
-//    z-index: 1;
-//  }
-//
-//  .button::before, .button::after {
-//    content: '';
-//    display: block;
-//    //width: calc(-50% + 1em);
-//    width: 70%;
-//    height: 200%;
-//    transform: translate(-50%, -55%);
-//    position: absolute;
-//    border-radius: 55%;
-//    z-index: -1;
-//    background: $white-color;
-//    transition: 1s ease;
-//  }
-//
-//  .button::before {
-//    top: 100%;
-//    right: -50%;
-//  }
-//
-//  .button::after {
-//    top: 100%;
-//    right: -50%;
-//  }
-//
-//  .button:hover::before, .button:hover::after {
-//    transform: translate(-50%, -55%);
-//    width: 50%;
-//  }
-//
-//  .button:hover {
-//    background: linear-gradient(126.56deg, rgb(255, 182, 41) 20.708%,rgb(255, 218, 86) 66.546%,rgb(255, 215, 166) 111.085%);
-//  }
-//
-//  .button:active {
-//    filter: brightness(.8);
-//  }
-//}
 
 %hover-btn-yellow {
   .button {
@@ -168,37 +115,3 @@ $S-mob-bp: toEm(320.98); // Small mobile breakpoint
   }
 }
 
-//.blue{
-//  font-size: toRem(20);
-//  color: black;
-//  padding: toRem(15) toRem(25);
-//  position: relative;
-//  z-index: 3;
-//  overflow: hidden;
-//  position: relative;
-//  background-color: #091242;
-//  color: #fff;
-//  @media(any-hover:hover){
-//    &:hover::before{
-//      transform: scale(3.9);
-//    }
-//  }
-//  @media(any-hover:none){
-//    &:active::before{
-//      transform: scale(3.9);
-//      transition: none;
-//    }
-//  }
-//  &:before{
-//    content:'';
-//    position: absolute;
-//    background: rgb(31, 42, 105);
-//    transition: all .3s ease-in;
-//    z-index: -1;
-//    border-radius: 50%;
-//    bottom: -40%;
-//    right: -10%;
-//    width: 30%;
-//    height: 100%;
-//  }
-//}
