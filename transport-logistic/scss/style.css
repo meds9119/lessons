@@ -660,13 +660,13 @@ body {
 
 .info__body {
   color: rgba(255, 255, 255, 0.96);
-  max-width: 30.3125rem;
+  max-width: 35rem;
   padding-top: 9.375rem;
   padding-bottom: 9.375rem;
 }
 
 .body-hero__title {
-  min-width: calc(50% + 0.5625rem);
+  min-width: calc(42% + 0.5625rem);
   background: rgba(4, 28, 55, 0.5);
 }
 .body-hero__title:not(:last-child) {
@@ -800,10 +800,10 @@ body {
   width: 4.6875rem;
   height: 7.1875rem;
   object-fit: contain;
-  object-position: center;
+  object-position: top;
 }
 .item__info {
-  max-width: 16.875rem;
+  max-width: 17.5rem;
   position: relative;
 }
 .item__info:before {

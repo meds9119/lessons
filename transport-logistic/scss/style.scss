@@ -792,7 +792,7 @@ body {
   // .info__body
   &__body {
     color: $white-color;
-    max-width: toRem(485);
+    max-width: toRem(560);
     padding-top: toRem(150);
     padding-bottom: toRem(150);
   }
@@ -801,7 +801,7 @@ body {
 .body-hero {
   // .body-hero__title
   &__title {
-    min-width: #{calc(50% + toRem(9))};
+    min-width: #{calc(42% + toRem(9))};
     //min-width: 50%;
     background: rgba(4, 28, 55, 0.5);
 
@@ -974,13 +974,13 @@ body {
     width: toRem(75);
     height: toRem(115);
     object-fit: contain;
-    object-position: center;
+    object-position: top;
     @extend %image-size;
   }
 
   // .item__info
   &__info {
-    max-width: toRem(270);
+    max-width: toRem(280);
     position: relative;
 
     &:before {
