@@ -30,7 +30,7 @@
                             Sunday Closed
                         </div>
                     </div>
-                    <div class="contacts__item">
+                    <div class="contacts__item item">
                         <a class="contacts__link" href="mailto:contact@logistics.com">
                             <img class="item__image" src="img/icons/mail.svg" alt="Email icon">
                             <div class="item__text">
@@ -41,7 +41,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="contacts__item">
+                    <div class="contacts__item item">
                         <a class="contacts__link" href="tel:(00)112365489">
                             <img class="item__image" src="img/icons/tel.svg" alt="Telephone icon">
                             <div class="item__text">
@@ -71,33 +71,39 @@
                                 </a>
                             </li>
                             <li class="nav__item nav__item--arrow">
-                                <a class="nav__link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes">
+                                <a class="nav__link" href="#">
                                     Pages
+                                    <span class="nav__icon"></span>
                                 </a>
                                 <nav class="menu__submenu submenu">
                                     <ul class="submenu__list">
                                         <li class="submenu__item">
-                                            <a class="submenu__link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes">
+                                            <a class="submenu__link"
+                                               href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes">
                                                 Products
                                             </a>
                                         </li>
                                         <li class="submenu__item">
-                                            <a class="submenu__link" href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics">
+                                            <a class="submenu__link"
+                                               href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics">
                                                 Contacts
                                             </a>
                                         </li>
                                         <li class="submenu__item">
-                                            <a class="submenu__link" href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics">
+                                            <a class="submenu__link"
+                                               href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics">
                                                 Favorite
                                             </a>
                                         </li>
                                         <li class="submenu__item">
-                                            <a class="submenu__link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes">
+                                            <a class="submenu__link"
+                                               href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes">
                                                 Sale
                                             </a>
                                         </li>
                                         <li class="submenu__item">
-                                            <a class="submenu__link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes">
+                                            <a class="submenu__link"
+                                               href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes">
                                                 Blog
                                             </a>
                                         </li>
@@ -135,6 +141,7 @@
                     <a class="side-info__link" href="#">
                         Request Quote
                     </a>
+                    <!--                      <img class="side-info__icon-get" src="img/icons/request.svg" alt="Request icon">-->
                     <div class="side-info__button">
                         <button class="side-info__icon-menu" type="button">
                             <span></span>
@@ -150,10 +157,92 @@
         <section class="page__hero hero">
             <div class="hero__container">
                 <div class="hero__background bg">
-                    <img class="bg__image" src="img/hero/opt/hero-ship-tiny2.webp" alt="Hero full picture with ship">
+                    <img class="bg__image" src="img/hero/hero-ship-2.webp" alt="Hero full picture with ship">
+                </div>
+                <div class="hero__info info">
+                    <div class="info__body body-hero">
+                        <h1 class="body-hero__title title">
+                            Logistics & Supply Chain Solutions
+                        </h1>
+                        <h2 class="body-hero__subtitle">
+                            Your Gateway
+                            to any Destination in the World
+                        </h2>
+                        <p>
+                            In augue ligula, feugiat ut nulla consequat. Ut est lacus, molestie in arcu no, iaculis
+                            vehicula ipsum. Nunc faucibus, nisl id dapibus finibus, enim diam interdum nulla, sed
+                            laoreet risus lectus.
+                        </p>
+                        <a class="body-hero__link link" href="#" target="_blank">
+                            Explore More
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
+        <section class="page__services services">
+            <div class="services__container">
+                <div class="services__body body">
+                    <h2 class="body__title title">
+                        What We Do
+                    </h2>
+                    <h3 class="body__subtitle-serv">
+                        Safe & Reliable Cargo Solutions
+                    </h3>
+                </div>
+                <div class="services__cards card">
+                    <article class="card__item item">
+                        <img class="item__image-card" src="img/icons/sea-transport-services.svg"
+                             alt="Sea transport services icon">
+                        <div class="item__info info">
+                            <div class="info__about">
+                                Sea Transport Services
+                            </div>
+                            <p>
+                                Following the quality of our service thus having gained trust of our many clients.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="card__item item">
+                        <img class="item__image-card" src="img/icons/warehousing-services.svg"
+                             alt="Warehousing services icon">
+                        <div class="item__info info">
+                            <div class="info__about">
+                                Warehousing Services
+                            </div>
+                            <p>
+                                Following the quality of our service thus having gained trust of our many clients.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="card__item item">
+                        <img class="item__image-card" src="img/icons/air-transport-services.svg"
+                             alt="Air transport services icon">
+                        <div class="item__info info">
+                            <div class="info__about">
+                                Air Fright Services
+                            </div>
+                            <p>
+                                Following the quality of our service thus having gained trust of our many clients.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="card__item item">
+                        <img class="item__image-card" src="img/icons/shipping-services.svg"
+                             alt="Shipping services icon">
+                        <div class="item__info info">
+                            <div class="info__about">
+                                Local Shipping Services
+                            </div>
+                            <p>
+                                Following the quality of our service thus having gained trust of our many clients.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
     </main>
     <!--FOOTER-->
     <footer class="footer">
