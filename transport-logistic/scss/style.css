@@ -75,7 +75,7 @@ textarea {
   height: 100%;
 }
 
-.picture__down img img, .picture__up img img, .list__item__image img, .background__image img, .item__image-card img, .bg__image img, .social__item img img, .item__image img, .tophead__logo img {
+.picture__down img img, .picture__up img img, .item-list__image img, .background__image img, .item__image-card img, .bg__image img, .social__item img img, .item__image img, .tophead__logo img {
   width: 100%;
   height: 100%;
 }
@@ -903,7 +903,8 @@ body {
 .list__item:not(:last-child) {
   margin-bottom: 1.375rem;
 }
-.list__item__image {
+
+.item-list__image {
   flex: 0 0 3.625rem;
   width: 3.625rem;
   height: 3.625rem;

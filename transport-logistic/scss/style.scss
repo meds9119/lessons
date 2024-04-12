@@ -1144,20 +1144,22 @@ body {
     &:not(:last-child) {
       margin-bottom: toRem(22);
     }
+  }
+}
 
-    // .list__image
-    &__image {
-      flex: 0 0 toRem(58);
-      width: toRem(58);
-      height: toRem(58);
-      object-fit: contain;
-      object-position: center;
-      @extend %image-size;
-    }
+.item-list {
+  // .item-list__image
+  &__image {
+    flex: 0 0 toRem(58);
+    width: toRem(58);
+    height: toRem(58);
+    object-fit: contain;
+    object-position: center;
+    @extend %image-size;
+  }
 
-    // .list__text
-    &__text {
-    }
+  // .item-list__text
+  &__text {
   }
 }
 
