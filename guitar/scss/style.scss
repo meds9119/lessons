@@ -1,0 +1,315 @@
+@use "sass:math";
+
+$minWidth: 320;
+// Min page width
+$maxWidth: 1440;
+// Site width
+$maxWidthContainer: 1200;
+// Container width (0 = no restrictions)
+$containerPadding: 30;
+// Common container spacing
+// (30 = 15x left|right, 0 = no spacing)
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+@import "_functions.scss";
+// Functions
+@import "_reset.scss";
+// Reset
+@import "_fonts.scss";
+// Fonts
+@import "_icons.scss";
+// Icons
+@import "_vars&&templates.scss"; // Variables and templates
+
+//-----------------------------BODY.WRAPPER------------------------
+//-----------------------------------------------------------------
+
+.wrapper {
+  overflow: clip;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+
+  > main {
+    flex-grow: 1;
+  }
+}
+
+body {
+  font-family: $basic-font;
+  font-size: $basic-fz;
+  line-height: $basic-lh;
+
+  .menu-open & {
+    overflow: hidden;
+  }
+}
+
+[class*="__container"] {
+  max-width: toRem(1230);
+  margin: 0 auto;
+  padding: 0 toRem(15);
+}
+
+//-----------------------------HEADER------------------------------
+//-----------------------------------------------------------------
+
+.header {
+  width: 100%;
+  // .header--position
+  &--position {
+    //position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+  }
+
+  // .header__container
+  &__container {
+    //max-width: toEm(1230);
+    min-height: toRem(152);
+    align-items: center;
+    column-gap: toRem(130);
+    row-gap: toRem(30);
+    padding: toRem(15);
+    display: flex;
+  }
+
+  // .header__logo
+  &__logo {
+    display: inline-block;
+    width: toRem(123);
+    height: toRem(29);
+  }
+
+  // .header__menu
+  &__menu {
+  }
+}
+
+.logo {
+  // .logo__image
+  &__image {
+    @extend %image-size;
+  }
+}
+
+.menu {
+  // .menu__nav
+  &__nav {
+  }
+}
+
+.nav {
+  // .nav__list
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: toRem(50);
+  }
+
+  // .nav__item
+  &__item {
+    color: $gray-header-color;
+    font-size: toRem(16);
+    font-weight: 500;
+    line-height: 1.5;
+    transition: all 0.2s ease;
+
+    text-decoration: none;
+    border: none;
+    background: none;
+
+
+    &::before {
+      margin-left: auto;
+    }
+
+    &::after, &::before {
+      content: '';
+      width: 0;
+      height: toRem(2);
+      background: $orange-hover-color;
+      display: block;
+      transition: 0.3s;
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: $orange-hover-color;
+      }
+
+      &:hover::after, &:hover::before {
+        width: 100%;
+      }
+    }
+  }
+
+  // .nav__link
+  &__link {
+    display: inline-block;
+  }
+}
+
+//-----------------------------HEADER------------------------------
+//-----------------------------------------------------------------
+
+.page {
+  // .page__hero
+  &__hero {
+  }
+}
+
+.hero {
+  // .hero__container
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    gap: toRem(20);
+  }
+
+  // .hero__image
+  &__image {
+    flex: 1 1 50%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 55%;
+    width: toRem(672);
+    height: toRem(586);
+    //aspect-ratio: 672 / 586;
+
+    > img {
+      //position: absolute;
+      //top: 0;
+      //left: 0;
+      width: 100%;
+      height: 100%;
+      object-position: right;
+      object-fit: contain;
+      @extend %image-size;
+    }
+  }
+
+  // .hero__content
+  &__content {
+    flex: 1 1 50%;
+    padding-top: toRem(80);
+    max-width: toRem(470);
+  }
+}
+
+.image {
+}
+
+.content {
+  > p {
+    max-width: toRem(390);
+    color: $gray-second-color;
+    font-size: toRem(16);
+    font-weight: 500;
+    line-height: 1.5;
+
+    &:not(:last-of-type) {
+      margin-bottom: toRem(15);
+    }
+
+    &:not(:last-child) {
+      margin-bottom: toRem(30);
+    }
+  }
+
+  // .content__title
+  &__title {
+    font-family: $secondary-font;
+    font-size: toRem(56);
+    font-weight: 600;
+    line-height: 1.1;
+
+    > span {
+      color: $orange-color;
+
+      //@media (any-hover: hover) {
+      //  &:hover {
+      //    color: $orange-hover-color;
+      //  }
+      //}
+    }
+
+    &:not(:last-of-type) {
+      margin-bottom: toRem(25);
+    }
+
+    &:not(:last-child) {
+      margin-bottom: toRem(32);
+    }
+
+    @media (max-width: toEm(875.99)) {
+      text-shadow: toRem(1) toRem(1) #a2a0a0;
+
+    }
+  }
+
+  // .content__active
+  &__active {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: toRem(40);
+  }
+}
+
+.active {
+  // .active__link
+  &__link {
+    display: inline-block;
+    border-radius: toRem(40);
+    background: $orange-color;
+    text-align: center;
+    padding: toRem(18) toRem(48);
+    color: rgb(255, 255, 255);
+    font-size: toRem(16);
+    font-weight: 600;
+    line-height: 1.1;
+    border: toRem(2) solid transparent;
+    transition: all 0.2s ease-in-out;
+
+    @media (any-hover: hover) {
+      &:hover {
+        background: $orange-hover-color;
+        border: toRem(2) solid white;
+      }
+    }
+  }
+
+  // .active__social
+  &__social {
+    > a {
+      &:not(:last-of-type) {
+        margin-right: toRem(28);
+      }
+    }
+  }
+}
+
+.link {
+}
+
+.social {
+  color: rgb(178, 178, 178);
+  font-size: toRem(30);
+  transition: color 0.3s;
+
+  @media (any-hover: hover) {
+    &:hover {
+      color: $orange-hover-color;
+    }
+  }
+}
+
+._icon-play {
+}
+
+._icon-logo-apple {
+}
