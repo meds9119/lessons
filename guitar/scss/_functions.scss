@@ -19,3 +19,9 @@
   $rez: ($num1 / $num2) * 100%;
   @return $rez;
 }
+
+// letter-spacing % to em
+@function percentToEm($letterSpacingPercentage, $fontSize: 16) {
+  $letterSpacingEm: ($letterSpacingPercentage / 100) * 1em;
+  @return $letterSpacingEm;
+}
